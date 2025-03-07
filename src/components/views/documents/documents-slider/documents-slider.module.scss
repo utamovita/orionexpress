@@ -1,0 +1,130 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.swiper {
+  padding: 0 0 vr.$spacingSize5XL;
+}
+
+.swiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-height: 450px;
+}
+
+.image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  padding: vr.$spacingSize6XL 0;
+
+  :global {
+    .swiper-slide {
+      filter: blur(4px);
+      transform: scale(0.8);
+      transition: 0.3s;
+
+      &.swiper-slide-active {
+        filter: blur(0);
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.slideContent {
+  position: relative;
+  min-height: 500px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgb(15, 15, 15);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 0.6558998599439776) 48%,
+    rgba(255, 255, 255, 0) 81%
+  );
+}
+
+.textWrapper {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: vr.$spacingSizeL;
+
+  .documentBtn {
+    @include mx.fontSize(24px);
+    display: flex;
+
+    min-width: auto;
+    padding: vr.$spacingSizeS vr.$spacingSizeXL;
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+.documentTitle {
+  font-family: var(--fontFamilyTertiary);
+  text-transform: none;
+  @include mx.fontSize(32px);
+}
+
+.documentSubtitle {
+  @include mx.fontSize(16px);
+}
+
+.stack {
+  justify-content: space-between;
+  height: 100%;
+}
+
+@include mx.devices(desktop) {
+  .documentTitle {
+    @include mx.fontSize(28px);
+  }
+
+  .documentSubtitle {
+    @include mx.fontSize(14px);
+  }
+}
+
+@include mx.devices(mobile) {
+  .documentTitle {
+    @include mx.fontSize(24px);
+  }
+
+  .documentSubtitle {
+    @include mx.fontSize(14px);
+  }
+
+  .wrapper {
+    :global {
+      .swiper-button-prev {
+        top: auto;
+        left: 0;
+        bottom: 0;
+      }
+
+      .swiper-button-next {
+        top: auto;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}

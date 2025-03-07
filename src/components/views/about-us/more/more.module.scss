@@ -1,0 +1,71 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorWhite);
+  color: var(--colorBlack);
+}
+
+.content {
+  z-index: 1;
+  flex-direction: row;
+}
+
+.section {
+  position: relative;
+  flex-basis: 50%;
+  align-self: center;
+  padding: vr.$spacingSizeL;
+}
+
+.title {
+  @include mx.fontSize(50px);
+  margin-bottom: vr.$spacingSizeL;
+  font-weight: var(--fontWeightBold);
+  font-family: var(--fontFamilySecondary);
+}
+
+.subtitle {
+  @include mx.fontSize(19px);
+  font-weight: var(--fontWeightRegular);
+}
+
+@include mx.devices(mobile) {
+  .content {
+    flex-direction: column;
+  }
+
+  .section {
+    padding: vr.$spacingSizeXS;
+  }
+
+  .section:last-child {
+    margin: vr.$spacingSizeL 0;
+  }
+
+  .subtitle {
+    @include mx.fontSize(17px);
+  }
+
+  .image {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .title {
+    @include mx.fontSize(44px);
+  }
+
+  .subtitle {
+    @include mx.fontSize(15px);
+  }
+
+  .image {
+    height: 200px;
+  }
+}

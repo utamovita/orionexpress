@@ -1,0 +1,323 @@
+@use "src/design-system/styles/utilities/mixins" as mx;
+@use "src/design-system/styles/utilities/variables" as vr;
+
+.defaultSpace {
+  & > * {
+    padding: 0;
+  }
+}
+
+/* (universal for all views && mobile views) */
+.space-XXS,
+.mobileSpace-XXS {
+  & > * {
+    padding-right: vr.$spacingSizeXXS;
+  }
+
+  &.noSides {
+    margin: 0 - vr.$spacingSizeXXS;
+  }
+}
+
+.space-XS,
+.mobileSpace-XS {
+  & > * {
+    padding-right: vr.$spacingSizeXS;
+  }
+
+  &.noSides {
+    margin: 0 - vr.$spacingSizeXS;
+  }
+}
+
+.space-S,
+.mobileSpace-S {
+  & > * {
+    padding-right: vr.$spacingSizeS;
+  }
+
+  &.noSides {
+    margin: 0 - vr.$spacingSizeS;
+  }
+}
+
+.space-M,
+.mobileSpace-M {
+  & > * {
+    padding-right: vr.$spacingSizeM;
+  }
+
+  &.noSides {
+    margin: 0 - vr.$spacingSizeM;
+  }
+}
+
+.space-XL,
+.mobileSpace-XL {
+  & > * {
+    padding-right: vr.$spacingSizeXL;
+  }
+
+  &.noSides {
+    margin: 0 - vr.$spacingSizeXL;
+  }
+}
+
+.space-XXL,
+.mobileSpace-XXL {
+  & > * {
+    padding-right: vr.$spacingSizeXXL;
+  }
+
+  &.noSides {
+    margin: 0 - vr.$spacingSizeXXL;
+  }
+}
+
+.space-4XL,
+.mobileSpace-4XL {
+  & > * {
+    padding-right: vr.$spacingSize4XL;
+  }
+
+  &.noSides {
+    margin: 0 - vr.$spacingSize4XL;
+  }
+}
+
+.space-6XL,
+.mobileSpace-6XL {
+  & > * {
+    padding-right: vr.$spacingSize6XL;
+  }
+
+  &.noSides {
+    margin: 0 - vr.$spacingSize6XL;
+  }
+}
+
+.space-8XL,
+.mobileSpace-8XL {
+  & > * {
+    padding-right: vr.$spacingSize8XL;
+  }
+
+  &.noSides {
+    margin: 0 - vr.$spacingSize8XL;
+  }
+}
+
+.space-9XL,
+.mobileSpace-9XL {
+  & > * {
+    padding-right: vr.$spacingSize9XL;
+  }
+
+  &.noSides {
+    margin: 0 - vr.$spacingSize9XL;
+  }
+}
+
+@include mx.devices(tablet) {
+  .tabletSpace-XXS {
+    & > * {
+      padding-right: vr.$spacingSizeXXS;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSizeXXS;
+    }
+  }
+
+  .tabletSpace-XS {
+    & > * {
+      padding-right: vr.$spacingSizeXS;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSizeXS;
+    }
+  }
+
+  .tabletSpace-S {
+    & > * {
+      padding-right: vr.$spacingSizeS;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSizeS;
+    }
+  }
+
+  .tabletSpace-M {
+    & > * {
+      padding-right: vr.$spacingSizeM;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSizeM;
+    }
+  }
+
+  .tabletSpace-XL {
+    & > * {
+      padding-right: vr.$spacingSizeXL;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSizeXL;
+    }
+  }
+
+  .tabletSpace-XXL {
+    & > * {
+      padding-right: vr.$spacingSizeXXL;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSizeXXL;
+    }
+  }
+
+  .tabletSpace-4XL {
+    & > * {
+      padding-right: vr.$spacingSize4XL;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSize4XL;
+    }
+  }
+
+  .tabletSpace-6XL {
+    & > * {
+      padding-right: vr.$spacingSize6XL;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSize6XL;
+    }
+  }
+
+  .tabletSpace-8XL {
+    & > * {
+      padding-right: vr.$spacingSize8XL;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSize8XL;
+    }
+  }
+
+  .tabletSpace-9XL {
+    & > * {
+      padding-right: vr.$spacingSize9XL;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSize9XL;
+    }
+  }
+}
+
+@include mx.devices(desktop) {
+  .desktopSpace-XXS {
+    & > * {
+      padding-right: vr.$spacingSizeXXS;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSizeXXS;
+    }
+  }
+
+  .desktopSpace-XS {
+    & > * {
+      padding-right: vr.$spacingSizeXS;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSizeXS;
+    }
+  }
+
+  .desktopSpace-S {
+    & > * {
+      padding-right: vr.$spacingSizeS;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSizeS;
+    }
+  }
+
+  .desktopSpace-M {
+    & > * {
+      padding-right: vr.$spacingSizeM;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSizeM;
+    }
+  }
+
+  .desktopSpace-XL {
+    & > * {
+      padding-right: vr.$spacingSizeXL;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSizeXL;
+    }
+  }
+
+  .desktopSpace-XXL {
+    & > * {
+      padding-right: vr.$spacingSizeXXL;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSizeXXL;
+    }
+  }
+
+  .desktopSpace-4XL {
+    & > * {
+      padding-right: vr.$spacingSize4XL;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSize4XL;
+    }
+  }
+
+  .desktopSpace-6XL {
+    & > * {
+      padding-right: vr.$spacingSize6XL;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSize6XL;
+    }
+  }
+
+  .desktopSpace-8XL {
+    & > * {
+      padding-right: vr.$spacingSize8XL;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSize8XL;
+    }
+  }
+
+  .desktopSpace-9XL {
+    & > * {
+      padding-right: vr.$spacingSize9XL;
+    }
+
+    &.noSides {
+      margin: 0 - vr.$spacingSize9XL;
+    }
+  }
+}

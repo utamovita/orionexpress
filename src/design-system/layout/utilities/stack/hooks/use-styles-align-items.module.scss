@@ -1,0 +1,55 @@
+@use "src/design-system/styles/utilities/mixins" as mx;
+
+.alignLeft {
+  align-items: flex-start;
+}
+
+.alignRight {
+  align-items: flex-end;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+@include mx.devices(mobile) {
+  .alignMobileLeft {
+    align-items: flex-start;
+  }
+
+  .alignMobileRight {
+    align-items: flex-end;
+  }
+
+  .alignMobileCenter {
+    align-items: center;
+  }
+}
+
+@include mx.devices(tablet) {
+  .alignTabletLeft {
+    align-items: flex-start;
+  }
+
+  .alignTabletRight {
+    align-items: flex-end;
+  }
+
+  .alignTabletCenter {
+    align-items: center;
+  }
+}
+
+@include mx.devices(desktop) {
+  .alignDesktopLeft {
+    align-items: flex-start;
+  }
+
+  .alignDesktopRight {
+    align-items: flex-end;
+  }
+
+  .alignDesktopCenter {
+    align-items: center;
+  }
+}

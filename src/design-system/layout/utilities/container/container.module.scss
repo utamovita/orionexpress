@@ -1,0 +1,38 @@
+@use "src/design-system/styles/utilities/variables" as vr;
+@use "src/design-system/styles/utilities/mixins" as mx;
+
+.container {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 2200px;
+  padding: 0 vr.$spacingSize9XL;
+}
+
+.fullWidth {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1920px) {
+  .container {
+    max-width: 1800px;
+  }
+}
+
+@include mx.devices(desktop) {
+  .container {
+    padding: 0 vr.$spacingSize7XL;
+  }
+}
+
+@include mx.devices(tablet) {
+  .container {
+    padding: 0 vr.$spacingSize4XL;
+  }
+}
+
+@include mx.devices(mobile) {
+  .container {
+    padding: 0 vr.$spacingSizeXL;
+  }
+}

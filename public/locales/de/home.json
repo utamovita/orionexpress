@@ -1,0 +1,21 @@
+{
+  "mainBanner": {
+    "title": "Moderne Logistiklösungen\nUnterstützt durch langjährige Erfahrung.",
+  },
+  "meetUs": {
+    "title": "Treffen Sie uns",
+    "subtitle": "Grand Transport Logistics ist ein Team von Spezialisten, die sich mit Spedition und Straßentransport in ganz Europa befassen. Bei unserer täglichen Arbeit nutzen wir die neuesten Lösungen und Technologien und jeder Transport wird auf die individuellen Bedürfnisse unserer Kunden zugeschnitten. Dank unseres breiten eigenen Fuhrparks und der Möglichkeit, Speditionsdienstleistungen anzubieten, ist der Transport für uns kein Problem!",
+    "button": "Lesen Sie uns"
+  },
+  "ourOffer": {
+    "mainTitle": "Was wir tun",
+    "offerOne": {
+      "title": "Transport",
+      "description": "Ein umfangreicher und moderner Fuhrpark ermöglicht es uns, höchste Qualitäts- und Sicherheitsstandards zu erfüllen. Wir sind sowohl auf dem nationalen als auch auf dem internationalen Markt tätig und bieten eine breite Palette an Transportlösungen an, die auf die Bedürfnisse unserer Kunden zugeschnitten sind."
+    },
+    "offerTwo": {
+      "title": "Versand",
+      "description": "Wir sind ein führendes Unternehmen, das sich auf die umfassende Organisation von Straßentransporten in ganz Europa spezialisiert hat.  Unabhängig von der Art der Ladung wickelt unser Unternehmen effektiv sowohl Sammelgut- als auch FTL-Transporte ab."
+    }
+  }
+}

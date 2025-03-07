@@ -1,0 +1,21 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.button {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  height: 35px;
+  z-index: 2;
+  margin-left: vr.$spacingSizeL;
+  fill: var(--colorWhite);
+  cursor: pointer;
+}
+
+@include mx.devices(tablet) {
+  .button {
+    display: block;
+  }
+}

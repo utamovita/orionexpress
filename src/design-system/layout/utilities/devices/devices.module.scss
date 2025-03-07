@@ -1,0 +1,25 @@
+@use "src/design-system/styles/utilities/_variables" as vr;
+
+.hideMobileBreakpointUp {
+  @media (min-width: vr.$breakpointMobile) {
+    display: none !important;
+  }
+}
+
+.hideMobileBreakpointDown {
+  @media (max-width: vr.$breakpointMobile - 1) {
+    display: none !important;
+  }
+}
+
+.hideDesktopBreakpointDown {
+  @media (max-width: vr.$breakpointDesktop - 1) {
+    display: none !important;
+  }
+}
+
+.hideDesktopBreakpointUp {
+  @media (min-width: vr.$breakpointDesktop) {
+    display: none !important;
+  }
+}

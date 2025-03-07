@@ -1,0 +1,21 @@
+{
+  "mainBanner": {
+    "title": "Modern logistics solutions supported by many years of experience."
+  },
+  "meetUs": {
+    "title": "Meet us",
+    "subtitle": "Grand Transport Logistics is a team of specialists in freight forwarding and road transport throughout Europe. All photos are real, taken and selected by us and then processed with AI. During our daily work we use the modern solutions and technologies. We have a big fleet of our own vehicles, and each transport is tailored to the individual needs of our customers.",
+    "button": "Read more"
+  },
+  "ourOffer": {
+    "mainTitle": "What we do",
+    "offerOne": {
+      "title": "Transport",
+      "description": "An extensive and modern fleet of vehicles allows us to meet the highest quality and safety standards. We operate on both the domestic and international markets, offering a wide range of transport solutions tailored to the needs of our clients."
+    },
+    "offerTwo": {
+      "title": "Shipping",
+      "description": "We are a leading company specializing in the comprehensive organization of road transport throughout Europe.  Regardless of the type of cargo, our company effectively handles both groupage and FTL shipments."
+    }
+  }
+}

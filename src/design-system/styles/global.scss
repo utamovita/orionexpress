@@ -1,0 +1,26 @@
+@import "reset";
+@import "./global/swiper";
+@import "./global/page-loading-indicator";
+
+body,
+html {
+  font-family: var(--fontFamilyPrimary);
+  color: var(--colorWhite);
+}
+
+:root {
+  // Fonts
+  --fontWeightBold: 600;
+  --fontWeightRegular: 500;
+
+  // Primary colors
+  --colorBlack: #000;
+  --colorWhite: #fff;
+
+  // Custom colors
+  --colorThunder: #4d4d4d;
+  --colorCapeHope: #d7d7d7;
+
+  --colorErrorText: #ff0000;
+  --colorTextLink: #007bec;
+}

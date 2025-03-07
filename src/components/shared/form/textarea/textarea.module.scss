@@ -1,0 +1,91 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.textFieldWrapper {
+  width: 100%;
+
+  label {
+    display: block;
+  }
+}
+
+.labelText {
+  @include mx.fontSize(14px);
+}
+
+.input {
+  color: white;
+}
+
+.input,
+.inputError {
+  width: 100%;
+  border: 1px solid var(--colorWhite);
+  padding: vr.$spacingSizeS vr.$spacingSizeM;
+  @include mx.fontSize(16px);
+  margin: 0 0 vr.$spacingSizeXS 0;
+  min-height: 130px;
+  background: transparent;
+  resize: vertical;
+  border-radius: 5px;
+
+  &:focus {
+    border: 1px solid var(--colorWhite);
+    outline-style: solid;
+    outline-color: var(--colorWhite);
+  }
+
+  &:disabled {
+    color: var(--colorBlack);
+    background-color: lightgray;
+  }
+
+  &[type="password"] {
+    -webkit-text-security: disc;
+    font:
+      large Verdana,
+      sans-serif;
+    letter-spacing: 1px;
+  }
+}
+
+.halfWidth {
+  width: calc(50% - vr.$spacingSizeXS);
+}
+
+.inputError {
+  border: 1px solid var(--colorErrorText);
+  outline-color: var(--colorErrorText);
+  padding: vr.$spacingSizeS vr.$spacingSize3XL vr.$spacingSizeS vr.$spacingSizeM;
+
+  &:focus {
+    border-color: var(--colorErrorText);
+    outline-color: var(--colorErrorText);
+  }
+}
+
+.inputWrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.iconError {
+  color: var(--colorErrorText);
+  fill: var(--colorErrorText);
+  position: absolute;
+  top: vr.$spacingSizeS;
+  right: vr.$spacingSizeM;
+  width: 20px;
+}
+
+.errorText {
+  color: var(--colorErrorText);
+  font-size: 12px;
+  margin-top: vr.$spacingSizeXXS;
+  padding-bottom: vr.$spacingSizeXS;
+}
+
+.labelText {
+  margin-bottom: vr.$spacingSizeXXS;
+}

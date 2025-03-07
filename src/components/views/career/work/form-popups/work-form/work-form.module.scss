@@ -1,0 +1,42 @@
+@use "../../../../../../design-system/styles/utilities/variables" as vr;
+@use "../../../../../../design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--colorWhite);
+  position: relative;
+  border-radius: 15px;
+  color: var(--colorWhite);
+  padding: 0 vr.$spacingSizeXXL;
+}
+
+.backgroundImage {
+  opacity: 0.25;
+}
+
+.title {
+  @include mx.fontSize(24px);
+  font-family: var(--fontFamilySecondary);
+  @include mx.fontGlow(6px);
+  padding: vr.$spacingSizeL 0 vr.$spacingSizeXXL;
+}
+
+.btnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: vr.$spacingSizeL 0 vr.$spacingSizeXXL;
+}
+
+@include mx.devices(mobile) {
+  .title {
+    @include mx.fontSize(28px);
+    padding: vr.$spacingSizeL 0;
+  }
+}
+
+.wrapper {
+  padding: 0 vr.$spacingSizeXL;
+}

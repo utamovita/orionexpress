@@ -1,0 +1,163 @@
+.flexClass {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+.columnRverse {
+  flex-direction: column-reverse;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrapReverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flexStart {
+  justify-content: flex-start;
+}
+
+.flexEnd {
+  justify-content: flex-end;
+}
+
+.center {
+  justify-content: center;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.spaceAround {
+  justify-content: space-around;
+}
+
+.spaceEvenly {
+  justify-content: space-evenly;
+}
+
+.start {
+  justify-content: start;
+}
+
+.end {
+  justify-content: end;
+}
+
+.left {
+  justify-content: left;
+}
+
+.right {
+  justify-content: right;
+}
+
+.stretch {
+  align-items: stretch;
+}
+
+.alignFlexStart {
+  align-items: flex-start;
+}
+
+.alignFlexEnd {
+  align-items: flex-end;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.baseline {
+  align-items: baseline;
+}
+
+.firstBaseline {
+  align-items: first baseline;
+}
+
+.lastBaseline {
+  align-items: last baseline;
+}
+
+.alignStart {
+  align-items: start;
+}
+
+.alignEnd {
+  align-items: end;
+}
+
+.selfStart {
+  align-items: self-start;
+}
+
+.selfEnd {
+  align-items: self-end;
+}
+
+.alignContentFlexStart {
+  align-content: flex-start;
+}
+
+.alignContentFlexEnd {
+  align-content: flex-end;
+}
+
+.alignContentCenter {
+  align-content: center;
+}
+
+.alignContentSpaceBetween {
+  align-content: space-between;
+}
+
+.alignContentSpaceAround {
+  align-content: space-around;
+}
+
+.alignContentSpaceEvenly {
+  align-content: space-evenly;
+}
+
+.alignContenStretch {
+  align-content: stretch;
+}
+
+.alignContentStart {
+  align-content: start;
+}
+
+.alignContentEnd {
+  align-content: end;
+}
+
+.alignContentBaseline {
+  align-content: baseline;
+}
+
+.alignContentFirstBaseline {
+  align-content: first baseline;
+}
+
+.alignContentLastBaseline {
+  align-content: last baseline;
+}

@@ -1,0 +1,101 @@
+{
+  "seo": {
+    "home": {
+      "title": "Strona główna - Grand Transport Logistics",
+      "description": "Grand Transport Logistics to dynamiczna firma spedycyjno-logistyczna, wyróżniająca się innowacyjnym podejściem do obsługi łańcucha dostaw."
+    },
+    "aboutUs": {
+      "title": "O nas - Grand Transport Logistics",
+      "description": "Grand Transport Logistics to grupa specjalistów oferujących nowoczesne rozwiązania logistyczne na terenie całej Europy."
+    },
+    "gallery": {
+      "title": "Galeria - Grand Transport Logistics",
+      "description": "Przejrzyj galerię zdjęć prezentujących działalność Grand Transport Logistics – lidera w nowoczesnych rozwiązaniach logistycznych. Oferujemy usługi transportowe i logistyczne na terenie całej Europy, dostosowane do potrzeb naszych klientów."
+    },
+    "career": {
+      "title": "Kariera - Grand Transport Logistics",
+      "description": "Dołącz do zespołu Grand Transport Logistics i rozwijaj swoją karierę w branży transportu i logistyki. Oferujemy dynamiczne środowisko pracy, możliwość rozwoju umiejętności spedycyjnych, atrakcyjne wynagrodzenie oraz współpracę w międzynarodowych projektach. Sprawdź nasze aktualne oferty i dokumenty potrzebne do aplikacji."
+    },
+    "documents": {
+      "title": "Kariera - Grand Transport Logistics",
+      "description": "Znajdź wszystkie niezbędne dokumenty związane z działalnością Grand Transport Logistics. Pobierz formularze dotyczące transportu, ochrony danych osobowych (RODO), procedur bankowych oraz innych istotnych formalności. Zapewniamy pełną transparentność i łatwy dostęp do wymaganej dokumentacji."
+    },
+    "contact": {
+      "title": "Kontakt - Grand Transport Logistics",
+      "description": "Skontaktuj się z Grand Transport Logistics, aby uzyskać szczegółowe informacje o naszych usługach i ofercie. Nasz zespół jest do Twojej dyspozycji – odpowiemy na pytania dotyczące transportu, logistyki i współpracy. Znajdziesz tu dane kontaktowe oraz formularz, aby szybko i wygodnie się z nami skontaktować."
+    }
+  },
+
+  "langSwitcher": {
+    "en": "English",
+    "de": "Deutsch",
+    "pl": "Polski",
+    "chooseLang": "Polski"
+  },
+  "gallery": "Galeria",
+  "documents": "Dokumenty",
+  "aboutUs": {
+    "mainTitle": "O nas",
+    "whoWeAre": {
+      "title": "Kim jesteśmy?",
+      "subtitle": "Grand Transport Logistics to grupa specjalistów oferujących nowoczesne rozwiązania logistyczne na terenie całej Europy. Podczas pracy dbamy o utrzymywanie pozytywnych stosunków z naszymi klientami, jak i wewnątrz firmy. Przekłada się to bezpośrednio na wyniki w pracy i znaczny stabilny rozwój.",
+      "punctuality": "Terminowość",
+      "security": "Bezpieczeństwo",
+      "partnership": "Partnerstwo"
+    },
+    "localization": {
+      "title": "Nasze nowoczesne biuro",
+      "subtitle": "Jesteśmy zlokalizowani w samym centrum Bydgoszczy. Biuro naszej firmy wyposażone jest w nowoczesny oraz ergonomiczny sprzęt z najwyższej półki, zapewniający wygodę i efektywność pracy.",
+      "seeOffice": "Zobacz biuro"
+    },
+    "more": {
+      "title": "Więcej o nas",
+      "subtitle": "Integracja pracowników jest dla nas kluczowym elementem budującym dobre relacje. Nasz zespół nie tylko pracuje razem, ale także spędza ze sobą wolne chwile. Dzięki wspólnym zainteresowaniom czas mija nam szybko i przyjemnie."
+    }
+  },
+  "career": {
+    "mainTitle": "Kariera",
+    "subtitle": {
+      "firstHalf": "Praca w Grand",
+      "secondHalf": "Transport Logistics"
+    },
+    "text": "Praca w Grand Transport Logistics to dla Ciebie idealna szansa na poszerzenie oferty transportowej lub rozwinięcie swoich umiejętności spedycyjnych. Współpraca w projektach, atrakcyjny system wynagrodzenia czy też stałe poszerzanie swoich umiejętności to tylko kilka cech, które charakteryzują naszą działalność.",
+    "work": {
+      "title": "Dostępne Stanowiska",
+      "carrier": "Przewoźnik",
+      "driver": "Kierowca",
+      "dispatcher": "Dyspozytor",
+      "forwarder": "Spedytor",
+      "administration": "Administracja",
+      "internationalForwarder": "Spedytor międzynarodowy"
+    },
+    "form": {
+      "title": "Twoje dane",
+      "note": "Jeżeli chcesz do nas dołączyć wyślij CV wraz z listem motywacyjnym na adres",
+      "carrier": {
+        "title": "Zgłoszenie na stanowisko przewoźnik"
+      },
+      "administration": {
+        "title": "Zgłoszenie na stanowisko administracja"
+      },
+      "driver": {
+          "title": "Zgłoszenie na stanowisko kierowca"
+      },
+      "dispatcher": {
+        "title": "Zgłoszenie na stanowisko dyspozytor"
+      },
+      "forwarder": {
+        "title": "Zgłoszenie na stanowisko spedytor"
+      }
+    }
+  },
+  "contactForm": {
+    "title": "Formularz kontaktowy"
+  },
+  "contact": {
+    "title": "Skontaktuj się",
+    "subtitle": "Skontaktuj się ze specjalistami Grand Transport Logistics w celu omówienia szczegółów współpracy. Odpowiemy na wszystkie pytania i rozwiejemy wątpliwości dotyczące transportu logistycznego.",
+    "teamTitle1": "Potrzebujesz kontaktu z konkretną osobą z naszego teamu?",
+    "teamTitle2": "Zerknij na pełną załogę Grand Transport Logistics"
+  }
+}

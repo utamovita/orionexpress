@@ -1,0 +1,26 @@
+@use "functions" as fn;
+@use "variables" as vr;
+
+@mixin fontSize($size) {
+  font-size: fn.calculateRem($size);
+}
+
+@mixin fontGlow($radius) {
+  text-shadow: 0 0 $radius rgba(255, 255, 255, 0.5);
+}
+
+@mixin devices($size) {
+  @if $size == mobile {
+    @media (max-width: vr.$breakpointMobile - 1) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (max-width: vr.$breakpointTablet) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (max-width: vr.$breakpointDesktop) {
+      @content;
+    }
+  }
+}

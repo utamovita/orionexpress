@@ -1,0 +1,121 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  display: flex;
+  position: relative;
+  background: black;
+}
+
+.localizationBoxWrapper {
+  position: absolute;
+}
+
+.localizationBox {
+  padding: vr.$spacingSizeL vr.$spacingSize3XL;
+  width: 50%;
+  max-width: 750px;
+  border: 1px solid var(--colorWhite);
+  border-radius: vr.$spacingSizeS;
+  position: relative;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1;
+  margin: vr.$spacingSize4XL 0;
+}
+
+.localizationBoxImage {
+  width: 70%;
+  height: auto;
+  margin: 0 0 vr.$spacingSizeL;
+}
+
+.pinIcon {
+  min-width: 28px;
+}
+
+.officeAddress {
+  margin: vr.$spacingSize3XL 0 vr.$spacingSizeL;
+  gap: vr.$spacingSizeXS;
+}
+
+.title {
+  font-family: var(--fontFamilySecondary);
+  @include mx.fontSize(56px);
+  margin-bottom: vr.$spacingSizeL;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.localizationButton {
+  min-width: 0;
+  height: 70px;
+  @include mx.fontSize(28px);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: vr.$spacingSizeL;
+  left: vr.$spacingSizeL;
+}
+
+@include mx.devices(desktop) {
+  .localizationBox {
+    width: 60%;
+  }
+
+  .title {
+    @include mx.fontSize(45px);
+  }
+}
+
+@include mx.devices(tablet) {
+  .localizationBox {
+    width: 570px;
+  }
+}
+
+@include mx.devices(mobile) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .localizationBox {
+    width: 90%;
+    margin: vr.$spacingSizeXXL auto;
+    padding: vr.$spacingSizeL vr.$spacingSizeXL;
+  }
+
+  .btnWrapper {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  .title {
+    @include mx.fontSize(32px);
+  }
+
+  .text {
+    @include mx.fontSize(14px);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .localizationBox {
+    width: 100%;
+  }
+
+  .title {
+    @include mx.fontSize(20px);
+  }
+}

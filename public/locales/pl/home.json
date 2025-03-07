@@ -1,0 +1,21 @@
+{
+  "mainBanner": {
+    "title": "Nowoczesne rozwiązania logistyczne poparte wieloletnim doświadczeniem."
+  },
+  "meetUs": {
+    "title": "Poznaj nas",
+    "subtitle": "Grand Transport Logistics to zespół specjalistów zajmujących się spedycją oraz transportem drogowym na terenie całej Europy. Wszystkie zdjęcia są prawdziwe, zrobione i wybrane przez nas a następnie przerobione sztuczną inteligencją. Podczas codziennej pracy wykorzystujemy najnowsze rozwiązania i technologie. Posiadamy szeroką flotę własnych pojazdów, a każdy przewóz dopasowany jest do indywidualnych potrzeb naszych klientów.",
+    "button": "Więcej o nas"
+  },
+  "ourOffer": {
+    "mainTitle": "Czym się zajmujemy",
+    "offerOne": {
+      "title": "Transport",
+      "description": "Obszerna oraz nowoczesna flota pojazdów pozwala nam spełniać najwyższe standardy jakości i bezpieczeństwa. Działamy zarówno na rynku krajowym, jak i międzynarodowym."
+    },
+    "offerTwo": {
+      "title": "Spedycja",
+      "description": "Jako wiodący ekspert w organizacji przewozów drogowych na terenie całej Europy, oferujemy kompleksowe rozwiązania transportowe dostosowane do indywidualnych potrzeb naszych klientów. Specjalizujemy się zarówno w wysyłkach drobnicowych, jak i pełno pojazdowym transporcie FTL."
+    }
+  }
+}

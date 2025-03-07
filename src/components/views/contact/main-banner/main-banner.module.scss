@@ -1,0 +1,88 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  position: relative;
+  align-items: center;
+  display: flex;
+  padding: vr.$spacingSize9XL 0;
+  height: 80vh;
+  max-height: 800px;
+
+  &:after {
+    content: "";
+    display: block;
+    background: url("/assets/images/header-shape.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 72px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  bottom: -1px;
+  background: rgb(15, 15, 15);
+  background: linear-gradient(
+    0deg,
+    rgba(5, 5, 5, 1) 0%,
+    rgba(0, 0, 0, 0.6558998599439776) 38%,
+    rgba(255, 255, 255, 0) 81%
+  );
+}
+
+.title {
+  font-family: var(--fontFamilySecondary);
+  font-weight: var(--fontWeightBold);
+  @include mx.fontSize(125px);
+  @include mx.fontGlow(8px);
+  line-height: 1.2em;
+  max-width: 1350px;
+  position: absolute;
+  z-index: 1;
+  bottom: vr.$spacingSize8XL;
+}
+
+@include mx.devices(desktop) {
+  .wrapper {
+    max-height: 700px;
+  }
+
+  .title {
+    @include mx.fontSize(100px);
+    max-width: 950px;
+    bottom: vr.$spacingSizeXXL;
+  }
+}
+
+@include mx.devices(tablet) {
+  .title {
+    @include mx.fontSize(80px);
+    max-width: 650px;
+  }
+
+  .wrapper {
+    max-height: 600px;
+    padding: vr.$spacingSizeXXL 0;
+  }
+}
+
+@include mx.devices(mobile) {
+  .title {
+    @include mx.fontSize(42px);
+    max-width: 100%;
+  }
+
+  .wrapper {
+    max-height: 400px;
+  }
+}

@@ -1,0 +1,8 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorBlack);
+}

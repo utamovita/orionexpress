@@ -1,0 +1,129 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  min-height: 500px;
+  font-family: var(--fontFamilySecondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorBlack);
+  color: var(--colorWhite);
+  padding: vr.$spacingSize8XL 0;
+}
+
+.section {
+  flex-basis: 50%;
+  &:first-child {
+    padding-right: vr.$spacingSizeXXL;
+  }
+
+  &:last-child {
+    padding-left: vr.$spacingSizeXXL;
+  }
+}
+
+.title {
+  @include mx.fontSize(58px);
+  margin-bottom: vr.$spacingSizeXL;
+  @include mx.fontGlow(8px);
+}
+
+.subtitle {
+  @include mx.fontSize(23px);
+  font-family: var(--fontFamilyPrimary);
+}
+
+.secondTitle {
+  text-align: center;
+  margin: vr.$spacingSizeXL 0;
+  @include mx.fontGlow(8px);
+}
+
+.buttons {
+  max-width: 500px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
+  .button {
+    min-width: 0;
+    height: 40px;
+    font-family: var(--fontFamilyPrimary);
+    @include mx.fontSize(14px);
+    border: 1px solid var(--colorWhite);
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
+    border-radius: 40px;
+    text-transform: none;
+  }
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: vr.$spacingSizeXXS;
+}
+
+@include mx.devices(desktop) {
+  .title {
+    @include mx.fontSize(50px);
+  }
+
+  .subtitle {
+    @include mx.fontSize(20px);
+  }
+}
+
+@include mx.devices(tablet) {
+  .title {
+    @include mx.fontSize(40px);
+  }
+
+  .subtitle {
+    @include mx.fontSize(14px);
+  }
+}
+
+@include mx.devices(mobile) {
+  .title {
+    @include mx.fontSize(50px);
+  }
+
+  .subtitle {
+    @include mx.fontSize(18px);
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .section {
+    &:first-child {
+      padding: 0 0 vr.$spacingSize4XL;
+    }
+
+    &:last-child {
+      padding-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .wrapper {
+    padding-top: vr.$spacingSize6XL;
+  }
+
+  .title {
+    @include mx.fontSize(30px);
+  }
+
+  .subtitle {
+    @include mx.fontSize(13px);
+  }
+
+  .image {
+    height: 200px;
+  }
+}

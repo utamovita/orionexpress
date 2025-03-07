@@ -1,0 +1,12 @@
+{
+  "required": "This field is required.",
+  "email": {
+    "wrongFormat": "Please enter a valid email address."
+  },
+  "phone": {
+    "wrongFormat": "Please enter a valid phone number."
+  },
+  "file": {
+    "wrongFormat": "Please upload a file in PDF format."
+  }
+}

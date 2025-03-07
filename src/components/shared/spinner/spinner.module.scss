@@ -1,0 +1,52 @@
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
+.spinnerSVG {
+  animation: rotate 1s linear infinite;
+  margin: 40px;
+  width: 50px;
+  height: 50px;
+
+  .path {
+    stroke: var(--colorWhite);
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+}
+
+.spinnerWrapper {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > svg {
+    margin: 30px;
+    height: 35px;
+    width: 35px;
+  }
+}

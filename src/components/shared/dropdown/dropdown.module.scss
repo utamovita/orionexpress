@@ -1,0 +1,69 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.dropdownWrapper {
+  position: relative;
+}
+
+.label {
+  margin-bottom: vr.$spacingSizeXXS;
+  display: inline-block;
+}
+
+.select {
+  min-height: 48px;
+  min-width: 150px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--colorWhite);
+  text-align: left;
+  padding: 0 vr.$spacingSizeS;
+  display: flex;
+  align-items: center;
+  color: var(--colorWhite);
+  border-radius: 5px;
+  gap: vr.$spacingSizeS;
+}
+
+.chevron {
+  margin-left: auto;
+}
+
+.chevronUp {
+  transform: rotateX(180deg);
+}
+
+.list {
+  width: 100%;
+  min-width: 150px;
+  background-color: var(--colorBlack);
+  color: var(--colorWhite);
+  position: absolute;
+  z-index: 9;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.option {
+  padding-left: vr.$spacingSizeM;
+  padding-right: vr.$spacingSizeM;
+  min-height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  min-width: 150px;
+}
+
+@include mx.devices(mobile) {
+  .dropdownWrapper {
+    margin: 0 auto 0 vr.$spacingSizeL;
+  }
+}
+
+@include mx.devices(tablet) {
+  .dropdownWrapper {
+    margin: 0 auto;
+  }
+}

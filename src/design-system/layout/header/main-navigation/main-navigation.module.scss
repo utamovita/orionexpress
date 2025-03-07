@@ -1,0 +1,72 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.nav {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 90px;
+}
+
+.list {
+  display: flex;
+  gap: vr.$spacingSizeS;
+}
+
+.element {
+  @include mx.fontSize(20px);
+}
+
+.link {
+  display: flex;
+  color: var(--colorCapeHope);
+  text-align: center;
+  padding: vr.$spacingSizeL;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  height: 100%;
+  align-items: center;
+
+  &:hover,
+  &.active {
+    color: var(--colorWhite);
+  }
+
+  &.active {
+    border-bottom: 2px solid var(--colorWhite);
+  }
+}
+
+@include mx.devices(desktop) {
+  .element {
+    @include mx.fontSize(18px);
+  }
+}
+
+@include mx.devices(tablet) {
+  .nav {
+    display: block;
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+
+  .element {
+    @include mx.fontSize(16px);
+  }
+
+  .list {
+    display: block;
+    padding: vr.$spacingSizeS 0;
+  }
+
+  .link {
+    display: block;
+    padding: vr.$spacingSizeM 0;
+    &.active {
+      border: none;
+    }
+  }
+}

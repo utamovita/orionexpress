@@ -1,0 +1,12 @@
+{
+  "name": "Vor- und Nachname",
+  "email": "Email",
+  "topic": "Thema",
+  "message": "Nachricht schreiben",
+  "writeAboutYourself": "Schreiben Sie ein paar Worte über sich",
+  "phone": "Telefonnummer",
+  "uploadCV": "Lebenslauf hochladen (PDF)",
+  "submit": "Senden",
+  "acceptOur": "Ich akzeptiere die",
+  "privacyPolicy": "Datenschutzbestimmungen"
+}

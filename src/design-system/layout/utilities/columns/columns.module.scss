@@ -1,0 +1,13 @@
+.columns {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: block;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,156 @@
+@use "src/design-system/styles/utilities/mixins" as mx;
+
+.defaultWidth {
+  width: 100%;
+}
+
+/* 12 columns (universal) */
+.width-1 {
+  width: 8.33%;
+}
+
+.width-2 {
+  width: 16.66%;
+}
+
+.width-3 {
+  width: 25%;
+}
+
+.width-4 {
+  width: 33.33%;
+}
+
+.width-5 {
+  width: 41.66%;
+}
+
+.width-6 {
+  width: 50%;
+}
+
+.width-7 {
+  width: 58.33%;
+}
+
+.width-8 {
+  width: 66.66%;
+}
+
+.width-9 {
+  width: 75%;
+}
+
+.width-10 {
+  width: 83.33%;
+}
+
+.width-11 {
+  width: 91.66%;
+}
+
+.width-12 {
+  width: 100%;
+}
+
+/* 4 columns (mobile) */
+.widthMobile-1 {
+  width: 25%;
+}
+
+.widthMobile-2 {
+  width: 50%;
+}
+
+.widthMobile-3 {
+  width: 75%;
+}
+
+.widthMobile-4 {
+  width: 100%;
+}
+
+@include mx.devices(mobile-up) {
+  // 8 column type (tablet)
+  .widthTablet-1 {
+    width: 12.5%;
+  }
+
+  .widthTablet-2 {
+    width: 25%;
+  }
+
+  .widthTablet-3 {
+    width: 37.5%;
+  }
+
+  .widthTablet-4 {
+    width: 50%;
+  }
+
+  .widthTablet-5 {
+    width: 62.5%;
+  }
+
+  .widthTablet-6 {
+    width: 75%;
+  }
+
+  .widthTablet-7 {
+    width: 87.5%;
+  }
+
+  .widthTablet-8 {
+    width: 100%;
+  }
+}
+
+@include mx.devices(desktop) {
+  .widthDesktop-1 {
+    width: 8.33%;
+  }
+
+  .widthDesktop-2 {
+    width: 16.66%;
+  }
+
+  .widthDesktop-3 {
+    width: 25%;
+  }
+
+  .widthDesktop-4 {
+    width: 33.33%;
+  }
+
+  .widthDesktop-5 {
+    width: 41.66%;
+  }
+
+  .widthDesktop-6 {
+    width: 50%;
+  }
+
+  .widthDesktop-7 {
+    width: 58.33%;
+  }
+
+  .widthDesktop-8 {
+    width: 66.66%;
+  }
+
+  .widthDesktop-9 {
+    width: 75%;
+  }
+
+  .widthDesktop-10 {
+    width: 83.33%;
+  }
+
+  .widthDesktop-11 {
+    width: 91.66%;
+  }
+
+  .widthDesktop-12 {
+    width: 100%;
+  }
+}

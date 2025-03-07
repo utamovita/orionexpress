@@ -1,0 +1,202 @@
+@use "src/design-system/styles/utilities/mixins" as mx;
+@use "src/design-system/styles/utilities/variables" as vr;
+
+.defaultGap {
+  gap: 0;
+}
+
+/* (universal for all views && mobile views) */
+
+.gap-XXS,
+.mobileGap-XXS {
+  gap: vr.$spacingSizeXXS 0;
+}
+
+.gap-XS,
+.mobileGap-XS {
+  gap: vr.$spacingSizeXS 0;
+}
+
+.gap-S,
+.mobileGap-S {
+  gap: vr.$spacingSizeS 0;
+}
+
+.gap-M,
+.mobileGap-M {
+  gap: vr.$spacingSizeM 0;
+}
+
+.gap-L,
+.mobileGap-L {
+  gap: vr.$spacingSizeL 0;
+}
+
+.gap-XL,
+.mobileGap-XL {
+  gap: vr.$spacingSizeXL 0;
+}
+
+.gap-XXL,
+.mobileGap-XXL {
+  gap: vr.$spacingSizeXXL 0;
+}
+
+.gap-3XL,
+.mobileGap-3XL {
+  gap: vr.$spacingSize3XL 0;
+}
+
+.gap-4XL,
+.mobileGap-4XL {
+  gap: vr.$spacingSize4XL 0;
+}
+
+.gap-5XL,
+.mobileGap-5XL {
+  gap: vr.$spacingSize5XL 0;
+}
+
+.gap-6XL,
+.mobileGap-6XL {
+  gap: vr.$spacingSize6XL 0;
+}
+
+.gap-7XL,
+.mobileGap-7XL {
+  gap: vr.$spacingSize7XL 0;
+}
+
+.gap-8XL,
+.mobileGap-8XL {
+  gap: vr.$spacingSize8XL 0;
+}
+
+.gap-9XL,
+.mobileGap-9XL {
+  gap: vr.$spacingSize9XL 0;
+}
+
+@include mx.devices(desktop) {
+  .desktopGap-none {
+    gap: 0 0;
+  }
+
+  .desktopGap-XXS {
+    gap: vr.$spacingSizeXXS 0;
+  }
+
+  .desktopGap-XS {
+    gap: vr.$spacingSizeXS 0;
+  }
+
+  .desktopGap-S {
+    gap: vr.$spacingSizeS 0;
+  }
+
+  .desktopGap-M {
+    gap: vr.$spacingSizeM 0;
+  }
+
+  .desktopGap-L {
+    gap: vr.$spacingSizeL 0;
+  }
+
+  .desktopGap-XL {
+    gap: vr.$spacingSizeXL 0;
+  }
+
+  .desktopGap-XXL {
+    gap: vr.$spacingSizeXXL 0;
+  }
+
+  .desktopGap-3XL {
+    gap: vr.$spacingSize3XL 0;
+  }
+
+  .desktopGap-4XL {
+    gap: vr.$spacingSize4XL 0;
+  }
+
+  .desktopGap-5XL {
+    gap: vr.$spacingSize5XL 0;
+  }
+
+  .desktopGap-6XL {
+    gap: vr.$spacingSize6XL 0;
+  }
+
+  .desktopGap-7XL {
+    gap: vr.$spacingSize7XL 0;
+  }
+
+  .desktopGap-8XL {
+    gap: vr.$spacingSize8XL 0;
+  }
+
+  .desktopGap-9XL {
+    gap: vr.$spacingSize9XL 0;
+  }
+}
+
+@include mx.devices(tablet-only) {
+  .tabletGap-none {
+    gap: 0 0;
+  }
+
+  .tabletGap-XXS {
+    gap: vr.$spacingSizeXXS 0;
+  }
+
+  .tabletGap-XS {
+    gap: vr.$spacingSizeXS 0;
+  }
+
+  .tabletGap-S {
+    gap: vr.$spacingSizeS 0;
+  }
+
+  .tabletGap-M {
+    gap: vr.$spacingSizeM 0;
+  }
+
+  .tabletGap-L {
+    gap: vr.$spacingSizeL 0;
+  }
+
+  .tabletGap-XL {
+    gap: vr.$spacingSizeXL 0;
+  }
+
+  .tabletGap-XXL {
+    gap: vr.$spacingSizeXXL 0;
+  }
+
+  .tabletGap-3XL {
+    gap: vr.$spacingSize3XL 0;
+  }
+
+  .tabletGap-4XL {
+    gap: vr.$spacingSize4XL 0;
+  }
+
+  .tabletGap-5XL {
+    gap: vr.$spacingSize5XL 0;
+  }
+
+  .tabletGap-6XL {
+    gap: vr.$spacingSize6XL 0;
+  }
+
+  .tabletGap-7XL {
+    gap: vr.$spacingSize7XL 0;
+  }
+
+  .tabletGap-8XL {
+    gap: vr.$spacingSize8XL 0;
+  }
+
+  .tabletGap-9XL {
+    gap: vr.$spacingSize9XL 0;
+  }
+}

@@ -1,0 +1,80 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+  box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.4);
+  min-width: 150px;
+  min-height: 150px;
+  position: relative;
+  max-width: 826px;
+  max-height: 95vh;
+  margin: 0 16px;
+
+  &.darkTheme {
+    background: rgba(10, 10, 10, 0.95);
+  }
+
+  &.fullWidth {
+    max-width: 85vw;
+  }
+}
+
+.overlay {
+  position: fixed;
+  z-index: 9999999100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(22, 22, 22, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+}
+
+.content {
+  overflow: auto;
+  width: 100%;
+  padding: vr.$spacingSize6XL;
+}
+
+.closeButton {
+  border: none;
+  background-color: #f2f2f2;
+  position: absolute;
+  z-index: 10;
+  right: vr.$spacingSizeXL;
+  top: vr.$spacingSizeM;
+  cursor: pointer;
+  pointer-events: auto;
+
+  &.darkTheme {
+    background: none;
+    fill: white;
+  }
+}
+
+@media (max-width: vr.$breakpointMobile) {
+  .modal {
+    max-width: 95vw;
+
+    &.fullWidth {
+      max-width: 95vw;
+    }
+  }
+
+  .content {
+    padding: vr.$spacingSizeXL;
+  }
+
+  .closeButton {
+    right: vr.$spacingSizeM;
+    top: vr.$spacingSizeM;
+  }
+}

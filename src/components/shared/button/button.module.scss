@@ -1,0 +1,79 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.button {
+  @include mx.fontSize(32px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 vr.$spacingSizeL;
+  font-family: var(--fontFamilyTertiary);
+  font-weight: var(--fontWeightBold);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  height: 100px;
+  text-transform: uppercase;
+  min-width: 265px;
+}
+
+.children {
+  display: block;
+  transition: transform 0.2s;
+}
+
+.link {
+  composes: button;
+  text-decoration: none;
+  text-align: center;
+}
+
+.primary {
+  background-color: var(--colorWhite);
+  color: var(--colorBlack);
+
+  &:not(.loading):hover {
+    background-color: transparent;
+    color: var(--colorWhite);
+    border: 1px solid var(--colorWhite);
+  }
+}
+
+.secondary {
+  color: var(--colorWhite);
+  border: 1px solid var(--colorWhite);
+
+  &:not(.loading):hover {
+    background-color: var(--colorWhite);
+    color: var(--colorBlack);
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+@include mx.devices(desktop) {
+  .button {
+    @include mx.fontSize(28px);
+    height: 85px;
+    min-width: 220px;
+  }
+}
+
+@include mx.devices(tablet) {
+  .button {
+    @include mx.fontSize(24px);
+    height: 70px;
+    min-width: 200px;
+  }
+}
+
+@include mx.devices(mobile) {
+  .button {
+    @include mx.fontSize(16px);
+    height: 45px;
+    min-width: 150px;
+  }
+}

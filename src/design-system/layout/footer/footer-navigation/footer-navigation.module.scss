@@ -1,0 +1,26 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.footerList {
+  display: flex;
+  gap: vr.$spacingSize3XL;
+  padding: vr.$spacingSize6XL 0 vr.$spacingSizeL;
+  border-bottom: 2px solid var(--colorWhite);
+}
+
+.footerItem {
+  color: var(--colorWhite);
+  @include mx.fontSize(20px);
+}
+
+@include mx.devices(mobile) {
+  .footerList {
+    gap: vr.$spacingSizeM;
+    padding: vr.$spacingSize4XL 0 vr.$spacingSizeL;
+    flex-wrap: wrap;
+  }
+
+  .footerItem {
+    @include mx.fontSize(14px);
+  }
+}

@@ -1,0 +1,15 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.text {
+  @include mx.fontSize(12px);
+  color: var(--colorWhite);
+}
+
+.link {
+  color: var(--colorTextLink);
+  text-decoration: underline;
+}
+.invalid {
+  color: var(--colorErrorText);
+}

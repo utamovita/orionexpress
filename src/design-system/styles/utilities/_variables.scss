@@ -1,0 +1,22 @@
+// =========================== Spacing ===========================
+$spacingBasicUnit: 4px;
+$spacingSizeXXS: $spacingBasicUnit; // 4px
+$spacingSizeXS: $spacingBasicUnit * 2; // 8px
+$spacingSizeS: $spacingBasicUnit * 3; // 12px
+$spacingSizeM: $spacingBasicUnit * 4; // 16px
+$spacingSizeL: $spacingBasicUnit * 5; // 20px
+$spacingSizeXL: $spacingBasicUnit * 6; // 24px
+$spacingSizeXXL: $spacingBasicUnit * 8; // 32px
+$spacingSize3XL: $spacingBasicUnit * 10; // 40px
+$spacingSize4XL: $spacingBasicUnit * 12; // 48px
+$spacingSize5XL: $spacingBasicUnit * 14; // 56px
+$spacingSize6XL: $spacingBasicUnit * 16; // 64px
+$spacingSize7XL: $spacingBasicUnit * 20; // 80px
+$spacingSize8XL: $spacingBasicUnit * 24; // 96px
+$spacingSize9XL: $spacingBasicUnit * 32; // 128px
+// =========================== End Spacing ===========================
+
+// media breakpoints
+$breakpointMobile: 770px;
+$breakpointTablet: 1200px;
+$breakpointDesktop: 1450px;

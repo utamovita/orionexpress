@@ -1,0 +1,127 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  position: relative;
+  justify-content: center;
+  background-color: var(--colorWhite);
+  color: var(--colorBlack);
+  padding: vr.$spacingSize5XL 0 vr.$spacingSize8XL;
+}
+
+.mainTitle {
+  font-family: var(--fontFamilySecondary);
+  @include mx.fontSize(58px);
+  @include mx.fontGlow(8px);
+  text-align: center;
+  padding: 0 0 vr.$spacingSize3XL;
+  color: var(--colorWhite);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.boxWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: auto;
+  width: 100%;
+  gap: vr.$spacingSize6XL;
+}
+
+.box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-grow: 1;
+  border: 1px solid var(--colorWhite);
+}
+
+.contentBox {
+  background: var(--colorBlack);
+  color: var(--colorWhite);
+  padding: vr.$spacingSizeXL;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imgWrapper {
+  position: relative;
+}
+
+.imgOverlay {
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0.1558998599439776) 35%,
+    rgba(255, 255, 255, 0) 91%
+  );
+  width: 100%;
+  height: 100%;
+  top: 2px;
+  left: 0;
+}
+
+.boxTitle {
+  font-family: var(--fontFamilySecondary);
+  @include mx.fontSize(42px);
+  text-align: center;
+}
+
+.boxDescription {
+  @include mx.fontSize(20px);
+  padding: vr.$spacingSizeL 0;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.boxBtn {
+  margin-top: vr.$spacingSize3XL;
+  width: auto;
+}
+
+@include mx.devices(desktop) {
+  .boxDescription {
+    @include mx.fontSize(16px);
+  }
+  .boxWrapper {
+    gap: vr.$spacingSize3XL;
+  }
+}
+
+@include mx.devices(mobile) {
+  .boxTitle,
+  .mainTitle {
+    @include mx.fontSize(32px);
+  }
+
+  .boxDescription {
+    @include mx.fontSize(14px);
+  }
+
+  .boxWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    width: 100%;
+  }
+
+  .imgWrapper img {
+    height: 63vw;
+    width: auto;
+  }
+}

@@ -1,0 +1,165 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  min-height: 500px;
+  font-family: var(--fontFamilySecondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorBlack);
+  color: var(--colorWhite);
+}
+
+.content {
+  z-index: 1;
+}
+
+.sectionIcons {
+  flex-basis: 50%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.sectionIconsChild {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: vr.$spacingSizeXXS;
+  @include mx.fontSize(30px);
+}
+
+.sectionIconsChild > p {
+  margin-top: vr.$spacingSizeXL;
+}
+
+.sectionIconsChild:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 0;
+  height: 50%;
+  width: 2px;
+  background-color: var(--colorWhite);
+}
+
+.sectionWhoWeAre {
+  flex-basis: 50%;
+  align-self: center;
+  text-align: right;
+  padding: vr.$spacingSizeL;
+}
+
+.title {
+  @include mx.fontSize(50px);
+  font-family: var(--fontFamilySecondary);
+  margin-bottom: vr.$spacingSizeL;
+  font-weight: var(--fontWeightBold);
+}
+
+.subtitle {
+  @include mx.fontSize(20px);
+  font-family: var(--fontFamilyPrimary);
+}
+
+@include mx.devices(desktop) {
+  .sectionIconsChild {
+    @include mx.fontSize(25px);
+  }
+
+  .sectionWhoWeAre {
+    padding: vr.$spacingSizeS;
+  }
+
+  .subtitle {
+    @include mx.fontSize(18px);
+  }
+}
+
+@include mx.devices(tablet) {
+  .content {
+    flex-direction: column;
+  }
+
+  .sectionIconsChild {
+    padding: vr.$spacingSizeXL;
+  }
+
+  .svg {
+    width: 80px;
+  }
+
+  .sectionIconsChild:last-child > .svg {
+    width: 100px;
+  }
+
+  .svgStars {
+    width: 140px;
+  }
+
+  .sectionIcons {
+    order: 2;
+  }
+
+  .sectionWhoWeAre {
+    order: 1;
+    text-align: left;
+  }
+}
+
+@include mx.devices(mobile) {
+  .svg {
+    width: 45px;
+  }
+  .sectionIcons {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: vr.$spacingSizeXL;
+  }
+
+  .sectionIconsChild {
+    padding: vr.$spacingSizeXL 0;
+    @include mx.fontSize(35px);
+  }
+
+  .sectionIconsChild:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: calc(50% - 75px);
+    height: 2px;
+    width: 150px;
+    background-color: var(--colorWhite);
+  }
+
+  .sectionWhoWeAre {
+    padding: vr.$spacingSizeXS;
+    margin-top: vr.$spacingSizeXXL;
+  }
+
+  .title {
+    @include mx.fontSize(35px);
+  }
+
+  .subtitle {
+    @include mx.fontSize(17px);
+  }
+
+  .sectionIconsChild > p {
+    @include mx.fontSize(32px);
+  }
+
+  .sectionIconsChild:last-child > .svg {
+    width: 65px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .subtitle {
+    @include mx.fontSize(15px);
+  }
+}

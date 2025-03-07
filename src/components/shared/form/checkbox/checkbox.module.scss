@@ -1,0 +1,74 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.fullWidth {
+  width: 100%;
+}
+
+.checkboxWrapper {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: vr.$spacingSizeM;
+  cursor: pointer;
+  margin-top: vr.$spacingSizeS;
+}
+
+.checkboxRect {
+  margin-top: 2px;
+  border-radius: 2px;
+}
+.checkboxLabel {
+  @include mx.fontSize(12px);
+  line-height: 21px;
+  font-weight: var(--fontPrimaryWeightRegular);
+}
+
+.disabled {
+  color: gray;
+}
+
+.large {
+  @include mx.fontSize(16px);
+  line-height: 24px;
+}
+
+.errorWrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: vr.$spacingSizeXS;
+  color: var(--colorSemanticError20);
+  margin-top: vr.$spacingSizeS;
+  margin-left: vr.$spacingSizeXXL;
+}
+
+.checkboxListItemTick {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--colorWhite);
+  border-radius: 3px;
+}
+
+.checkboxListItemTickActive {
+  background-color: var(--colorWhite);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invalid {
+  color: var(--colorErrorText);
+}
+
+.iconError {
+  width: 20px;
+  fill: var(--colorErrorText);
+  color: var(--colorErrorText);
+}
+
+.errorText {
+  color: var(--colorErrorText);
+  @include mx.fontSize(12px);
+}

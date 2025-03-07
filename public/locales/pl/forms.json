@@ -1,0 +1,12 @@
+{
+  "name": "Imię i nazwisko",
+  "email": "Email",
+  "topic": "Temat",
+  "message": "Napisz wiadomość",
+  "writeAboutYourself": "Napisz kilka słów o sobie",
+  "phone": "Numer telefonu",
+  "uploadCV": "Wgraj CV (PDF)",
+  "submit": "Wyślij",
+  "acceptOur": "Zaakceptuj nasz",
+  "privacyPolicy": "regulamin"
+}
