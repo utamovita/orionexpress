@@ -1,28 +1,32 @@
 {
   "seo": {
     "home": {
-      "title": "Startseite - Grand Transport Logistics",
-      "description": "Grand Transport Logistics ist ein dynamisches Speditions- und Logistikunternehmen, das sich durch seinen innovativen Ansatz im Supply Chain Management auszeichnet."
+      "title": "Startseite - Orion Express",
+      "description": "Orion Express ist Ihr Experte für Straßentransporte in ganz Europa. Unser Speditionsangebot richtet sich vor allem an Kunden aus der Europäischen Union, denen wir eine pünktliche und sichere Lieferung verschiedener Güter garantieren."
     },
     "aboutUs": {
-      "title": "Über uns - Grand Transport Logistics",
-      "description": "Grand Transport Logistics ist ein Team von Spezialisten, das moderne Logistiklösungen in ganz Europa anbietet."
+      "title": "Über uns - Orion Express",
+      "description": "Orion Express ist ein dynamisch wachsendes Logistikunternehmen, das umfassende Transportdienstleistungen in Europa anbietet. Unser Team aus Fachleuten sorgt für eine effiziente Abwicklung jeder Bestellung."
     },
     "gallery": {
-      "title": "Galerie - Grand Transport Logistics",
-      "description": "Durchstöbern Sie die Fotogalerie und entdecken Sie die Aktivitäten von Grand Transport Logistics – einem führenden Anbieter moderner Logistiklösungen. Wir bieten Transport- und Logistikdienstleistungen, die auf die Bedürfnisse unserer Kunden in ganz Europa zugeschnitten sind."
+      "title": "Galerie - Orion Express",
+      "description": "Schauen Sie sich unsere Bildergalerie an und entdecken Sie, wie Orion Express innovative Transportlösungen für seine Kunden umsetzt."
     },
     "career": {
-      "title": "Karriere - Grand Transport Logistics",
-      "description": "Werden Sie Teil des Teams von Grand Transport Logistics und entwickeln Sie Ihre Karriere in der Transport- und Logistikbranche. Wir bieten ein dynamisches Arbeitsumfeld, Möglichkeiten zur Weiterentwicklung Ihrer Speditionskompetenzen, attraktive Vergütung und Zusammenarbeit in internationalen Projekten. Sehen Sie sich unsere aktuellen Stellenangebote und Bewerbungsunterlagen an."
+      "title": "Karriere - Orion Express",
+      "description": "Gestalten Sie Ihre berufliche Zukunft mit Orion Express! Wir bieten attraktive Arbeitsbedingungen, Aufstiegsmöglichkeiten und ein dynamisches Umfeld in der internationalen Logistikbranche."
     },
     "documents": {
-      "title": "Dokumente - Grand Transport Logistics",
-      "description": "Finden Sie alle erforderlichen Dokumente im Zusammenhang mit den Aktivitäten von Grand Transport Logistics. Laden Sie Formulare zu Transport, DSGVO-Compliance, Bankverfahren und anderen wichtigen Formalitäten herunter. Wir gewährleisten volle Transparenz und einfachen Zugang zur benötigten Dokumentation."
+      "title": "Dokumente - Orion Express",
+      "description": "Hier finden Sie alle wichtigen Dokumente zu Orion Express, darunter Transportformulare, Datenschutzrichtlinien und Bankdokumente."
     },
     "contact": {
-      "title": "Kontakt - Grand Transport Logistics",
-      "description": "Kontaktieren Sie Grand Transport Logistics, um detaillierte Informationen über unsere Dienstleistungen und Angebote zu erhalten. Unser Team steht Ihnen für Fragen zu Transport, Logistik und Partnerschaften zur Verfügung. Hier finden Sie unsere Kontaktdaten sowie ein Formular für eine schnelle und einfache Kontaktaufnahme."
+      "title": "Kontakt - Orion Express",
+      "description": "Haben Sie Fragen? Kontaktieren Sie Orion Express! Wir unterstützen Sie mit maßgeschneiderten Transport- und Logistiklösungen. Hier finden Sie unsere Kontaktdaten und ein Anfrageformular."
+    },
+    "csr": {
+      "title": "CSR - Orion Express",
+      "description": "Erfahren Sie mehr über das soziale Engagement von Orion Express und wie wir nachhaltige Entwicklung und gesellschaftliche Verantwortung unterstützen."
     }
   },
   "langSwitcher": {
@@ -37,7 +41,7 @@
     "mainTitle": "Über uns",
     "whoWeAre": {
       "title": "Wer sind wir?",
-      "subtitle": "Grand Transport Logistics ist eine Gruppe von Spezialisten, die europaweit moderne Logistiklösungen anbieten. Bei unserer Arbeit achten wir darauf, positive Beziehungen sowohl zu unseren Kunden als auch innerhalb des Unternehmens aufrechtzuerhalten. Dies schlägt sich direkt in Arbeitsergebnissen und einem deutlichen, stabilen Wachstum des Unternehmens nieder. In unserem Unternehmen legen wir großen Wert auf Innovation und kontinuierlichen Fortschritt. Wir unterstützen uns mit modernen Tools und nutzen künstliche Intelligenz, um die Qualität unserer Dienstleistungen stetig zu verbessern.",
+      "subtitle": "OrionExpress ist eine Gruppe von Spezialisten, die europaweit moderne Logistiklösungen anbieten. Bei unserer Arbeit achten wir darauf, positive Beziehungen sowohl zu unseren Kunden als auch innerhalb des Unternehmens aufrechtzuerhalten. Dies schlägt sich direkt in Arbeitsergebnissen und einem deutlichen, stabilen Wachstum des Unternehmens nieder. In unserem Unternehmen legen wir großen Wert auf Innovation und kontinuierlichen Fortschritt. Wir unterstützen uns mit modernen Tools und nutzen künstliche Intelligenz, um die Qualität unserer Dienstleistungen stetig zu verbessern.",
       "punctuality": "Pünktlichkeit",
       "security": "Sicherheit",
       "partnership": "Partnerschaft"
@@ -58,7 +62,7 @@
       "firstHalf": "Arbeite bei Grand",
       "secondHalf": "Transport Logistics"
     },
-    "text": "Die Arbeit bei Grand Transport Logistics ist eine ideale Gelegenheit für Sie, Ihr Transportangebot zu erweitern oder Ihre Speditionsfähigkeiten weiterzuentwickeln. Die Zusammenarbeit in Projekten, ein attraktives Vergütungssystem und die ständige Weiterentwicklung der Fähigkeiten sind nur einige Merkmale, die unsere Aktivitäten auszeichnen.",
+    "text": "Die Arbeit bei OrionExpress ist eine ideale Gelegenheit für Sie, Ihr Transportangebot zu erweitern oder Ihre Speditionsfähigkeiten weiterzuentwickeln. Die Zusammenarbeit in Projekten, ein attraktives Vergütungssystem und die ständige Weiterentwicklung der Fähigkeiten sind nur einige Merkmale, die unsere Aktivitäten auszeichnen.",
     "work": {
       "title": "Stellen verfügbar",
       "carrier": "Träger",
@@ -93,8 +97,8 @@
   },
   "contact": {
     "title": "Kontaktieren",
-    "subtitle": "Kontaktieren Sie die Spezialisten von Grand Transport Logistics, um die Einzelheiten der Zusammenarbeit zu besprechen. Wir beantworten Ihre Fragen und zerstreuen alle Zweifel bezüglich des Logistiktransports.",
+    "subtitle": "Kontaktieren Sie die Spezialisten von OrionExpress, um die Einzelheiten der Zusammenarbeit zu besprechen. Wir beantworten Ihre Fragen und zerstreuen alle Zweifel bezüglich des Logistiktransports.",
     "teamTitle1": "Benötigen Sie Kontakt zu einer bestimmten Person aus unserem Team?",
-    "teamTitle2": "Werfen Sie einen Blick auf die gesamte Crew von Grand Transport Logistics"
+    "teamTitle2": "Werfen Sie einen Blick auf die gesamte Crew von OrionExpress"
   }
 }
