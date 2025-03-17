@@ -2,7 +2,7 @@
 @use "@design-system/styles/utilities/mixins" as mx;
 
 .wrapper {
-  background-color: var(--colorBlack);
+  background-color: #14171C;
   padding: vr.$spacingSize5XL 0;
 
   .contentWrapper {
@@ -15,43 +15,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  :global {
-    .swiper-button-prev,
-    .swiper-button-next {
-      background: var(--colorWhite);
-      width: 65px;
-      height: 65px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      &::after {
-        @include mx.fontSize(32px);
-      }
-    }
-
-    .swiper-pagination-bullets {
-      bottom: 0;
-
-      .swiper-pagination-bullet {
-        width: 25px;
-        height: 25px;
-        background: var(--colorWhite);
-        opacity: 1;
-
-        &.swiper-pagination-bullet-active {
-          background: var(--colorBlack);
-          border: 5px solid var(--colorWhite);
-        }
-      }
-    }
-  }
 }
 
 .swiperSlide {
-  padding: vr.$spacingSizeL vr.$spacingSize3XL;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,15 +26,15 @@
 .content {
   width: 50%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: column;
   text-align: right;
   align-items: flex-end;
 
+
   .title {
     @include mx.fontSize(52px);
-    font-family: var(--fontFamilySecondary);
-    @include mx.fontGlow(8px);
+    font-weight: var(--fontWeightBold);
   }
 
   .subtitle {

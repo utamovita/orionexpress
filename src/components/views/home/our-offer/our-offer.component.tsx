@@ -1,7 +1,7 @@
 import styles from "./our-offer.module.scss";
-import backgroundImage from "../../../../../public/assets/images/home/bg.png";
-import offerOneImage from "../../../../../public/assets/images/home/offer1.jpeg";
-import offerTwoImage from "../../../../../public/assets/images/home/offer2.jpeg";
+import offerOneImage from "../../../../../public/assets/images/home/offer1.png";
+import offerTwoImage from "../../../../../public/assets/images/home/offer2.png";
+import offerThreeImage from "../../../../../public/assets/images/home/offer3.png";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { Container } from "@design-system/layout/utilities";
@@ -13,9 +13,10 @@ function OurOffer() {
     <div className={styles.wrapper}>
       <Container>
         <div className={styles.content}>
-          <h2 className={styles.mainTitle}>{t("home:ourOffer.mainTitle")}</h2>
+
 
           <div className={styles.boxWrapper}>
+
             <div className={styles.box}>
               <div className={styles.imgWrapper}>
                 <Image
@@ -23,21 +24,21 @@ function OurOffer() {
                   src={offerOneImage}
                   placeholder="blur"
                   quality={90}
-                  width={610}
-                  style={{
-                    objectFit: "cover",
-                    width: "100%",
-                  }}
+                  width={189}
+                  height={210}
                 />
-                <div className={styles.imgOverlay}></div>
+
+
               </div>
-              <div className={styles.contentBox}>
-                <div>
-                  <h3 className={styles.boxTitle}>{t("home:ourOffer.offerOne.title")}</h3>
-                  <p className={styles.boxDescription}>{t("home:ourOffer.offerOne.description")}</p>
-                </div>
-              </div>
+
+              <h3 className={styles.boxTitle}>
+                {t("home:ourOffer.offerOne.title")}
+              </h3>
+              <p className={styles.boxDescription}>
+                {t("home:ourOffer.offerOne.description")}
+              </p>
             </div>
+
             <div className={styles.box}>
               <div className={styles.imgWrapper}>
                 <Image
@@ -45,34 +46,42 @@ function OurOffer() {
                   src={offerTwoImage}
                   placeholder="blur"
                   quality={90}
-                  width={610}
-                  style={{
-                    objectFit: "cover",
-                    width: "100%",
-                  }}
+                  width={189}
+                  height={210}
                 />
-                <div className={styles.imgOverlay}></div>
+
+
               </div>
-              <div className={styles.contentBox}>
-                <div>
-                  <h3 className={styles.boxTitle}>{t("home:ourOffer.offerTwo.title")}</h3>
-                  <p className={styles.boxDescription}>{t("home:ourOffer.offerTwo.description")}</p>
-                </div>
-              </div>
+              <h3 className={styles.boxTitle}>
+                {t("home:ourOffer.offerTwo.title")}
+              </h3>
+              <p className={styles.boxDescription}>
+                {t("home:ourOffer.offerTwo.description")}
+              </p>
             </div>
+
+            <div className={styles.box}>
+              <div className={styles.imgWrapper}>
+                <Image
+                  alt={t("home:ourOffer.offerThree.title")}
+                  src={offerThreeImage}
+                  placeholder="blur"
+                  quality={90}
+                  width={189}
+                  height={210}
+                />
+              </div>
+              <h3 className={styles.boxTitle}>
+                {t("home:ourOffer.offerThree.title")}
+              </h3>
+              <p className={styles.boxDescription}>
+                {t("home:ourOffer.offerThree.description")}
+              </p>
+            </div>
+
           </div>
         </div>
 
-        <Image
-          alt="background image"
-          src={backgroundImage}
-          placeholder="blur"
-          quality={90}
-          fill
-          style={{
-            objectFit: "cover",
-          }}
-        />
       </Container>
     </div>
   );

@@ -4,7 +4,7 @@
 .footerList {
   display: flex;
   gap: vr.$spacingSize3XL;
-  padding: vr.$spacingSize6XL 0 vr.$spacingSizeL;
+  padding: vr.$spacingSizeXL 0 vr.$spacingSizeL;
   border-bottom: 2px solid var(--colorWhite);
 }
 
@@ -16,7 +16,7 @@
 @include mx.devices(mobile) {
   .footerList {
     gap: vr.$spacingSizeM;
-    padding: vr.$spacingSize4XL 0 vr.$spacingSizeL;
+    padding: vr.$spacingSizeXL 0 vr.$spacingSizeL;
     flex-wrap: wrap;
   }
 

@@ -68,7 +68,6 @@
   .documentBtn {
     @include mx.fontSize(24px);
     display: flex;
-
     min-width: auto;
     padding: vr.$spacingSizeS vr.$spacingSizeXL;
     width: auto;

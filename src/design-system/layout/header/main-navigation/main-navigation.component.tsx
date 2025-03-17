@@ -25,7 +25,7 @@ function MainNavigation() {
           return (
             <li key={index} className={styles.element}>
               <Link href={item.link} className={cx(styles.link, { [styles.active]: isActive })}>
-                {item.title} asd
+                {item.title}
               </Link>
             </li>
           );

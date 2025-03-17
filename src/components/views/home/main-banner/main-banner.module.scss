@@ -8,23 +8,23 @@
   padding: vr.$spacingSize9XL 0;
   height: 80vh;
   max-height: 800px;
-
-  &:after {
-    content: "";
-    display: block;
-    background: url("/assets/images/header-shape.svg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    position: absolute;
-    height: 72px;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 2;
-  }
+  justify-content: center;
 }
 
+.containerClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgWrapper {
+  position: relative;
+  max-width: 774px;
+  width: 80%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
 .overlay {
   position: absolute;
   z-index: 1;
@@ -41,10 +41,8 @@
 }
 
 .title {
-  font-family: var(--fontFamilySecondary);
   font-weight: var(--fontWeightBold);
   @include mx.fontSize(72px);
-  @include mx.fontGlow(8px);
   line-height: 1.2em;
   max-width: 1350px;
   position: absolute;

@@ -3,9 +3,8 @@
 
 .title {
   text-align: center;
-  font-family: var(--fontFamilySecondary);
+  font-weight: var(--fontWeightBold);
   @include mx.fontSize(32px);
-  @include mx.fontGlow(6px);
   margin-bottom: vr.$spacingSizeXXL;
 }
 .contentWrapper {
@@ -40,9 +39,8 @@
 }
 
 .note {
-  font-family: var(--fontFamilySecondary);
+  font-weight: var(--fontWeightBold);
   @include mx.fontSize(24px);
-  @include mx.fontGlow(8px);
 }
 
 .noteEmail {

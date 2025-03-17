@@ -41,10 +41,8 @@
 }
 
 .title {
-  font-family: var(--fontFamilySecondary);
   font-weight: var(--fontWeightBold);
   @include mx.fontSize(125px);
-  @include mx.fontGlow(8px);
   line-height: 1.2em;
   max-width: 1350px;
   position: absolute;

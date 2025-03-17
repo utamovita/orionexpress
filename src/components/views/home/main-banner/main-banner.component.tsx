@@ -1,15 +1,13 @@
 import styles from "./main-banner.module.scss";
-import { useTranslation } from "next-i18next";
 import { Container } from "@design-system/layout/utilities";
 import backgroundImage from "../../../../../public/assets/images/home/hero-banner.jpg";
+import logo from "../../../../../public/assets/images/logo.png";
 import Image from "next/image";
 
 function MainBanner() {
-  const { t } = useTranslation("home");
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.overlay} />
       <Image
         alt="background image"
         src={backgroundImage}
@@ -18,11 +16,23 @@ function MainBanner() {
         fill
         sizes="100vw"
         style={{
-          objectFit: "cover",
+          objectFit: "cover"
         }}
       />
-      <Container>
-        <h1 className={styles.title}>{t("mainBanner.title")}</h1>
+      <Container className={styles.containerClass}>
+        <div className={styles.imgWrapper}>
+          <Image
+            src={logo}
+            alt={"orion express logo"}
+            quality={100}
+            width={774}
+            height={631.14}
+            style={{
+                   objectFit: "cover"
+            }}
+          />
+        </div>
+
       </Container>
     </div>
   );

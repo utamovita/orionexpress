@@ -4,9 +4,6 @@ type DocumentItem = {
   title: {
     [key in Locale]: string;
   };
-  subtitle: {
-    [key in Locale]: string;
-  };
   image: {
     url: string;
     alt: string;
@@ -18,102 +15,121 @@ type DocumentItem = {
 
 const imageBasePath = "/assets/images/documents/";
 const docBasePath = "/assets/docs/";
+
 const documentsConfig: DocumentItem[] = [
   {
     title: {
-      en: "KRS",
-      de: "KRS",
-      pl: "KRS",
-    },
-    subtitle: {
-      en: "KRS",
-      de: "KRS",
-      pl: "Krajowy rejestr sądowy",
+      en: "RODO",
+      de: "RODO",
+      pl: "Zgoda na przetwarzanie danych osobowych",
     },
     image: {
-      url: `${imageBasePath}krs.png`,
-      alt: "Grand transport logistics KRS",
-      width: 745,
-      height: 964,
+      url: `${imageBasePath}rekrutacja.jpg`,
+      alt: "Zgoda na przetwarzanie danych osobowych",
+      width: 1585,
+      height: 1032,
     },
-    link: `${docBasePath}krs.pdf`,
+    link: `${docBasePath}Orion-Express-Rekrutacja.pdf`,
   },
-  {
+   {
     title: {
-      en: "Account details PLN ",
-      de: "Kontodetails PLN",
-      pl: "Szczegóły konta PLN",
-    },
-    subtitle: {
-      en: "Details regarding Euro bank payment methods",
-      de: "Details zu Euro-Bank-Zahlungsmethoden",
-      pl: "Szczegóły dotyczące metod płatności PLN",
+      en: "Euro bank details",
+      de: "Euro bank details",
+      pl: "Euro bank details",
     },
     image: {
-      url: `${imageBasePath}szczegoly-konta-pln.png`,
-      alt: "Account details PLN",
-      width: 762,
-      height: 924,
+      url: `${imageBasePath}euro-bank-details.jpg`,
+      alt: "Euro bank details",
+      width: 814,
+      height: 931,
     },
-    link: `${docBasePath}szczegoly-konta-pln.pdf`,
+    link: `${docBasePath}Euro-bank-details.pdf`,
   },
-  {
-    title: {
-      en: "Account details EUR",
-      de: "Kontodetails EUR",
-      pl: "Szczegóły konta EUR",
-    },
-    subtitle: {
-      en: "Details regarding Euro bank payment methods",
-      de: "Details zu Euro-Bank-Zahlungsmethoden",
-      pl: "Szczegóły dotyczące metod płatności EUR",
-    },
-    image: {
-      url: `${imageBasePath}szczegoly-konta-eur.png`,
-      alt: "Account details EUR",
-      width: 761,
-      height: 971,
-    },
-    link: `${docBasePath}szczegoly-konta-eur.pdf`,
-  },
-  {
+   {
     title: {
       en: "Licence",
-      de: "Lizenz",
+      de: "Licence",
       pl: "Licencja",
     },
-    subtitle: {
-      en: "Licence for road transport",
-      de: "Lizenz für den Straßentransport",
-      pl: "Licencja Spedycyjna",
-    },
     image: {
-      url: `${imageBasePath}licencja.png`,
-      alt: "Grand transport logistics licencja",
-      width: 735,
-      height: 930,
+      url: `${imageBasePath}licencja.jpg`,
+      alt: "licencja",
+      width: 785,
+      height: 931,
     },
-    link: `${docBasePath}licencja.pdf`,
+    link: `${docBasePath}License.pdf`,
   },
-  {
+   {
     title: {
-      en: "Insurance",
-      de: "Versicherung",
-      pl: "Ubezpieczenie",
-    },
-    subtitle: {
-      en: "Insurance certificate",
-      de: "Versicherungszertifikat",
-      pl: "Certyfikat ubezpieczeniowy",
+      en: "Certificate",
+      de: "Certificate",
+      pl: "Certyfikat ubezpieczenia"
     },
     image: {
-      url: `${imageBasePath}ubezpieczenie.png`,
-      alt: "Grand transport logistics ubezpieczenie",
-      width: 742,
-      height: 925,
+      url: `${imageBasePath}certyfikat-ubezpieczenia.jpg`,
+      alt: "certyfikat ubezpieczenia",
+      width: 790,
+      height: 931,
     },
-    link: `${docBasePath}ubezpieczenie.pdf`,
+    link: `${docBasePath}certyfikat_ocpdis.pdf`,
   },
+   {
+    title: {
+      en: "KRS",
+      de: "KRS",
+      pl: "KRS"
+    },
+    image: {
+      url: `${imageBasePath}KRS.jpg`,
+      alt: "KRS",
+      width: 789,
+      height: 931,
+    },
+    link: `${docBasePath}KRS.pdf`,
+  },
+   {
+    title: {
+      en: "OSCIPD",
+      de: "OSCIPD",
+      pl: "OSCIPD"
+    },
+    image: {
+      url: `${imageBasePath}OSCIPD.jpg`,
+      alt: "KRS",
+      width: 789,
+      height: 931,
+    },
+    link: `${docBasePath}Orion-Express-ocsipd.pdf`,
+  },
+   {
+    title: {
+      en: "OSCPDU DE",
+      de: "OSCPDU DE",
+      pl: "Ubezpieczenie kabotażowe OSCPDU DE"
+    },
+    image: {
+      url: `${imageBasePath}kabotaz-de.jpg`,
+      alt: "KRS",
+      width: 789,
+      height: 931,
+    },
+    link: `${docBasePath}Orion-kabotaz-de.pdf`,
+  },
+   {
+    title: {
+      en: "OSCPDU UE",
+      de: "OSCPDU UE",
+      pl: "Ubezpieczenie kabotażowe OSCPDU UE"
+    },
+    image: {
+      url: `${imageBasePath}kabotaz-ue.jpg`,
+      alt: "KRS",
+      width: 789,
+      height: 931,
+    },
+    link: `${docBasePath}Orion-kabotaz-ue.pdf`,
+  },
+
 ];
 
 export { documentsConfig };

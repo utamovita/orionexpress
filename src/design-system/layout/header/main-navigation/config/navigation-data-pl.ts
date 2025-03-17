@@ -2,10 +2,6 @@ import { NavigationItem } from "@design-system/layout/header/main-navigation/mai
 
 const navigationDataPL: NavigationItem[] = [
   {
-    title: "Home",
-    link: "/",
-  },
-  {
     title: "O nas",
     link: "/o-nas",
   },
@@ -14,17 +10,21 @@ const navigationDataPL: NavigationItem[] = [
     link: "/galeria",
   },
   {
-    title: "Kariera",
-    link: "/kariera",
+    title: "CSR",
+    link: "/csr",
   },
   {
-    title: "Dokumenty",
-    link: "/dokumenty",
+    title: "Kariera",
+    link: "/kariera",
   },
   {
     title: "Kontakt",
     link: "/kontakt",
   },
+  {
+    title: "Dokumenty",
+    link: "/dokumenty",
+  }
 ];
 
 export { navigationDataPL };

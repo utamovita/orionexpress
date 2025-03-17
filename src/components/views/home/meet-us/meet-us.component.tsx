@@ -2,7 +2,7 @@ import styles from "./meet-us.module.scss";
 import { useTranslation } from "next-i18next";
 import { Container, Stack } from "@design-system/layout/utilities";
 import { ButtonLink } from "@components/shared/button/button-link.component";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -22,7 +22,7 @@ function MeetUs() {
       height: 435,
     },
     {
-      url: `${imageBasePath}2.jpg`,
+      url: `${imageBasePath}2.jpeg`,
       alt: "Slider 2",
       width: 800,
       height: 435,
@@ -43,9 +43,7 @@ function MeetUs() {
             slidesPerView={1}
             autoplay={{ delay: 4000 }}
             loop={true}
-            pagination={true}
-            navigation={true}
-            modules={[Navigation, Pagination, Autoplay]}
+            modules={[Autoplay]}
             className={styles.swiper}
           >
             {sliderImages.map((image, index) => (

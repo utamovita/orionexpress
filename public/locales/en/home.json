@@ -4,18 +4,25 @@
   },
   "meetUs": {
     "title": "Meet us",
-    "subtitle": "Grand Transport Logistics is a team of specialists in freight forwarding and road transport throughout Europe. All photos are real, taken and selected by us and then processed with AI. During our daily work we use the modern solutions and technologies. We have a big fleet of our own vehicles, and each transport is tailored to the individual needs of our customers.",
+    "subtitle": "Our company is an expert in the organization of road transport all over Europe. The forwarding offer is mainly directed to customers from the European Union, for which we carefully and professionally transport virtually any type of goods.",
     "button": "Read more"
   },
+  "ourPrio": {
+    "title": "Our priority",
+    "subtitle": "is, above all, a high work culture, the quality of every detail, and a partnership approach. We want our customers from all over Europe to be able to focus on the development of their business, while having the assurance of safe and on-time transport, as well as constant access to information about their orders."
+  },
   "ourOffer": {
-    "mainTitle": "What we do",
     "offerOne": {
-      "title": "Transport",
-      "description": "An extensive and modern fleet of vehicles allows us to meet the highest quality and safety standards. We operate on both the domestic and international markets, offering a wide range of transport solutions tailored to the needs of our clients."
+      "title": "Deadlines",
+      "description": "We respect your time and understand how important it is that your goods arrive on time. With us, you can rest assured because your freight will be delivered according to our deal."
     },
     "offerTwo": {
-      "title": "Shipping",
-      "description": "We are a leading company specializing in the comprehensive organization of road transport throughout Europe.  Regardless of the type of cargo, our company effectively handles both groupage and FTL shipments."
+      "title": "Safety",
+      "description": "At every stage of the supply chain, we make sure that your load is under the right control. Safety and audits are in the DNA of our company."
+    },
+    "offerThree": {
+      "title": "Partnership",
+      "description": "When it comes to cooperation, comfort and professionalism are both very important to us. We approach the order individually at every step, adjusting solutions perfectly to your needs."
     }
   }
 }

@@ -4,18 +4,25 @@
   },
   "meetUs": {
     "title": "Poznaj nas",
-    "subtitle": "Grand Transport Logistics to zespół specjalistów zajmujących się spedycją oraz transportem drogowym na terenie całej Europy. Wszystkie zdjęcia są prawdziwe, zrobione i wybrane przez nas a następnie przerobione sztuczną inteligencją. Podczas codziennej pracy wykorzystujemy najnowsze rozwiązania i technologie. Posiadamy szeroką flotę własnych pojazdów, a każdy przewóz dopasowany jest do indywidualnych potrzeb naszych klientów.",
+    "subtitle": "Nasza firma jest ekspertem w organizacji przewozów drogowych na terenie całej Europy. Oferta spedycyjna skierowana jest głównie do kontrahentów z Unii Europejskiej, dla których starannie i profesjonalnie przewieziemy praktycznie każdy rodzaj towaru.",
     "button": "Więcej o nas"
   },
+  "ourPrio": {
+    "title": "Naszym priorytetem",
+    "subtitle": "jest przede wszystkim wysoka kultura pracy, solidna jakość każdego detalu oraz partnerskie podejście. Pragniemy, aby nasi klienci z całej Europy mogli skoncentrować się na rozwoju swojego biznesu, mając pewność bezpiecznego i terminowego transportu, a także stałego dostępu do informacji o realizowanych zleceniach."
+  },
   "ourOffer": {
-    "mainTitle": "Czym się zajmujemy",
     "offerOne": {
-      "title": "Transport",
-      "description": "Obszerna oraz nowoczesna flota pojazdów pozwala nam spełniać najwyższe standardy jakości i bezpieczeństwa. Działamy zarówno na rynku krajowym, jak i międzynarodowym."
+      "title": "Terminowość",
+      "description": "Szanujemy Twój czas i wiemy, jak ważne jest dla Ciebie, aby przesyłka dotarła na czas. Z nami możesz spać spokojnie, bo Twój ładunek zostanie dostarczony zgodnie z naszą umową."
     },
     "offerTwo": {
-      "title": "Spedycja",
-      "description": "Jako wiodący ekspert w organizacji przewozów drogowych na terenie całej Europy, oferujemy kompleksowe rozwiązania transportowe dostosowane do indywidualnych potrzeb naszych klientów. Specjalizujemy się zarówno w wysyłkach drobnicowych, jak i pełno pojazdowym transporcie FTL."
+      "title": "Bezpieczeństwo",
+      "description": "Na każdym etapie działań logistycznych dbamy o to, aby Twój ładunek był pod odpowiednią kontrolą. Bezpieczeństwo i audyt są wpisane w DNA naszej firmy."
+    },
+    "offerThree": {
+      "title": "Partnerstwo",
+      "description": "Komfort i profesjonalizm współpracy są dla nas bardzo ważne. Podchodzimy indywidualnie do zlecenia dopasowując rozwiązania idealnie dostosowane do Twoich potrzeb."
     }
   }
 }

@@ -18,8 +18,7 @@
 
 .title {
   @include mx.fontSize(32px);
-  font-family: var(--fontFamilySecondary);
-  @include mx.fontGlow(6px);
+  font-weight: var(--fontWeightBold);
   text-align: center;
   padding: vr.$spacingSizeL vr.$spacingSizeXXL;
 }

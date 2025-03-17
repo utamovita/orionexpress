@@ -2,6 +2,7 @@ import { Contact } from "@components/views/home/contact/contact.component";
 import { MeetUs } from "@components/views/home/meet-us/meet-us.component";
 import { OurOffer } from "@components/views/home/our-offer/our-offer.component";
 import { MainBanner } from "./main-banner/main-banner.component";
+import { OurPrio } from "@components/views/home/our-prio/our-prio.component";
 
 function HomePageView() {
   return (
@@ -9,6 +10,7 @@ function HomePageView() {
       <MainBanner />
       <MeetUs />
       <OurOffer />
+      <OurPrio/>
       <Contact />
     </>
   );

@@ -3,7 +3,7 @@
 
 .wrapper {
   min-height: 500px;
-  font-family: var(--fontFamilySecondary);
+  font-weight: var(--fontWeightBold);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +56,6 @@
 
 .title {
   @include mx.fontSize(50px);
-  font-family: var(--fontFamilySecondary);
   margin-bottom: vr.$spacingSizeL;
   font-weight: var(--fontWeightBold);
 }

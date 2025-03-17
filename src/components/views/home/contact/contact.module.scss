@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   color: var(--colorWhite);
-  background-color: var(--colorBlack);
+  background-color: #14171C;
 }
 
 .backgroundImage {
@@ -38,8 +38,7 @@
 
 .title {
   @include mx.fontSize(42px);
-  font-family: var(--fontFamilySecondary);
-  @include mx.fontGlow(6px);
+  font-weight: var(--fontWeightBold);
 }
 
 .subtitle {
@@ -49,7 +48,6 @@
 .companyTitle {
   @include mx.fontSize(28px);
   font-weight: var(--fontWeightBold);
-  @include mx.fontGlow(6px);
   margin: vr.$spacingSizeXL 0 vr.$spacingSizeS;
 }
 

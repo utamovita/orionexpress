@@ -65,8 +65,6 @@
   &:nth-child(1) {
     grid-column: col1-start / col4-start;
     grid-row: row1-start;
-    font-family: var(--fontFamilySecondary);
-    @include mx.fontGlow(8px);
     font-weight: var(--fontWeightBold);
     text-align: right;
   }

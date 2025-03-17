@@ -6,7 +6,6 @@
 }
 
 .title {
-  font-family: var(--fontFamilySecondary);
   @include mx.fontSize(42px);
   color: var(--colorBlack);
   text-align: center;
@@ -71,7 +70,6 @@
   }
 }
 .name {
-  font-family: var(--fontFamilySecondary);
   @include mx.fontSize(62px);
   text-shadow: 3px 3px 0px #587295;
 
@@ -82,7 +80,6 @@
 }
 
 .role {
-  font-family: var(--fontFamilySecondary);
   @include mx.fontSize(24px);
   text-shadow: 3px 3px 0px #587295;
 

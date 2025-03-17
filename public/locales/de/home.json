@@ -4,18 +4,25 @@
   },
   "meetUs": {
     "title": "Treffen Sie uns",
-    "subtitle": "Grand Transport Logistics ist ein Team von Spezialisten, die sich mit Spedition und Straßentransport in ganz Europa befassen. Bei unserer täglichen Arbeit nutzen wir die neuesten Lösungen und Technologien und jeder Transport wird auf die individuellen Bedürfnisse unserer Kunden zugeschnitten. Dank unseres breiten eigenen Fuhrparks und der Möglichkeit, Speditionsdienstleistungen anzubieten, ist der Transport für uns kein Problem!",
+    "subtitle": "Unsere Firma ist Experte in der Organisation von Straßentransporten in ganz Europa. Unser Speditionsangebot richtet sich hauptsächlich an Kunden aus der Europäischen Union, für die wir fast alle Arten von Waren vorsichtig und professionell transportieren.",
     "button": "Lesen Sie uns"
   },
+  "ourPrio": {
+    "title": "Unsere Prioritäten",
+    "subtitle": "sind in erster Linie eine hohe Arbeitskultur, solide Qualität in jedem Detail und eine partnerschaftliche Herangehensweise. Wir möchten, dass unsere Kunden aus ganz Europa sich auf die Entwicklung ihres Geschäfts konzentrieren können, und gleichzeitig die Gewissheit haben, dass ihre Transporte sicher und pünktlich durchgeführt werden, sowie ständigen Zugang zu Informationen über laufende Aufträge haben."
+  },
   "ourOffer": {
-    "mainTitle": "Was wir tun",
     "offerOne": {
-      "title": "Transport",
-      "description": "Ein umfangreicher und moderner Fuhrpark ermöglicht es uns, höchste Qualitäts- und Sicherheitsstandards zu erfüllen. Wir sind sowohl auf dem nationalen als auch auf dem internationalen Markt tätig und bieten eine breite Palette an Transportlösungen an, die auf die Bedürfnisse unserer Kunden zugeschnitten sind."
+      "title": "Rechtzeitigkeit",
+      "description": "Wir schätzen Ihre Zeit und wissen, wie wichtig es für Sie ist, dass Ihre Lieferung pünktlich ankommt. Mit uns können Sie beruhigt sein, denn Ihre Fracht wird gemäß unserem Vertrag geliefert."
     },
     "offerTwo": {
-      "title": "Versand",
-      "description": "Wir sind ein führendes Unternehmen, das sich auf die umfassende Organisation von Straßentransporten in ganz Europa spezialisiert hat.  Unabhängig von der Art der Ladung wickelt unser Unternehmen effektiv sowohl Sammelgut- als auch FTL-Transporte ab."
+      "title": "Sicherheit",
+      "description": "In jedem Schritt der Lieferkette (logistischen Prozesse) kümmern wir uns darum, dass Ihre Ladung unter angemessener Kontrolle ist. Sicherheit und Audit sind fest in unserer Unternehmens- DNA verankert."
+    },
+    "offerThree": {
+      "title": "Partnerschaft",
+      "description": "Der Komfort und die Professionalität unserer Zusammenarbeit sind für uns sehr wichtig. In jedem Schritt gehen wir individuell auf den Auftrag ein, indem wir Lösungen erarbeiten, die optimal auf Ihre Bedürfnisse zugeschnitten sind."
     }
   }
 }

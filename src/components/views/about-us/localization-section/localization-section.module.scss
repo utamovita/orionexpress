@@ -40,7 +40,7 @@
 }
 
 .title {
-  font-family: var(--fontFamilySecondary);
+  font-weight: var(--fontWeightBold);
   @include mx.fontSize(56px);
   margin-bottom: vr.$spacingSizeL;
 }

@@ -39,7 +39,7 @@ function DocumentsSlider() {
         modules={[Navigation, Pagination, Autoplay]}
         className={styles.swiper}
       >
-        {documentsConfig.map(({ image, title, subtitle, link }) => (
+        {documentsConfig.map(({ image, title, link }) => (
           <SwiperSlide key={image.alt} className={styles.swiperSlide}>
             <div className={styles.slideContent}>
               <Image
@@ -54,7 +54,6 @@ function DocumentsSlider() {
                   <Stack space={"M"} className={styles.stack}>
                     <div>
                       <h2 className={styles.documentTitle}>{title[locale as Locale]}</h2>
-                      <p className={styles.documentSubtitle}>{subtitle[locale as Locale]}</p>
                     </div>
 
                     <ButtonLink newTab={true} to={link} variant={"secondary"} className={styles.documentBtn}>

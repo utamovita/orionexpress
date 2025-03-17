@@ -1,0 +1,95 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  background-color: var(--colorWhite);
+  padding: vr.$spacingSize5XL 0;
+  color: var(--colorBlack);
+
+  .contentWrapper {
+    display: flex;
+  }
+}
+.flexWrapper {
+  gap: vr.$spacingSizeXXL;
+}
+.box {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+
+
+  .title {
+    @include mx.fontSize(52px);
+    font-weight: var(--fontWeightBold);
+  }
+
+  .subtitle {
+    @include mx.fontSize(18px);
+    padding-left: vr.$spacingSizeXXL;
+  }
+}
+
+@include mx.devices(desktop) {
+  .content .subtitle {
+    @include mx.fontSize(16px);
+  }
+}
+
+@include mx.devices(tablet) {
+  .content {
+    .title {
+      margin-top: vr.$spacingSizeXXL;
+    }
+
+    .subtitle {
+      @include mx.fontSize(16px);
+      padding: 0;
+    }
+  }
+
+  .flexWrapper {
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+  }
+  .contentWrapper {
+    flex-direction: column;
+  }
+  .sliderWrapper {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@include mx.devices(mobile) {
+  .wrapper {
+    padding: vr.$spacingSizeXXL 0;
+  }
+
+  .content {
+    gap: vr.$spacingSizeL;
+    .title {
+      @include mx.fontSize(32px);
+    }
+
+    .subtitle {
+      @include mx.fontSize(14px);
+    }
+  }
+}

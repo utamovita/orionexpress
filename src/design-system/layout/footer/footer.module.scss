@@ -6,3 +6,24 @@
   flex-direction: column;
   background-color: var(--colorBlack);
 }
+
+.imgWrapper {
+  max-width: 300px;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+@include mx.devices(mobile) {
+  .imgWrapper {
+    max-width: 200px;
+    height: auto;
+    position: relative;
+    margin: auto;
+  }
+}
