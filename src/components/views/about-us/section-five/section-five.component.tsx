@@ -16,16 +16,15 @@ function SectionFive() {
           <div className={styles.box}>
             <p className={styles.subtitle}>{t("aboutUs.whoWeAre.sectionFiveText")}</p>
             <div className={styles.btnBox}>
-              <ButtonLink to={"galeria"} variant={"tertiary"}>{t("aboutUs.whoWeAre.sectionFiveBtn")}</ButtonLink>
+              <ButtonLink to={"galeria"} variant={"tertiary"}>
+                {t("aboutUs.whoWeAre.sectionFiveBtn")}
+              </ButtonLink>
             </div>
           </div>
           <div className={styles.box}>
             <Image src={sectionImage} alt={"orion express"} width={1024} height={772} layout={"responsive"} />
           </div>
-
-
         </div>
-
       </Container>
     </div>
   );

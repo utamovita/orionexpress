@@ -6,7 +6,7 @@
   min-height: 450px;
   display: flex;
   align-items: center;
-  background-color: #14171C;
+  background-color: #14171c;
 }
 
 .subtitle {
@@ -23,13 +23,14 @@
   width: 50%;
 }
 @include mx.devices(mobile) {
-    .contentWrapper {
-        flex-direction: column;
-    }
-    .box {
-        width: 100%;
-    }
-  .box, .subtitle {
+  .contentWrapper {
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+  }
+  .box,
+  .subtitle {
     @include mx.fontSize(16px);
   }
 }

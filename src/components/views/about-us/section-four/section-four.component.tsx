@@ -20,13 +20,12 @@ function SectionFour() {
           <div className={styles.box}>
             <p className={styles.subtitle}>{t("aboutUs.whoWeAre.sectionFourText")}</p>
             <div className={styles.btnBox}>
-              <ButtonLink to={"galeria"} variant={"tertiary"}>{t("aboutUs.whoWeAre.sectionFourBtn")}</ButtonLink>
+              <ButtonLink to={"galeria"} variant={"tertiary"}>
+                {t("aboutUs.whoWeAre.sectionFourBtn")}
+              </ButtonLink>
             </div>
           </div>
-
-
         </div>
-
       </Container>
     </div>
   );

@@ -19,7 +19,6 @@ function SectionThree() {
             <Image src={sectionImage} alt={"orion express"} width={1024} height={772} layout={"responsive"} />
           </div>
         </div>
-
       </Container>
     </div>
   );

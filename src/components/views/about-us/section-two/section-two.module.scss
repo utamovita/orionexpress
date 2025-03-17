@@ -13,7 +13,8 @@
   @include mx.fontSize(20px);
 }
 @include mx.devices(mobile) {
-  .box, .subtitle {
+  .box,
+  .subtitle {
     @include mx.fontSize(16px);
   }
 }

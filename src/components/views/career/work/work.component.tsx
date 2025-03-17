@@ -1,11 +1,10 @@
 import styles from "./work.module.scss";
 import { useTranslation } from "next-i18next";
-import { Container} from "@design-system/layout/utilities";
+import { Container } from "@design-system/layout/utilities";
 import Image from "next/image";
 import sectionImage from "../../../../../public/assets/images/aboutUs/section-three.jpg";
 import * as React from "react";
 import { ButtonLink } from "@components/shared/button/button-link.component";
-
 
 function Work() {
   const { t } = useTranslation("common");
@@ -17,8 +16,11 @@ function Work() {
           <div className={styles.contentWrapper}>
             <div className={styles.box}>
               <p className={styles.subtitle}>{t("career.paragraphOne")}</p>
-              <p className={styles.subtitle}>{t("career.paragraphTwo")} {" "} <a className={styles.mailLink}
-                                                                                 href="mailto:rekrutacja@orionexpress.eu">rekrutacja@orionexpress.eu</a>
+              <p className={styles.subtitle}>
+                {t("career.paragraphTwo")}{" "}
+                <a className={styles.mailLink} href="mailto:rekrutacja@orionexpress.eu">
+                  rekrutacja@orionexpress.eu
+                </a>
               </p>
               <div className={styles.btns}>
                 <div className={styles.buttonWrapper}>
@@ -28,13 +30,13 @@ function Work() {
                 </div>
                 <div className={styles.buttonWrapper}>
                   <ButtonLink to={"/assets/images/documents/Orion-Express-Rekrutacja.pdf"} newTab>
-                  {t("career.button.rodo")}
-                </ButtonLink>
+                    {t("career.button.rodo")}
+                  </ButtonLink>
                 </div>
                 <div className={styles.buttonWrapper}>
                   <ButtonLink to={"/assets/images/documents/Orion-Express-pdf-klauzula.pdf"} newTab>
-                  {t("career.button.info")}
-                </ButtonLink>
+                    {t("career.button.info")}
+                  </ButtonLink>
                 </div>
               </div>
             </div>

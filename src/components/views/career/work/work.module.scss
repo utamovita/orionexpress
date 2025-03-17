@@ -6,7 +6,7 @@
   min-height: 450px;
   display: flex;
   align-items: center;
-  background-color: #14171C;
+  background-color: #14171c;
   color: var(--colorWhite);
 }
 
@@ -24,7 +24,7 @@
 }
 
 .buttonWrapper {
-    display: flex;
+  display: flex;
 }
 .mailLink {
   display: inline-block;
@@ -35,7 +35,6 @@
   display: flex;
   align-items: center;
   gap: vr.$spacingSize4XL;
-
 }
 .box {
   width: 50%;
@@ -59,7 +58,8 @@
     max-width: 250px;
     margin: vr.$spacingSizeXXL auto 0;
   }
-  .box, .subtitle {
+  .box,
+  .subtitle {
     @include mx.fontSize(16px);
   }
 }
