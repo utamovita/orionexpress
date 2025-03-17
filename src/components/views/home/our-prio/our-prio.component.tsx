@@ -16,18 +16,13 @@ function OurPrio() {
       <Container className={styles.contentWrapper}>
         <FlexComponent className={styles.flexWrapper}>
           <div className={styles.box}>
-            <p className={styles.subtitle}><strong>{t("ourPrio.title")}</strong>{" "}{t("ourPrio.subtitle")}</p>
+            <p className={styles.subtitle}>
+              <strong>{t("ourPrio.title")}</strong> {t("ourPrio.subtitle")}
+            </p>
           </div>
           <div className={styles.box}>
-            <Image
-              src={backgroundImage}
-              alt={"orion express"}
-              width={2048}
-              height={1536}
-              layout={"responsive"}
-            />
+            <Image src={backgroundImage} alt={"orion express"} width={2048} height={1536} layout={"responsive"} />
           </div>
-
         </FlexComponent>
       </Container>
     </div>

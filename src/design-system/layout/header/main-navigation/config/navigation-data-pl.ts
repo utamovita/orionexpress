@@ -24,7 +24,7 @@ const navigationDataPL: NavigationItem[] = [
   {
     title: "Dokumenty",
     link: "/dokumenty",
-  }
+  },
 ];
 
 export { navigationDataPL };

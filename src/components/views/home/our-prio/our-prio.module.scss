@@ -26,7 +26,6 @@
   text-align: right;
   align-items: flex-end;
 
-
   .title {
     @include mx.fontSize(52px);
     font-weight: var(--fontWeightBold);

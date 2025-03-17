@@ -5,7 +5,6 @@ import logo from "../../../../../public/assets/images/logo.png";
 import Image from "next/image";
 
 function MainBanner() {
-
   return (
     <div className={styles.wrapper}>
       <Image
@@ -16,7 +15,7 @@ function MainBanner() {
         fill
         sizes="100vw"
         style={{
-          objectFit: "cover"
+          objectFit: "cover",
         }}
       />
       <Container className={styles.containerClass}>
@@ -28,11 +27,10 @@ function MainBanner() {
             width={774}
             height={631.14}
             style={{
-                   objectFit: "cover"
+              objectFit: "cover",
             }}
           />
         </div>
-
       </Container>
     </div>
   );

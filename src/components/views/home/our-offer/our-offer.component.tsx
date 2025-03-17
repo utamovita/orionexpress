@@ -13,10 +13,7 @@ function OurOffer() {
     <div className={styles.wrapper}>
       <Container>
         <div className={styles.content}>
-
-
           <div className={styles.boxWrapper}>
-
             <div className={styles.box}>
               <div className={styles.imgWrapper}>
                 <Image
@@ -27,16 +24,10 @@ function OurOffer() {
                   width={189}
                   height={210}
                 />
-
-
               </div>
 
-              <h3 className={styles.boxTitle}>
-                {t("home:ourOffer.offerOne.title")}
-              </h3>
-              <p className={styles.boxDescription}>
-                {t("home:ourOffer.offerOne.description")}
-              </p>
+              <h3 className={styles.boxTitle}>{t("home:ourOffer.offerOne.title")}</h3>
+              <p className={styles.boxDescription}>{t("home:ourOffer.offerOne.description")}</p>
             </div>
 
             <div className={styles.box}>
@@ -49,15 +40,9 @@ function OurOffer() {
                   width={189}
                   height={210}
                 />
-
-
               </div>
-              <h3 className={styles.boxTitle}>
-                {t("home:ourOffer.offerTwo.title")}
-              </h3>
-              <p className={styles.boxDescription}>
-                {t("home:ourOffer.offerTwo.description")}
-              </p>
+              <h3 className={styles.boxTitle}>{t("home:ourOffer.offerTwo.title")}</h3>
+              <p className={styles.boxDescription}>{t("home:ourOffer.offerTwo.description")}</p>
             </div>
 
             <div className={styles.box}>
@@ -71,17 +56,11 @@ function OurOffer() {
                   height={210}
                 />
               </div>
-              <h3 className={styles.boxTitle}>
-                {t("home:ourOffer.offerThree.title")}
-              </h3>
-              <p className={styles.boxDescription}>
-                {t("home:ourOffer.offerThree.description")}
-              </p>
+              <h3 className={styles.boxTitle}>{t("home:ourOffer.offerThree.title")}</h3>
+              <p className={styles.boxDescription}>{t("home:ourOffer.offerThree.description")}</p>
             </div>
-
           </div>
         </div>
-
       </Container>
     </div>
   );

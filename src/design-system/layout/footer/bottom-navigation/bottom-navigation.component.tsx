@@ -4,7 +4,6 @@ import styles from "./bottom-navigation.module.scss";
 import cx from "classnames";
 
 function BottomNavigation() {
-
   return (
     <div className={styles.wrapper}>
       <Link

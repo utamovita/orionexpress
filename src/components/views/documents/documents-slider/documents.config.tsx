@@ -31,7 +31,7 @@ const documentsConfig: DocumentItem[] = [
     },
     link: `${docBasePath}Orion-Express-Rekrutacja.pdf`,
   },
-   {
+  {
     title: {
       en: "Euro bank details",
       de: "Euro bank details",
@@ -45,7 +45,7 @@ const documentsConfig: DocumentItem[] = [
     },
     link: `${docBasePath}Euro-bank-details.pdf`,
   },
-   {
+  {
     title: {
       en: "Licence",
       de: "Licence",
@@ -59,11 +59,11 @@ const documentsConfig: DocumentItem[] = [
     },
     link: `${docBasePath}License.pdf`,
   },
-   {
+  {
     title: {
       en: "Certificate",
       de: "Certificate",
-      pl: "Certyfikat ubezpieczenia"
+      pl: "Certyfikat ubezpieczenia",
     },
     image: {
       url: `${imageBasePath}certyfikat-ubezpieczenia.jpg`,
@@ -73,11 +73,11 @@ const documentsConfig: DocumentItem[] = [
     },
     link: `${docBasePath}certyfikat_ocpdis.pdf`,
   },
-   {
+  {
     title: {
       en: "KRS",
       de: "KRS",
-      pl: "KRS"
+      pl: "KRS",
     },
     image: {
       url: `${imageBasePath}KRS.jpg`,
@@ -87,11 +87,11 @@ const documentsConfig: DocumentItem[] = [
     },
     link: `${docBasePath}KRS.pdf`,
   },
-   {
+  {
     title: {
       en: "OSCIPD",
       de: "OSCIPD",
-      pl: "OSCIPD"
+      pl: "OSCIPD",
     },
     image: {
       url: `${imageBasePath}OSCIPD.jpg`,
@@ -101,11 +101,11 @@ const documentsConfig: DocumentItem[] = [
     },
     link: `${docBasePath}Orion-Express-ocsipd.pdf`,
   },
-   {
+  {
     title: {
       en: "OSCPDU DE",
       de: "OSCPDU DE",
-      pl: "Ubezpieczenie kabotażowe OSCPDU DE"
+      pl: "Ubezpieczenie kabotażowe OSCPDU DE",
     },
     image: {
       url: `${imageBasePath}kabotaz-de.jpg`,
@@ -115,11 +115,11 @@ const documentsConfig: DocumentItem[] = [
     },
     link: `${docBasePath}Orion-kabotaz-de.pdf`,
   },
-   {
+  {
     title: {
       en: "OSCPDU UE",
       de: "OSCPDU UE",
-      pl: "Ubezpieczenie kabotażowe OSCPDU UE"
+      pl: "Ubezpieczenie kabotażowe OSCPDU UE",
     },
     image: {
       url: `${imageBasePath}kabotaz-ue.jpg`,
@@ -129,7 +129,6 @@ const documentsConfig: DocumentItem[] = [
     },
     link: `${docBasePath}Orion-kabotaz-ue.pdf`,
   },
-
 ];
 
 export { documentsConfig };

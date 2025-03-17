@@ -10,7 +10,7 @@ function HomePageView() {
       <MainBanner />
       <MeetUs />
       <OurOffer />
-      <OurPrio/>
+      <OurPrio />
       <Contact />
     </>
   );

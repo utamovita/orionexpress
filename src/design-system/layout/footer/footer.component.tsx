@@ -11,13 +11,7 @@ function Footer() {
     <footer className={styles.footer}>
       <Container>
         <div className={styles.imgWrapper}>
-          <Image
-            className={styles.logo}
-            src={logo}
-            alt={"orion express logo"}
-            quality={100}
-            objectFit="cover"
-          />
+          <Image className={styles.logo} src={logo} alt={"orion express logo"} quality={100} objectFit="cover" />
         </div>
 
         <FooterNavigation />
