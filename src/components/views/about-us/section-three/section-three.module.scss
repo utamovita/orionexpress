@@ -1,0 +1,35 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  padding: vr.$spacingSize3XL 0;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  background-color: #14171C;
+}
+
+.subtitle {
+  color: var(--colorWhite);
+  @include mx.fontSize(20px);
+}
+
+.contentWrapper {
+  display: flex;
+  align-items: center;
+  gap: vr.$spacingSize4XL;
+}
+.box {
+  width: 50%;
+}
+@include mx.devices(mobile) {
+    .contentWrapper {
+        flex-direction: column;
+    }
+    .box {
+        width: 100%;
+    }
+  .box, .subtitle {
+    @include mx.fontSize(16px);
+  }
+}

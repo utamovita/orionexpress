@@ -1,0 +1,19 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  padding: vr.$spacingSize3XL 0;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.subtitle {
+  color: var(--colorBlack);
+  @include mx.fontSize(20px);
+}
+@include mx.devices(mobile) {
+  .box, .subtitle {
+    @include mx.fontSize(16px);
+  }
+}

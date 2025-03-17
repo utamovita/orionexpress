@@ -2,126 +2,64 @@
 @use "@design-system/styles/utilities/mixins" as mx;
 
 .wrapper {
-  min-height: 500px;
-  font-weight: var(--fontWeightBold);
+  padding: vr.$spacingSize3XL 0;
+  min-height: 450px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: var(--colorBlack);
+  background-color: #14171C;
   color: var(--colorWhite);
-  padding: vr.$spacingSize8XL 0;
-}
-
-.section {
-  flex-basis: 50%;
-  &:first-child {
-    padding-right: vr.$spacingSizeXXL;
-  }
-
-  &:last-child {
-    padding-left: vr.$spacingSizeXXL;
-  }
-}
-
-.title {
-  @include mx.fontSize(58px);
-  margin-bottom: vr.$spacingSizeXL;
 }
 
 .subtitle {
-  @include mx.fontSize(23px);
-  font-family: var(--fontFamilyPrimary);
+  color: var(--colorWhite);
+  @include mx.fontSize(20px);
+  margin-bottom: vr.$spacingSizeL;
 }
 
-.secondTitle {
-  text-align: center;
-  margin: vr.$spacingSizeXL 0;
-}
-
-.buttons {
-  max-width: 500px;
+.btns {
   display: flex;
-  margin: 0 auto;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-
-  .button {
-    min-width: 0;
-    height: 40px;
-    font-family: var(--fontFamilyPrimary);
-    @include mx.fontSize(14px);
-    border: 1px solid var(--colorWhite);
-    background-color: var(--colorBlack);
-    color: var(--colorWhite);
-    border-radius: 40px;
-    text-transform: none;
-  }
+  gap: vr.$spacingSizeL;
+  margin-top: vr.$spacingSizeL;
 }
 
-.arrow {
+.buttonWrapper {
+    display: flex;
+}
+.mailLink {
   display: inline-block;
-  margin-left: vr.$spacingSizeXXS;
+  text-decoration: underline;
+  color: var(--colorTextLink);
+}
+.contentWrapper {
+  display: flex;
+  align-items: center;
+  gap: vr.$spacingSize4XL;
+
+}
+.box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
-@include mx.devices(desktop) {
-  .title {
-    @include mx.fontSize(50px);
-  }
-
-  .subtitle {
-    @include mx.fontSize(20px);
-  }
-}
-
-@include mx.devices(tablet) {
-  .title {
-    @include mx.fontSize(40px);
-  }
-
-  .subtitle {
-    @include mx.fontSize(14px);
-  }
+.btnBox {
+  max-width: 200px;
+  margin-top: vr.$spacingSizeXXL;
 }
 
 @include mx.devices(mobile) {
-  .title {
-    @include mx.fontSize(50px);
-  }
-
-  .subtitle {
-    @include mx.fontSize(18px);
-  }
-
-  .flex {
+  .contentWrapper {
     flex-direction: column;
   }
-
-  .section {
-    &:first-child {
-      padding: 0 0 vr.$spacingSize4XL;
-    }
-
-    &:last-child {
-      padding-left: 0;
-    }
+  .box {
+    width: 100%;
   }
-}
-
-@media only screen and (max-width: 500px) {
-  .wrapper {
-    padding-top: vr.$spacingSize6XL;
+  .btnBox {
+    max-width: 250px;
+    margin: vr.$spacingSizeXXL auto 0;
   }
-
-  .title {
-    @include mx.fontSize(30px);
-  }
-
-  .subtitle {
-    @include mx.fontSize(13px);
-  }
-
-  .image {
-    height: 200px;
+  .box, .subtitle {
+    @include mx.fontSize(16px);
   }
 }

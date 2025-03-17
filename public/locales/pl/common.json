@@ -42,10 +42,16 @@
     "mainTitle": "O nas",
     "whoWeAre": {
       "title": "Kim jesteśmy?",
-      "subtitle": "OrionExpress to grupa specjalistów oferujących nowoczesne rozwiązania logistyczne na terenie całej Europy. Podczas pracy dbamy o utrzymywanie pozytywnych stosunków z naszymi klientami, jak i wewnątrz firmy. Przekłada się to bezpośrednio na wyniki w pracy i znaczny stabilny rozwój.",
+      "subtitle": "Dbamy o wzajemne wsparcie, dzielimy się doświadczeniami i wiedzą. Naszym priorytetem jest stworzenie przyjaznych relacji i dobrej atmosfery w pracy.  Dzięki takiemu podejściu udaje nam się budować pozytywną relację wewnątrz firmy. Nasze nastawienie do biznesu przekłada się również na wyniki w pracy i znaczny stabilny wzrost firmy. Klienci to doceniają, czego dowodem są również nasze referencje.",
       "punctuality": "Terminowość",
       "security": "Bezpieczeństwo",
-      "partnership": "Partnerstwo"
+      "partnership": "Partnerstwo",
+      "sectionTwoText": "Dbamy o wzajemne wsparcie, dzielimy się doświadczeniami i wiedzą. Naszym priorytetem jest stworzenie przyjaznych relacji i dobrej atmosfery w pracy.  Dzięki takiemu podejściu udaje nam się budować pozytywną relację wewnątrz firmy. Nasze nastawienie do biznesu przekłada się również na wyniki w pracy i znaczny stabilny wzrost firmy. Klienci to doceniają, czego dowodem są również nasze referencje.",
+      "sectionThreeText": "Nie tylko pracujemy razem, ale lubimy również spędzać ze sobą czas. Często gramy na konsoli i miło praktykujemy wolne chwile. Dzięki naszym wspólnym zainteresowaniom czas w pracy mija szybko i przyjemnie.",
+      "sectionFourText": "Nasze biura wyposażone są w nowoczesny oraz ergonomiczny sprzęt z najwyższej półki, który zapewnia wygodę i efektywność pracy. Co więcej, nasza lodówka z napojami jest zawsze dobrze wyposażona, a szuflada wypełniona słodyczami, by dodatkowo umilić nam dzień.",
+      "sectionFiveText": "W naszej firmie integracje to zawsze niezapomniane wydarzenia! Organizujemy je z przytupem, aby każdy mógł oderwać się od codzienności i zapomnieć o kłopotach. Nasze imprezy są pełne niesamowitych atrakcji.",
+      "sectionFourBtn": "Zobacz biuro",
+      "sectionFiveBtn": "Zobacz sam"
     },
     "localization": {
       "title": "Nasze nowoczesne biuro",
@@ -59,38 +65,12 @@
   },
   "career": {
     "mainTitle": "Kariera",
-    "subtitle": {
-      "firstHalf": "Praca w Grand",
-      "secondHalf": "Transport Logistics"
-    },
-    "text": "Praca w OrionExpress to dla Ciebie idealna szansa na poszerzenie oferty transportowej lub rozwinięcie swoich umiejętności spedycyjnych. Współpraca w projektach, atrakcyjny system wynagrodzenia czy też stałe poszerzanie swoich umiejętności to tylko kilka cech, które charakteryzują naszą działalność.",
-    "work": {
-      "title": "Dostępne Stanowiska",
-      "carrier": "Przewoźnik",
-      "driver": "Kierowca",
-      "dispatcher": "Dyspozytor",
-      "forwarder": "Spedytor",
-      "administration": "Administracja",
-      "internationalForwarder": "Spedytor międzynarodowy"
-    },
-    "form": {
-      "title": "Twoje dane",
-      "note": "Jeżeli chcesz do nas dołączyć wyślij CV wraz z listem motywacyjnym na adres",
-      "carrier": {
-        "title": "Zgłoszenie na stanowisko przewoźnik"
-      },
-      "administration": {
-        "title": "Zgłoszenie na stanowisko administracja"
-      },
-      "driver": {
-          "title": "Zgłoszenie na stanowisko kierowca"
-      },
-      "dispatcher": {
-        "title": "Zgłoszenie na stanowisko dyspozytor"
-      },
-      "forwarder": {
-        "title": "Zgłoszenie na stanowisko spedytor"
-      }
+    "paragraphOne": "Kierujemy się przede wszystkim wysoką kulturą pracy oraz przyjazną atmosferą. Razem tworzymy to miejsce tak, by każdy przychodził tutaj z uśmiechem i pełen pozytywnej energii.",
+    "paragraphTwo": "Jeżeli te wartości nie są ci obce swoje CV wraz z listem motywacyjnym możesz przesłać na",
+    "button": {
+      "whatDoWeDo": "Zobacz czym się zajmujemy",
+      "rodo": "RODO",
+      "info": "Klauzula informacyjna"
     }
   },
   "contactForm": {

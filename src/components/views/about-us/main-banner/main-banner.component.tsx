@@ -1,5 +1,5 @@
 import styles from "./main-banner.module.scss";
-import backgroundImage from "public/assets/images/aboutUs/hero-banner.jpg";
+import backgroundImage from "public/assets/images/aboutUs/hero-banner.png";
 import Image from "next/image";
 import { Container } from "@design-system/layout/utilities";
 import { useTranslation } from "next-i18next";

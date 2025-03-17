@@ -7,7 +7,7 @@ import Link from "next/link";
 type ButtonLinkProps = {
   to: string;
   children: React.ReactNode;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "tertiary";
   isDisabled?: boolean;
   fullWidth?: boolean;
   className?: string;

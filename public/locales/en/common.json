@@ -44,7 +44,13 @@
       "subtitle": "OrionExpress is a group of specialists offering modern logistics solutions throughout Europe. During our work we take care to keep positive relations with our customers, as well as inside our company. It impacts directly into results at work and significant stable development.",
       "punctuality": "Punctuality",
       "security": "Security",
-      "partnership": "Partnership"
+      "partnership": "Partnership",
+      "sectionTwoText": "We make sure to support each other, share experiences and knowledge. Our priority is to create friendly relations and a great atmosphere at work. Due to this attitude, we are able to build positive internal relationships within the company. Our business mindset also has an impact on work performance and significant growth of the company. Our clients appreciate this, which is also proven by our references.",
+      "sectionThreeText": "We not only work together, but after a hard day we also enjoy spending time with each other. We often play video games together and make the most of our free moments. Thanks to our shared interest, the time we spend at work becomes even more wonderful.",
+      "sectionFourText": "Our offices are equipped with modern and ergonomic devices to make our work comfortable and efficient. What’s more, our refrigerator with beverages is always full, and the drawer is filled with sweets to make our day even more pleasant.",
+      "sectionFiveText": "In our company team-building events are always unforgettable! We organize them in such away that everyone can get away from everyday life and forget about their worries. Our meetings are always full of great attractions.",
+      "sectionFourBtn": "Our office",
+      "sectionFiveBtn": "See for yourself"
     },
     "localization": {
       "title": "Our modern office",
@@ -59,38 +65,12 @@
 
   "career": {
     "mainTitle": "Career",
-    "subtitle": {
-      "firstHalf": "Work at Grand",
-      "secondHalf": "Transport Logistics"
-    },
-    "text": "Working at OrionExpress is an ideal opportunity for you to expand your transport offers or develop your freight forwarding skills. Cooperation in projects, an attractive remuneration system or constant expansion of your skills are just a few features that stand out our business.",
-    "work": {
-      "title": "Positions available",
-      "carrier": "Carrier",
-      "driver": "Driver",
-      "dispatcher": "Dispatcher",
-      "forwarder": "Forwarder",
-      "administration": "Administration",
-      "internationalForwarder": "International Forwarder"
-    },
-    "form": {
-      "title": "Your contact details",
-      "note": "If you want to join us, send your CV along with a cover letter to the address",
-      "carrier": {
-        "title": "Application for the Carrier Position"
-      },
-      "administration": {
-        "title": "Application for the Administration Position"
-      },
-      "driver": {
-        "title": "Application for the Driver Position"
-      },
-      "dispatcher": {
-        "title": "Application for the Dispatcher Position"
-      },
-      "forwarder": {
-        "title": "Application for the Forwarder Position"
-      }
+    "paragraphOne": "We are guided above all by a strong work culture and a friendly atmosphere. Together, we create this place so that everyone comes here with a smile and full of positive energy.",
+    "paragraphTwo": "If you reflect these values, you can send your CV together with a cover letter to the following e-mail:",
+    "button": {
+      "whatDoWeDo": "See what we do",
+      "rodo": "RODO",
+      "info": "Information clause"
     }
   },
   "contactForm": {

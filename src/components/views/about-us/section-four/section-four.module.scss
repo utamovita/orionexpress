@@ -1,0 +1,49 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  padding: vr.$spacingSize3XL 0;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  background-color: #EDEDED;
+}
+
+.subtitle {
+  color: var(--colorBlack);
+  @include mx.fontSize(20px);
+}
+
+.contentWrapper {
+  display: flex;
+  align-items: center;
+  gap: vr.$spacingSize4XL;
+
+}
+.box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.btnBox {
+  max-width: 200px;
+  margin-top: vr.$spacingSizeXXL;
+}
+
+@include mx.devices(mobile) {
+    .contentWrapper {
+        flex-direction: column;
+    }
+    .box {
+        width: 100%;
+    }
+    .btnBox {
+      max-width: 250px;
+      margin: vr.$spacingSizeXXL auto 0;
+    }
+
+  .box, .subtitle {
+    @include mx.fontSize(16px);
+  }
+}

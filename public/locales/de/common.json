@@ -41,10 +41,16 @@
     "mainTitle": "Über uns",
     "whoWeAre": {
       "title": "Wer sind wir?",
-      "subtitle": "OrionExpress ist eine Gruppe von Spezialisten, die europaweit moderne Logistiklösungen anbieten. Bei unserer Arbeit achten wir darauf, positive Beziehungen sowohl zu unseren Kunden als auch innerhalb des Unternehmens aufrechtzuerhalten. Dies schlägt sich direkt in Arbeitsergebnissen und einem deutlichen, stabilen Wachstum des Unternehmens nieder. In unserem Unternehmen legen wir großen Wert auf Innovation und kontinuierlichen Fortschritt. Wir unterstützen uns mit modernen Tools und nutzen künstliche Intelligenz, um die Qualität unserer Dienstleistungen stetig zu verbessern.",
+      "subtitle": "Wir kümmern uns um gegenseitige Unterstützung, teilen Erfahrungen und Wissen. Unsere Priorität ist es, freundliche Beziehungen und eine gute Arbeitsatmosphäre zu schaffen. Dank dieser Herangehensweise gelingt es uns, positive Beziehungen innerhalb des Unternehmens aufzubauen. Unsere geschäftliche Denkweise schlägt sich auch in Arbeitsergebnissen und einem bedeutenden, stabilen Wachstum des Unternehmens nieder. Die Kunden wissen dies zu schätzen, was auch durch unsere Referenzen bestätigt wird.",
       "punctuality": "Pünktlichkeit",
       "security": "Sicherheit",
-      "partnership": "Partnerschaft"
+      "partnership": "Partnerschaft",
+      "sectionTwoText": "Wir kümmern uns um gegenseitige Unterstützung, teilen Erfahrungen und Wissen. Unsere Priorität ist es, freundliche Beziehungen und eine gute Arbeitsatmosphäre zu schaffen. Dank dieser Herangehensweise gelingt es uns, positive Beziehungen innerhalb des Unternehmens aufzubauen. Unsere geschäftliche Denkweise schlägt sich auch in Arbeitsergebnissen und einem bedeutenden, stabilen Wachstum des Unternehmens nieder. Die Kunden wissen dies zu schätzen, was auch durch unsere Referenzen bestätigt wird.",
+      "sectionThreeText": "Wir arbeiten nicht nur gerne zusammen, sondern verbringen auch nach einem anstrengenden Arbeitstag gerne Zeit miteinander. Häufig spielen wir gemeinsam auf der Konsole und genießen unsere Freizeit. Dank unserer gemeinsamen Interessen wird die Zeit, die wir bei der Arbeit verbringen, noch angenehmer.",
+      "sectionFourText": "NUnsere Büros sind mit modernen und ergonomischen Geräten ausgestattet, um Komfort und Effektivität zu garantieren. Darüber hinaus ist unser Getränkekühlschrank immer gut bestückt, und die Schublade ist mit Süßigkeiten gefüllt, um unseren Tag zusätzlich zu versüßen.",
+      "sectionFiveText": "In unserem Unternehmen sind Teambuilding Veranstaltungen immer unvergessliche Ereignisse! Wir organisieren sie so, dass jeder dem Alltag entfliehen und seine Sorgen vergessen kann. Unsere Veranstaltungen sind voll von erstaunlichen Attraktionen.",
+      "sectionFourBtn": "Siehe Büro",
+      "sectionFiveBtn": "Sieh selbst"
     },
     "localization": {
       "title": "Unser modernes Büro",
@@ -57,39 +63,13 @@
     }
   },
   "career": {
-    "mainTitle": "Karriere",
-    "subtitle": {
-      "firstHalf": "Arbeite bei Grand",
-      "secondHalf": "Transport Logistics"
-    },
-    "text": "Die Arbeit bei OrionExpress ist eine ideale Gelegenheit für Sie, Ihr Transportangebot zu erweitern oder Ihre Speditionsfähigkeiten weiterzuentwickeln. Die Zusammenarbeit in Projekten, ein attraktives Vergütungssystem und die ständige Weiterentwicklung der Fähigkeiten sind nur einige Merkmale, die unsere Aktivitäten auszeichnen.",
-    "work": {
-      "title": "Stellen verfügbar",
-      "carrier": "Träger",
-      "driver": "Treiber",
-      "dispatcher": "Dispatcher",
-      "forwarder": "Spediteur",
-      "administration": "Verwaltung",
-      "internationalForwarder": "Internationaler Spediteur"
-    },
-    "form": {
-      "title": "Ihre Kontaktdaten",
-      "note": "Wenn Sie sich uns anschließen möchten, senden Sie Ihren Lebenslauf zusammen mit einem Anschreiben an die Adresse",
-      "carrier": {
-        "title": "Bewerbung für die Position des Trägers"
-      },
-      "administration": {
-        "title": "Bewerbung für die Position der Verwaltung"
-      },
-      "driver": {
-        "title": "Bewerbung für die Position des Fahrers"
-      },
-      "dispatcher": {
-        "title": "Bewerbung für die Position des Disponenten"
-      },
-      "forwarder": {
-        "title": "Bewerbung für die Position des Spediteurs"
-      }
+    "mainTitle": "Career",
+    "paragraphOne": "Wir lassen uns vor allem von einer hohen Arbeitskultur und einer freundlichen Atmosphäre leiten. Gemeinsam gestalten wir diesen Ort so, dass jeder mit einem Lächeln und voller positiver Energie hierher kommt.",
+    "paragraphTwo": "Wenn Ihnen diese Werte nicht fremd sind, können Sie Ihren Lebenslauf zusammen mit einem Motivationsschreiben an diese E- Mail-Adresse: ",
+    "button": {
+      "whatDoWeDo": "Schau, was wir tun",
+      "rodo": "RODO",
+      "info": "Informationsklausel"
     }
   },
   "contactForm": {
