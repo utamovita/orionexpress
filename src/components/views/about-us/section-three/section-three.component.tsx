@@ -16,7 +16,7 @@ function SectionThree() {
             <p className={styles.subtitle}>{t("aboutUs.whoWeAre.sectionThreeText")}</p>
           </div>
           <div className={styles.box}>
-            <Image src={sectionImage} alt={"orion express"} width={1024} height={772} layout={"responsive"} />
+            <Image src={sectionImage} alt={"orion express"} width={1024} height={772} layout={"responsive"}  loading={"lazy"}/>
           </div>
         </div>
       </Container>

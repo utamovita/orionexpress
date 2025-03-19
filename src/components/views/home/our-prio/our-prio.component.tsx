@@ -21,7 +21,7 @@ function OurPrio() {
             </p>
           </div>
           <div className={styles.box}>
-            <Image src={backgroundImage} alt={"orion express"} width={2048} height={1536} layout={"responsive"} />
+            <Image src={backgroundImage} alt={"orion express"} width={2048} height={1536} layout={"responsive"} loading={"lazy"} />
           </div>
         </FlexComponent>
       </Container>

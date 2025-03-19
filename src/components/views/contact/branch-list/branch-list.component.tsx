@@ -31,6 +31,7 @@ function BranchList() {
                 style={{
                   objectFit: "cover",
                 }}
+                loading={"lazy"}
               />
 
               <div className={styles.overlay}>

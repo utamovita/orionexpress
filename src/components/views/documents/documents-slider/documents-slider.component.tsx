@@ -48,6 +48,7 @@ function DocumentsSlider() {
                 className={styles.image}
                 width={image.width}
                 height={image.height}
+                loading={"lazy"}
               />
               <div className={styles.overlay}>
                 <div className={styles.textWrapper}>

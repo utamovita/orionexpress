@@ -55,6 +55,7 @@ function MeetUs() {
                   width={image.width}
                   height={image.height}
                   layout={"responsive"}
+                  loading={"lazy"}
                 />
               </SwiperSlide>
             ))}

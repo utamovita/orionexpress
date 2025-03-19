@@ -23,6 +23,7 @@ function OurOffer() {
                   quality={90}
                   width={189}
                   height={210}
+                  loading={"lazy"}
                 />
               </div>
 
@@ -39,6 +40,7 @@ function OurOffer() {
                   quality={90}
                   width={189}
                   height={210}
+                  loading={"lazy"}
                 />
               </div>
               <h3 className={styles.boxTitle}>{t("home:ourOffer.offerTwo.title")}</h3>
@@ -54,6 +56,7 @@ function OurOffer() {
                   quality={90}
                   width={189}
                   height={210}
+                  loading={"lazy"}
                 />
               </div>
               <h3 className={styles.boxTitle}>{t("home:ourOffer.offerThree.title")}</h3>
