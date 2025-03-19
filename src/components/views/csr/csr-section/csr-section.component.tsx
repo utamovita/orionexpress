@@ -29,7 +29,7 @@ function CSRSection() {
               <h1 className={styles.title}>{t("csr.title")}</h1>
               <h2 className={styles.subtitle}>{t("csr.subtitle")}</h2>
             </div>
-            <CSRPost data={csrConfig[2]} onClick={handleOpenGallery}/>
+            <CSRPost data={csrConfig[2]} onClick={handleOpenGallery} />
           </div>
         </div>
       </Container>
@@ -44,7 +44,7 @@ function CSRSection() {
 type CSRPostProps = {
   data: CsrConfig;
   onClick: (sliderData: CsrConfig["images"]) => void;
-}
+};
 
 function CSRPost(props: CSRPostProps) {
   const { data, onClick } = props;
@@ -53,7 +53,7 @@ function CSRPost(props: CSRPostProps) {
       <Image
         className={styles.postImg}
         src={data.images[0].url}
-         alt={"csr"}
+        alt={"csr"}
         layout="responsive"
         width={100}
         height={50}

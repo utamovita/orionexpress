@@ -12,7 +12,7 @@
 }
 .branchList {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   gap: vr.$spacingSizeL;
   justify-content: space-between;
 }
@@ -40,7 +40,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-
 .overlay {
   position: absolute;
   top: 0;
@@ -50,10 +49,10 @@
   height: 100%;
   background: rgb(15, 15, 15);
   background: linear-gradient(
-                  0deg,
-                  rgba(0, 0, 0, 1) 10%,
-                  rgba(0, 0, 0, 0.6558998599439776) 38%,
-                  rgba(255, 255, 255, 0) 81%
+    0deg,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0.6558998599439776) 38%,
+    rgba(255, 255, 255, 0) 81%
   );
 }
 
@@ -89,7 +88,6 @@
   @include mx.fontSize(16px);
 }
 
-
 @include mx.devices(mobile) {
   .branchList {
     flex-direction: column;
@@ -101,5 +99,3 @@
     width: 100%;
   }
 }
-
-

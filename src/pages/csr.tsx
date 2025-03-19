@@ -13,7 +13,7 @@ export default function GalleryPage() {
     <>
       <NextSeo title={t("seo.csr.title")} description={t("seo.csr.description")} />
       <BaseLayout>
-        <CSRView/>
+        <CSRView />
       </BaseLayout>
     </>
   );

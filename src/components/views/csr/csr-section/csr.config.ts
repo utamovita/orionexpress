@@ -4,11 +4,11 @@ type CsrConfig = {
     url: string;
     alt: string;
   }>;
-}
+};
 
 const basePath = "/assets/images/csr";
 
-const csrConfig:CsrConfig[] = [
+const csrConfig: CsrConfig[] = [
   {
     title: "Rutka",
     images: [
@@ -24,9 +24,9 @@ const csrConfig:CsrConfig[] = [
         url: `${basePath}/rutka/3.jpg`,
         alt: "rutka",
       },
-    ]
+    ],
   },
-    {
+  {
     title: "Mecz hala",
     images: [
       {
@@ -36,10 +36,10 @@ const csrConfig:CsrConfig[] = [
       {
         url: `${basePath}/mecz-hala/2.jpg`,
         alt: "mecz-hala",
-      }
-    ]
+      },
+    ],
   },
-    {
+  {
     title: "Patria Buk",
     images: [
       {
@@ -70,9 +70,9 @@ const csrConfig:CsrConfig[] = [
         url: `${basePath}/patria-buk/7.jpg`,
         alt: "patria-buk",
       },
-    ]
+    ],
   },
-]
+];
 
 export { csrConfig };
 export type { CsrConfig };

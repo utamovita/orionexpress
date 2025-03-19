@@ -10,7 +10,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 type BranchPageProps = {
   data: BranchData;
-}
+};
 
 const BranchPage: NextPage<BranchPageProps> = ({ data }) => {
   const { t } = useTranslation("common");
@@ -42,7 +42,7 @@ export const getStaticProps: GetStaticProps<BranchPageProps> = async ({ params, 
     return { notFound: true };
   }
 
-  return { props: {  ...(await serverSideTranslations(locale as string, ["common", "validation", "forms"])), data } };
+  return { props: { ...(await serverSideTranslations(locale as string, ["common", "validation", "forms"])), data } };
 };
 
 export default BranchPage;

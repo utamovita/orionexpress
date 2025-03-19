@@ -20,7 +20,6 @@
   padding: vr.$spacingSizeM;
 }
 
-
 .imageWrapper {
   position: relative;
   z-index: 1;
@@ -80,7 +79,6 @@
     }
   }
 }
-
 
 @include mx.devices(desktop) {
   .member {

@@ -80,7 +80,6 @@ const blogConfig: BlogItem[] = [
         url: `${imageBasePath}zycie-codzienne/13.jpg`,
         alt: "gallery blog 1 image 13",
       },
-
     ],
   },
   {
@@ -99,51 +98,50 @@ const blogConfig: BlogItem[] = [
         url: `${imageBasePath}kwiecien-24/2v1.jpg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}kwiecien-24/2v2.jpg`,
         alt: "gallery blog 1 image 2",
       },
-       {
+      {
         url: `${imageBasePath}kwiecien-24/2v3.jpg`,
         alt: "gallery blog 1 image 3",
       },
-       {
+      {
         url: `${imageBasePath}kwiecien-24/2v4.jpg`,
         alt: "gallery blog 1 image 4",
       },
-       {
+      {
         url: `${imageBasePath}kwiecien-24/2v5.jpg`,
         alt: "gallery blog 1 image 5",
       },
-       {
+      {
         url: `${imageBasePath}kwiecien-24/2v6.jpg`,
         alt: "gallery blog 1 image 6",
       },
-       {
+      {
         url: `${imageBasePath}kwiecien-24/2v7.jpg`,
         alt: "gallery blog 1 image 7",
       },
-       {
+      {
         url: `${imageBasePath}kwiecien-24/2v8.jpg`,
         alt: "gallery blog 1 image 8",
       },
-       {
+      {
         url: `${imageBasePath}kwiecien-24/2v9.jpg`,
         alt: "gallery blog 1 image 9",
       },
-       {
+      {
         url: `${imageBasePath}kwiecien-24/2v10.jpg`,
         alt: "gallery blog 1 image 10",
       },
-       {
+      {
         url: `${imageBasePath}kwiecien-24/2v11.jpg`,
         alt: "gallery blog 1 image 11",
       },
-       {
+      {
         url: `${imageBasePath}kwiecien-24/2v12.jpg`,
         alt: "gallery blog 1 image 12",
       },
-
     ],
   },
   {
@@ -162,31 +160,31 @@ const blogConfig: BlogItem[] = [
         url: `${imageBasePath}grudzien-23/3v1.jpg`,
         alt: "gallery blog 3 image 1",
       },
-       {
+      {
         url: `${imageBasePath}grudzien-23/3v2.jpg`,
         alt: "gallery blog 3 image 2",
       },
-       {
+      {
         url: `${imageBasePath}grudzien-23/3v3.jpg`,
         alt: "gallery blog 3 image 3",
       },
-       {
+      {
         url: `${imageBasePath}grudzien-23/3v4.jpg`,
         alt: "gallery blog 3 image 4",
       },
-       {
+      {
         url: `${imageBasePath}grudzien-23/3v5.jpg`,
         alt: "gallery blog 3 image 5",
       },
-       {
+      {
         url: `${imageBasePath}grudzien-23/3v6.jpg`,
         alt: "gallery blog 3 image 6",
       },
-       {
+      {
         url: `${imageBasePath}grudzien-23/3v7.jpg`,
         alt: "gallery blog 3 image 7",
       },
-       {
+      {
         url: `${imageBasePath}grudzien-23/3v8.jpg`,
         alt: "gallery blog 3 image 8",
       },
@@ -298,7 +296,7 @@ const blogConfig: BlogItem[] = [
         url: `${imageBasePath}pazdziernik-23/5v8.jpeg`,
         alt: "gallery blog 1 image 1",
       },
-    ]
+    ],
   },
   {
     title: {
@@ -316,59 +314,59 @@ const blogConfig: BlogItem[] = [
         url: `${imageBasePath}czerwiec-23/6v1.jpg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}czerwiec-23/6v2.jpeg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}czerwiec-23/6v3.jpg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}czerwiec-23/6v4.jpg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}czerwiec-23/6v5.jpg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}czerwiec-23/6v6.jpg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}czerwiec-23/6v7.jpg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}czerwiec-23/6v8.jpg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}czerwiec-23/6v9.jpg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}czerwiec-23/6v10.jpg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}czerwiec-23/6v11.jpg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}czerwiec-23/6v12.jpg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}czerwiec-23/6v13.jpeg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}czerwiec-23/6v14.jpeg`,
         alt: "gallery blog 1 image 1",
       },
-    ]
+    ],
   },
   {
     title: {
@@ -440,7 +438,6 @@ const blogConfig: BlogItem[] = [
         url: `${imageBasePath}czerwiec-22/8v7.jpeg`,
         alt: "gallery blog 1 image 1",
       },
-
     ],
   },
   {
@@ -459,25 +456,24 @@ const blogConfig: BlogItem[] = [
         url: `${imageBasePath}wrzesien-22/9v1.jpeg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}wrzesien-22/9v2.jpeg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}wrzesien-22/9v3.jpeg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}wrzesien-22/9v4.jpeg`,
         alt: "gallery blog 1 image 1",
       },
-       {
+      {
         url: `${imageBasePath}wrzesien-22/9v5.jpeg`,
         alt: "gallery blog 1 image 1",
       },
-
     ],
-  }
+  },
 ];
 
 export { blogConfig };

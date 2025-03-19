@@ -4,7 +4,6 @@ import backgroundImage from "../../../../../public/assets/images/documents/hero-
 import Image from "next/image";
 
 function MainBanner() {
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.overlay} />

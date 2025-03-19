@@ -5,7 +5,7 @@ function ContactView() {
   return (
     <>
       <MainBanner />
-      <BranchList/>
+      <BranchList />
     </>
   );
 }

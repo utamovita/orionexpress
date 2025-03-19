@@ -1,5 +1,5 @@
 import { BranchData } from "./branch-data";
-import styles from "./branch.module.scss"
+import styles from "./branch.module.scss";
 import { Container } from "@design-system/layout/utilities";
 import { Team } from "@components/views/contact/team/team.component";
 

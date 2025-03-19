@@ -61,7 +61,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
           de: "https://orionexpress.pl/de/kontakt",
         },
       },
-    },  {
+    },
+    {
       url: "https://orionexpress.pl/csr",
       lastModified: new Date(),
       alternates: {

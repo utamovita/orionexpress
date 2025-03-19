@@ -1,5 +1,5 @@
 import { branchData } from "../branch/branch-data";
-import styles from "./branch-list.module.scss"
+import styles from "./branch-list.module.scss";
 import { Container, Stack } from "@design-system/layout/utilities";
 import Image from "next/image";
 import { Locale } from "@customTypes/pages";
@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 
-function BranchList( ) {
+function BranchList() {
   const { locale } = useRouter();
   const { t } = useTranslation("common");
 
@@ -23,24 +23,24 @@ function BranchList( ) {
         <div className={styles.branchList}>
           {branchData.map((branch, index) => (
             <Link href={`/kontakt/${branch.slug}`} key={index} className={styles.branch}>
-                <Image
-                  src={branch.img}
-                  alt={branch.title[locale as Locale]}
-                  className={styles.branchImage}
-                  fill
-                  style={{
-                    objectFit: "cover",
-                  }}
-                />
+              <Image
+                src={branch.img}
+                alt={branch.title[locale as Locale]}
+                className={styles.branchImage}
+                fill
+                style={{
+                  objectFit: "cover",
+                }}
+              />
 
-                <div className={styles.overlay}>
-                  <div className={styles.textWrapper}>
-                    <Stack space={"XS"} className={styles.stack}>
-                        <h3 className={styles.documentTitle}>{branch.title[locale as Locale]}</h3>
-                        <h4 className={styles.documentSubtitle}>{branch.address}</h4>
-                    </Stack>
-                  </div>
+              <div className={styles.overlay}>
+                <div className={styles.textWrapper}>
+                  <Stack space={"XS"} className={styles.stack}>
+                    <h3 className={styles.documentTitle}>{branch.title[locale as Locale]}</h3>
+                    <h4 className={styles.documentSubtitle}>{branch.address}</h4>
+                  </Stack>
                 </div>
+              </div>
             </Link>
           ))}
         </div>

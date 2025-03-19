@@ -4,11 +4,11 @@ type BranchData = {
     en: string;
     pl: string;
     de: string;
-  },
+  };
   img: string;
   address: string;
   team: TeamMember[];
-}
+};
 
 type TeamMember = {
   name: string;
@@ -17,10 +17,10 @@ type TeamMember = {
   phone: string;
   img1: string;
   img2: string;
-}
+};
 const imageBasePath = "/assets/images/contact/team/";
 const imageBasePath2 = "/assets/images/gallery/zycie-codzienne/";
-const branchData:BranchData[] = [
+const branchData: BranchData[] = [
   {
     slug: "oddzial-buk-mickiewicza",
     title: {
@@ -63,7 +63,7 @@ const branchData:BranchData[] = [
         img1: `${imageBasePath}t5-1.png`,
         img2: `${imageBasePath}t5-2.png`,
       },
-    ]
+    ],
   },
   {
     slug: "oddzial-buk-wisniowy-sad",
@@ -74,7 +74,7 @@ const branchData:BranchData[] = [
     },
     img: `${imageBasePath2}1v6.jpg`,
     address: "Wiśniowy Sad 25/2 64-320 Buk",
-    team: []
+    team: [],
   },
   {
     slug: "oddzial-pniewy",
@@ -85,7 +85,7 @@ const branchData:BranchData[] = [
     },
     img: `${imageBasePath2}1v7.jpg`,
     address: "Borówkowa 31a,  62-045 Pniewy",
-    team: []
+    team: [],
   },
   {
     slug: "oddzial-opalenica",
@@ -96,7 +96,7 @@ const branchData:BranchData[] = [
     },
     img: `${imageBasePath2}1v8.jpg`,
     address: "Zamkowa 3/30 , 64-330 Opalenica",
-    team: []
+    team: [],
   },
   {
     slug: "oddzial-glinno",
@@ -107,7 +107,7 @@ const branchData:BranchData[] = [
     },
     img: `${imageBasePath2}1v9.jpg`,
     address: "Grudniowa 66B , 64-300 Glinno",
-    team: []
+    team: [],
   },
   {
     slug: "oddzial-tarnowo-podgorne",
@@ -118,11 +118,9 @@ const branchData:BranchData[] = [
     },
     img: `${imageBasePath2}1v10.jpg`,
     address: "Florencka 7/5 , 62-080 Tarnowo Podgórne",
-    team: []
+    team: [],
   },
+];
 
-]
-
-
-export { branchData }
-export type { BranchData, TeamMember }
+export { branchData };
+export type { BranchData, TeamMember };

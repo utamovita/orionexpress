@@ -37,18 +37,12 @@ function Team(props: { team: BranchData["team"] }) {
               </div>
               <div className={styles.content}>
                 <ul className={styles.list}>
-                  <li className={cx(styles.element, styles.name)}>
-                    {item.name}
-                  </li>
-                  <li className={styles.element}>
-                    {item.role}
-                  </li>
-                  <li className={styles.element}>
-                    {item.phone}
-                  </li>
+                  <li className={cx(styles.element, styles.name)}>{item.name}</li>
+                  <li className={styles.element}>{item.role}</li>
+                  <li className={styles.element}>{item.phone}</li>
                   <li className={styles.element}>
                     <div className={styles.iconWrapper}>
-                      <EnvelopeIcon fill={"white"}/>
+                      <EnvelopeIcon fill={"white"} />
                     </div>
                     <span className={styles.emailText}>
                       {item.email}
