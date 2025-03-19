@@ -20,6 +20,7 @@ function MainBanner() {
         style={{
           objectFit: "cover",
         }}
+        priority
       />
       <Container>
         <h1 className={styles.title}>{t("documents")}</h1>

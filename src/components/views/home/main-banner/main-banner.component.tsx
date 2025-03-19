@@ -17,6 +17,7 @@ function MainBanner() {
         style={{
           objectFit: "cover",
         }}
+        priority
       />
       <Container className={styles.containerClass}>
         <div className={styles.imgWrapper}>
@@ -29,6 +30,7 @@ function MainBanner() {
             style={{
               objectFit: "cover",
             }}
+            priority
           />
         </div>
       </Container>
