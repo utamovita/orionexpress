@@ -22,7 +22,14 @@ function SectionFive() {
             </div>
           </div>
           <div className={styles.box}>
-            <Image src={sectionImage} alt={"orion express"} width={1024} height={772} layout={"responsive"}  loading={"lazy"}/>
+            <Image
+              src={sectionImage}
+              alt={"orion express"}
+              width={1024}
+              height={772}
+              layout={"responsive"}
+              loading={"lazy"}
+            />
           </div>
         </div>
       </Container>
