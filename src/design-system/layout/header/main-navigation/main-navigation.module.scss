@@ -15,7 +15,7 @@
 }
 
 .element {
-  @include mx.fontSize(20px);
+  @include mx.fontSize(18px);
 }
 
 .link {
@@ -28,6 +28,8 @@
   white-space: nowrap;
   height: 100%;
   align-items: center;
+  text-transform: uppercase;
+  font-weight: var(--fontWeightBold);
 
   &:hover,
   &.active {

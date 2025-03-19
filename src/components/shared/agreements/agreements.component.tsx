@@ -13,7 +13,7 @@ function Agreements({ isInvalid = false }: AgreementsProps) {
   return (
     <p className={cx(styles.text, { [styles.invalid]: isInvalid })}>
       {t("acceptOur")}{" "}
-      <Link href={"/dokumenty"} className={styles.link}>
+      <Link href={"/assets/docs/Orion-Express-Rekrutacja.pdf"} className={styles.link} target={"_blank"}>
         {t("privacyPolicy")}
       </Link>
       .

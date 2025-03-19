@@ -78,7 +78,7 @@
 }
 
 .documentTitle {
-  font-family: var(--fontFamilyTertiary);
+  font-family: var(--fontFamilyPrimary);
   text-transform: none;
   @include mx.fontSize(32px);
 }

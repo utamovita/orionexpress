@@ -1,0 +1,73 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  position: relative;
+  align-items: center;
+  padding: vr.$spacingSize9XL 0;
+  background-color: var(--colorBlack);
+  color: var(--colorWhite);
+}
+
+.contentWrapper {
+  display: flex;
+  gap: vr.$spacingSizeXXL;
+}
+.side {
+  display: flex;
+  width: 50%;
+  position: relative;
+  flex-direction: column;
+  gap: vr.$spacingSizeXXL;
+}
+
+.post {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover .postImg{
+    transform: scale(1.1);
+  }
+}
+
+.postImg {
+    transition: transform 0.3s ease-in-out;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: vr.$spacingSizeS;
+}
+
+.title {
+  @include mx.fontSize(42px);
+  font-weight: var(--fontWeightBold);
+  text-transform: uppercase;
+  line-height: 1.3em;
+}
+
+.subtitle {
+  @include mx.fontSize(20px);
+  font-weight: var(--fontWeightRegular);
+}
+
+@include mx.devices(mobile) {
+  .wrapper {
+    padding: vr.$spacingSizeXXL 0;
+  }
+  .contentWrapper {
+    flex-direction: column;
+  }
+
+  .side {
+    width: 100%;
+
+    &:first-child {
+      order: 2;
+    }
+  }
+}

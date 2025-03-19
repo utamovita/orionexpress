@@ -23,6 +23,7 @@
   color: var(--colorWhite);
   border-radius: 5px;
   gap: vr.$spacingSizeS;
+  font-weight: var(--fontWeightBold);
 }
 
 .chevron {
@@ -42,6 +43,7 @@
   z-index: 9;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  font-weight: var(--fontWeightBold);
 }
 
 .option {

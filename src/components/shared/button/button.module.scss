@@ -2,20 +2,20 @@
 @use "@design-system/styles/utilities/mixins" as mx;
 
 .button {
-  @include mx.fontSize(32px);
+  @include mx.fontSize(20px);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 vr.$spacingSizeL;
-  font-family: var(--fontFamilyTertiary);
+  font-family: var(--fontFamilyPrimary);
   font-weight: var(--fontWeightBold);
   border: 1px solid transparent;
   border-radius: 5px;
   cursor: pointer;
   position: relative;
-  height: 100px;
+  height: 80px;
   text-transform: uppercase;
-  min-width: 265px;
+  min-width: 225px;
 }
 
 .children {

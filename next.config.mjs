@@ -7,16 +7,7 @@ import redirects from "./next-config/redirects.mjs";
 const i18n = {
   defaultLocale: "pl",
   locales: ["en", "de", "pl"],
-  domains: [
-    {
-      domain: "grandtransportlogistics.pl",
-      defaultLocale: "pl",
-    },
-    {
-      domain: "grandtransportlogistics.de",
-      defaultLocale: "de",
-    },
-  ],
+  localeDetection: true,
 };
 
 const nextConfig = {

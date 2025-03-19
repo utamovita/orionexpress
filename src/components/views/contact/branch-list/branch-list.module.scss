@@ -1,0 +1,105 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  background-color: var(--colorBlack);
+  color: var(--colorWhite);
+}
+
+.titleWrapper {
+  padding: vr.$spacingSize6XL 0;
+  text-align: center;
+}
+.branchList {
+  display: flex;
+  flex-wrap:wrap;
+  gap: vr.$spacingSizeL;
+  justify-content: space-between;
+}
+
+.branch {
+  width: calc(50% - 16px);
+  display: flex;
+  min-height: 350px;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    .branchImage {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.branchImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgb(15, 15, 15);
+  background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 1) 10%,
+                  rgba(0, 0, 0, 0.6558998599439776) 38%,
+                  rgba(255, 255, 255, 0) 81%
+  );
+}
+
+.textWrapper {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: vr.$spacingSizeL;
+  display: flex;
+  align-items: flex-end;
+
+  .documentBtn {
+    @include mx.fontSize(24px);
+    display: flex;
+    min-width: auto;
+    padding: vr.$spacingSizeS vr.$spacingSizeXL;
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+.documentTitle {
+  text-transform: none;
+  @include mx.fontSize(32px);
+  line-height: 1.2em;
+}
+
+.documentSubtitle {
+  @include mx.fontSize(16px);
+}
+
+
+@include mx.devices(mobile) {
+  .branchList {
+    flex-direction: column;
+  }
+  .documentTitle {
+    @include mx.fontSize(24px);
+  }
+  .branch {
+    width: 100%;
+  }
+}
+
+

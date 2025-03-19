@@ -1,0 +1,25 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  background-color: var(--colorBlack);
+  color: var(--colorWhite);
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: vr.$spacingSize6XL 0 vr.$spacingSize3XL;
+}
+.mainTitle {
+  @include mx.fontSize(52px);
+  font-weight: var(--fontWeightBold);
+}
+.subtitle {
+  @include mx.fontSize(32px);
+  font-weight: var(--fontWeightRegular);
+  margin-bottom: 20px;
+}
+

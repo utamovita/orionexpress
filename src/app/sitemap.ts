@@ -3,62 +3,71 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://grandtransportlogistics.pl",
+      url: "https://orionexpress.pl",
       lastModified: new Date(),
       alternates: {
         languages: {
-          en: "https://grandtransportlogistics.pl/en",
-          de: "https://grandtransportlogistics.pl/de",
+          en: "https://orionexpress.pl/en",
+          de: "https://orionexpress.pl/de",
         },
       },
     },
     {
-      url: "https://grandtransportlogistics.pl/o-nas",
+      url: "https://orionexpress.pl/o-nas",
       lastModified: new Date(),
       alternates: {
         languages: {
-          en: "https://grandtransportlogistics.pl/en/about-us",
-          de: "https://grandtransportlogistics.pl/de/uber-uns",
+          en: "https://orionexpress.pl/en/about-us",
+          de: "https://orionexpress.pl/de/uber-uns",
         },
       },
     },
     {
-      url: "https://grandtransportlogistics.pl/galeria",
+      url: "https://orionexpress.pl/galeria",
       lastModified: new Date(),
       alternates: {
         languages: {
-          en: "https://grandtransportlogistics.pl/en/gallery",
-          de: "https://grandtransportlogistics.pl/de/galerie",
+          en: "https://orionexpress.pl/en/gallery",
+          de: "https://orionexpress.pl/de/galerie",
         },
       },
     },
     {
-      url: "https://grandtransportlogistics.pl/kariera",
+      url: "https://orionexpress.pl/kariera",
       lastModified: new Date(),
       alternates: {
         languages: {
-          en: "https://grandtransportlogistics.pl/en/career",
-          de: "https://grandtransportlogistics.pl/de/karriere",
+          en: "https://orionexpress.pl/en/career",
+          de: "https://orionexpress.pl/de/karriere",
         },
       },
     },
     {
-      url: "https://grandtransportlogistics.pl/dokumenty",
+      url: "https://orionexpress.pl/dokumenty",
       lastModified: new Date(),
       alternates: {
         languages: {
-          en: "https://grandtransportlogistics.pl/en/documents",
-          de: "https://grandtransportlogistics.pl/de/unterlagen",
+          en: "https://orionexpress.pl/en/documents",
+          de: "https://orionexpress.pl/de/unterlagen",
         },
       },
     },
     {
-      url: "https://grandtransportlogistics.pl/kontakt",
+      url: "https://orionexpress.pl/kontakt",
       lastModified: new Date(),
       alternates: {
         languages: {
-          en: "https://grandtransportlogistics.pl/en/contact",
-          de: "https://grandtransportlogistics.pl/de/kontakt",
+          en: "https://orionexpress.pl/en/contact",
+          de: "https://orionexpress.pl/de/kontakt",
+        },
+      },
+    },  {
+      url: "https://orionexpress.pl/csr",
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: "https://orionexpress.pl/en/csr",
+          de: "https://orionexpress.pl/de/csr",
         },
       },
     },
