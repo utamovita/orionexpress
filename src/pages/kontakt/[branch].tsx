@@ -25,10 +25,17 @@ const BranchPage: NextPage<BranchPageProps> = ({ data }) => {
   );
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = branchData.map((branch) => ({
-    params: { branch: branch.slug },
-  }));
+export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
+  const paths = locales
+    ? locales.flatMap((locale) =>
+      branchData.map((branch) => ({
+        params: { branch: branch.slug },
+        locale, // Add locale to the paths
+      }))
+    )
+    : branchData.map((branch) => ({
+      params: { branch: branch.slug },
+    }));
 
   return { paths, fallback: false };
 };

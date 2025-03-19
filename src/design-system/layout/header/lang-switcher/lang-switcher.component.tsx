@@ -7,13 +7,13 @@ import { PlanetIcon } from "@components/shared/icons/planet.icon";
 const LangSwitcher = () => {
   const router = useRouter();
   const { t } = useTranslation("common");
-  const { locales: routerLocales, locale, pathname } = router;
+  const { locales: routerLocales, locale } = router;
   const locales = routerLocales as Locale[] | undefined;
   const { onChangeSelectedOption, selectedOption } = useDropdownState({
     placeholder: t("langSwitcher.chooseLang"),
     onChangeSelected: (selection) => {
       if (selection.value !== locale) {
-        router.push(pathname, pathname, { locale: selection.value });
+        router.push("/", "/", { locale: selection.value });
       }
     },
   });
