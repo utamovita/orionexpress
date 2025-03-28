@@ -18,17 +18,15 @@ function Team(props: { team: BranchData["team"] }) {
                 <Image
                   src={item.img1}
                   alt={item.name}
-                  fill
-                  style={{
-                    objectFit: "cover",
-                  }}
+                  width={274}
+                  height={300}
                   className={styles.image1}
                 />
                 <Image
                   src={item.img2}
                   alt={item.name}
-                  width={445}
-                  height={800}
+                  width={274}
+                  height={300}
                   style={{
                     objectFit: "cover",
                   }}
@@ -38,8 +36,8 @@ function Team(props: { team: BranchData["team"] }) {
               <div className={styles.content}>
                 <ul className={styles.list}>
                   <li className={cx(styles.element, styles.name)}>{item.name}</li>
-                  <li className={styles.element}>{item.role}</li>
-                  <li className={styles.element}>{item.phone}</li>
+                  {item.role ? <li className={styles.element}>{item.role}</li> : null}
+                  {item.phone ? <li className={styles.element}>{item.phone}</li> : null}
                   <li className={styles.element}>
                     <div className={styles.iconWrapper}>
                       <EnvelopeIcon fill={"white"} />

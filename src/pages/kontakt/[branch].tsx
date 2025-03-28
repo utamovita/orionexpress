@@ -17,7 +17,7 @@ const BranchPage: NextPage<BranchPageProps> = ({ data }) => {
 
   return (
     <>
-      <NextSeo title={t("seo.documents.title")} description={t("seo.documents.description")} />
+      <NextSeo title={data.title.pl} description={t("seo.contact.description")} />
       <BaseLayout>
         <BranchView branchData={data} />
       </BaseLayout>
