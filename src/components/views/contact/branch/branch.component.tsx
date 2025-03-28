@@ -24,4 +24,3 @@ function BranchView(props: { branchData: BranchData }) {
 }
 
 export { BranchView };
-

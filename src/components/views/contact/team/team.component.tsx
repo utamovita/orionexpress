@@ -15,13 +15,7 @@ function Team(props: { team: BranchData["team"] }) {
           {team.map((item, index) => (
             <div key={index} className={styles.member}>
               <div className={styles.imageWrapper}>
-                <Image
-                  src={item.img1}
-                  alt={item.name}
-                  width={274}
-                  height={300}
-                  className={styles.image1}
-                />
+                <Image src={item.img1} alt={item.name} width={274} height={300} className={styles.image1} />
                 <Image
                   src={item.img2}
                   alt={item.name}
