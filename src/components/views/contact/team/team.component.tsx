@@ -20,7 +20,7 @@ function Team(props: { team: BranchData["team"] }) {
                 width={274}
                 height={300}
                 style={{
-                  objectFit: "cover"
+                  objectFit: "cover",
                 }}
                 className={styles.image2}
                 quality={100}
@@ -36,9 +36,9 @@ function Team(props: { team: BranchData["team"] }) {
                     <EnvelopeIcon fill={"white"} />
                   </div>
                   <span className={styles.emailText}>
-                      {item.email}
+                    {item.email}
                     <span>@orionexpress.eu</span>
-                    </span>
+                  </span>
                 </li>
               </ul>
             </div>
