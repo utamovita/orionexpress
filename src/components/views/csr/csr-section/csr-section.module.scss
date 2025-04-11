@@ -44,7 +44,7 @@
 }
 
 .title {
-  @include mx.fontSize(42px);
+  @include mx.fontSize(32px);
   font-weight: var(--fontWeightBold);
   text-transform: uppercase;
   line-height: 1.3em;

@@ -24,17 +24,17 @@ function Work() {
               </p>
               <div className={styles.btns}>
                 <div className={styles.buttonWrapper}>
-                  <ButtonLink to={"/"} newTab>
+                  <ButtonLink to={"/"}>
                     {t("career.button.whatDoWeDo")}
                   </ButtonLink>
                 </div>
                 <div className={styles.buttonWrapper}>
-                  <ButtonLink to={"/assets/images/documents/Orion-Express-Rekrutacja.pdf"} newTab>
+                  <ButtonLink to={"/assets/docs/Orion-Express-Rekrutacja.pdf"} newTab>
                     {t("career.button.rodo")}
                   </ButtonLink>
                 </div>
                 <div className={styles.buttonWrapper}>
-                  <ButtonLink to={"/assets/images/documents/Orion-Express-pdf-klauzula.pdf"} newTab>
+                  <ButtonLink to={"/assets/docs/Orion-Express-pdf-klauzula.pdf"} newTab>
                     {t("career.button.info")}
                   </ButtonLink>
                 </div>
