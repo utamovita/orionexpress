@@ -5,14 +5,29 @@ import { useTranslation } from "next-i18next";
 import EnvelopeIcon from "@components/shared/icons/envelope.icon";
 import DocCheckIcon from "@components/shared/icons/doc-check.icon";
 import HomeIcon from "@components/shared/icons/home.icon";
+import backgroundImage from "../../../../../public/assets/images/home/hero-banner.jpg";
+
 import cx from "classnames";
 import Link from "next/link";
+import Image from "next/image";
 
 function Contact() {
   const { t } = useTranslation("common");
 
   return (
     <div className={styles.wrapper}>
+      <Image
+        alt="background image"
+        src={backgroundImage}
+        placeholder="blur"
+        quality={90}
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover",
+        }}
+        className={styles.backgroundImage}
+      />
       <Container>
         <div className={styles.contentWrapper}>
           <div className={styles.contactFormWrapper}>

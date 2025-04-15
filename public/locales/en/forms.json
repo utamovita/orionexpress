@@ -5,7 +5,7 @@
   "message": "Write a message",
   "writeAboutYourself": "Write a few words about yourself",
   "phone": "Phone number",
-  "uploadCV": "Upload CV (PDF)",
+  "uploadFile": "Attach file (PDF)",
   "submit": "Submit",
   "acceptOur": "I accept the",
   "privacyPolicy": "Privacy Policy"

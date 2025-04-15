@@ -12,6 +12,7 @@ export function useContactForm() {
       email: fieldsContact.email.defaultValue,
       topic: fieldsContact.topic.defaultValue,
       message: fieldsContact.message.defaultValue,
+      file: fieldsContact.file.defaultValue,
       agreements: fieldsContact.agreements.defaultValue,
     },
     resolver: zodResolver(schema),
@@ -20,24 +21,23 @@ export function useContactForm() {
   const onSubmit = handleSubmit(async (data) => {
     try {
       setIsLoading(true);
-      const formData = {
-        name: data.name,
-        email: data.email,
-        message: data.message,
-        topic: data.topic,
-        agreements: data.agreements,
-      };
+      const formData = new FormData();
+      formData.append("name", data.name);
+      formData.append("email", data.email);
+      formData.append("message", data.message);
+      formData.append("file", data.file[0]);
+      formData.append("agreements", data.agreements ? "1" : "0");
+
 
       const response = await fetch("/api/email/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: formData,
       });
 
       if (response.ok) {
         setIsLoading(false);
         reset();
-        return alert("Wiadomość została wysłana. Odezwiemy się wkrótce!");
+        return alert(`Wiadomość została wysłana. Odezwiemy się wkrótce!`);
       }
       setIsLoading(false);
     } catch (error) {
@@ -46,6 +46,7 @@ export function useContactForm() {
     }
     setIsLoading(false);
   });
+
   return {
     isSubmitting: formState.isSubmitting,
     onSubmit,

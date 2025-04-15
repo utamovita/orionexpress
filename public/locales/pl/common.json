@@ -85,5 +85,10 @@
   "csr": {
     "title": "Inicjatywy, w których bierzemy udział",
     "subtitle":"Sukces to dla nas nie tylko liczby i wyniki – to również partnerstwo i czynne wspieranie lokalnej społeczności. Doceniamy ludzi z pasją, którzy poprzez swoje działania inspirują innych, pokazując, że warto sięgać wyżej – niezależnie od dziedziny. Wspieramy inicjatywy, które łączą, budują relacje i zostawiają po sobie coś dobrego."
+  },
+  "pagination": {
+    "prev": "Poprzednia",
+    "next": "Następna",
+    "of": "z"
   }
 }

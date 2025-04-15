@@ -1,5 +1,6 @@
-import { Button } from "@components/shared/button/button.component";
-
+import { useTranslation } from "next-i18next";
+import styles from "./pagination.module.scss";
+import cx from "classnames";
 type PaginationProps = {
   totalItems: number;
   pageSize: number;
@@ -13,6 +14,8 @@ export default function Pagination({
                                      onPageChange,
                                      pageSize
                                    }: PaginationProps) {
+  const { t } = useTranslation("common");
+
   const totalPages = Math.ceil(totalItems / pageSize);
 
   const handlePageClick = (page: number) => {
@@ -22,24 +25,32 @@ export default function Pagination({
   };
 
   return (
-    <div>
-      <Button
-        onPress={() => handlePageClick(currentPage - 1)}
-        isDisabled={currentPage === 1}
+    <div className={styles.pagination}>
+      <button
+        onClick={() => handlePageClick(currentPage - 1)}
+        disabled={currentPage === 1}
+        type={"button"}
+        className={cx(styles.btn, styles.prev)}
       >
-        Prev
-      </Button>
+        {t("pagination.prev")}
+        {/* eslint-disable @next/next/no-img-element */}
+        <img src={"/assets/images/icons/arrows.png"} alt={t("pagination.prev")} />
+      </button>
 
       <span>
-        {currentPage} of {totalPages}
+        {currentPage} {t("pagination.of")} {totalPages}
       </span>
 
-      <Button
-        onPress={() => handlePageClick(currentPage + 1)}
-        isDisabled={currentPage === totalPages}
+      <button
+        onClick={() => handlePageClick(currentPage + 1)}
+        disabled={currentPage === totalPages}
+        type={"button"}
+        className={cx(styles.btn, styles.next)}
       >
-        Next
-      </Button>
+        {t("pagination.next")}
+        {/* eslint-disable @next/next/no-img-element */}
+        <img src={"/assets/images/icons/arrows.png"} alt={t("pagination.next")} />
+      </button>
     </div>
   );
 }

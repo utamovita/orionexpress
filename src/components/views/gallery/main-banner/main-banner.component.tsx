@@ -5,8 +5,8 @@ import backgroundImage from "../../../../../public/assets/images/gallery/hero-ba
 import Image from "next/image";
 
 function MainBanner() {
-  const { t } = useTranslation("common");
-
+  const { t, i18n } = useTranslation("common");
+  console.log("CURRENT LOCALE:", i18n.language);
   return (
     <div className={styles.wrapper}>
       <div className={styles.overlay} />

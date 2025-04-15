@@ -4,16 +4,19 @@ import { z } from "zod";
 
 import {
   useValidationSchemaIsRequiredBoolean,
-  useValidationSchemaIsRequiredString,
+  useValidationSchemaIsRequiredString
 } from "../../../../../utilities/validationSchema/use-validation-schema-required.hook";
 import { FormFieldRendererConfig } from "@components/shared/form/form-fields.types";
 import { useValidationSchemaEmail } from "../../../../../utilities/validationSchema/use-validation-schema-email.hook";
+import { useValidationSchemaFile } from "../../../../../utilities/validationSchema/use-validation-schema-file.hook";
 
 export function useContactFormConfig() {
   const { t } = useTranslation("forms");
   const isRequiredStringValidationSchema = useValidationSchemaIsRequiredString();
   const emailValidationSchema = useValidationSchemaEmail();
   const isRequiredBooleanValidationSchema = useValidationSchemaIsRequiredBoolean();
+  const isFileRequiredValidationSchema = useValidationSchemaFile();
+
   const fieldsContact = useMemo(
     () =>
       ({
@@ -22,28 +25,35 @@ export function useContactFormConfig() {
           defaultValue: "",
           label: t("name"),
           name: "name",
-          validationSchema: isRequiredStringValidationSchema,
+          validationSchema: isRequiredStringValidationSchema
         },
         email: {
           type: "text",
           defaultValue: "",
           label: t("email"),
           name: "email",
-          validationSchema: emailValidationSchema,
+          validationSchema: emailValidationSchema
         },
         topic: {
           type: "text",
           defaultValue: "",
           label: t("topic"),
           name: "topic",
-          validationSchema: isRequiredStringValidationSchema,
+          validationSchema: isRequiredStringValidationSchema
         },
         message: {
           type: "textarea",
           defaultValue: "",
           label: t("message"),
           name: "message",
-          validationSchema: isRequiredStringValidationSchema,
+          validationSchema: isRequiredStringValidationSchema
+        },
+        file: {
+          type: "file",
+          defaultValue: "",
+          label: t("uploadFile"),
+          name: "file",
+          validationSchema: isFileRequiredValidationSchema
         },
         agreements: {
           type: "checkbox",
@@ -51,10 +61,10 @@ export function useContactFormConfig() {
           label: t("agreement"),
           name: "agreements",
           validationSchema: isRequiredBooleanValidationSchema,
-          fullWidth: true,
-        },
+          fullWidth: true
+        }
       }) as const satisfies Record<string, FormFieldRendererConfig>,
-    [isRequiredStringValidationSchema, isRequiredBooleanValidationSchema, emailValidationSchema, t],
+    [isRequiredStringValidationSchema, isRequiredBooleanValidationSchema, emailValidationSchema, isFileRequiredValidationSchema, t]
   );
 
   const schema = useMemo(
@@ -64,9 +74,10 @@ export function useContactFormConfig() {
         email: fieldsContact.email.validationSchema,
         topic: fieldsContact.topic.validationSchema,
         message: fieldsContact.message.validationSchema,
-        agreements: fieldsContact.agreements.validationSchema,
+        file: fieldsContact.file.validationSchema,
+        agreements: fieldsContact.agreements.validationSchema
       }),
-    [fieldsContact],
+    [fieldsContact]
   );
 
   const fieldListContact = useMemo(() => Object.entries(fieldsContact), [fieldsContact]);
@@ -74,6 +85,6 @@ export function useContactFormConfig() {
   return {
     fieldsContact,
     fieldListContact,
-    schema,
+    schema
   };
 }

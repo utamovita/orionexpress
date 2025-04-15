@@ -1,0 +1,33 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.pagination {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: vr.$spacingSize3XL 0;
+  color: var(--colorBlack);
+  @include mx.fontSize(18px);
+  gap: vr.$spacingSizeL;
+  background-color: var(--colorWhite);
+}
+
+.btn {
+  font-size: 0;
+
+  img {
+    width: 40px;
+    height: auto;
+  }
+
+  &.prev {
+    img {
+        transform: rotate(180deg);
+    }
+  }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

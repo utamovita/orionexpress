@@ -4,18 +4,6 @@ const path = require("path");
 const i18n = {
     defaultLocale: "pl",
     locales: ["en", "de", "pl"],
-    domains: [
-        {
-            domain: "grandtransportlogistics.pl",
-            defaultLocale: "pl",
-            locales: ["en", "de", "pl"],
-        },
-        {
-            domain: "grandtransportlogistics.de",
-            defaultLocale: "de",
-            locales: ["en", "de", "pl"],
-        },
-    ]
 };
 
 /** @type import("next-i18next").UserConfig */

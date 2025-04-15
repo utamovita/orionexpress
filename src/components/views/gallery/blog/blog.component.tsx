@@ -1,5 +1,5 @@
 import styles from "./blog.module.scss";
-import { blogConfig, BlogItem } from "@components/views/gallery/blog/blog.config";
+import { BlogItem } from "@components/views/gallery/blog/blog.config";
 import { Container } from "@design-system/layout/utilities";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -7,11 +7,23 @@ import { Locale } from "@customTypes/pages";
 import ZoomIcon from "@components/shared/icons/zoom.icon";
 import { SliderFullscreen } from "@components/shared/slider/fullscreen-slider.component";
 import { useState } from "react";
+import Pagination from "@components/shared/pagination/pagination.component";
 
-function Blog() {
+const PAGE_SIZE = 4;
+
+type BlogProps = {
+  currentPage: number;
+  paginatedItems: BlogItem[];
+  totalItems: number;
+};
+
+
+function Blog({ currentPage, paginatedItems, totalItems }: BlogProps) {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [sliderData, setSliderData] = useState<BlogItem["images"]>([]);
   const [startingSlide, setStartingSlide] = useState(0);
+
+  const { push, pathname, query } = useRouter();
 
   const handleOpenGallery = (sliderData: BlogItem["images"], slide: number) => {
     setIsGalleryOpen(true);
@@ -19,11 +31,32 @@ function Blog() {
     setStartingSlide(slide);
   };
 
+  const handlePageChange = (newPage: number) => {
+    const isFirstPage = newPage === 1;
+    const updatedQuery = { ...query };
+
+    if (isFirstPage) {
+      delete updatedQuery.page;
+    } else {
+      updatedQuery.page = String(newPage);
+    }
+
+    push({ pathname, query: updatedQuery }, undefined, { scroll: false });
+  };
+
+
   return (
     <div className={styles.wrapper}>
-      {blogConfig.map((item, index) => {
+      {paginatedItems.map((item, index) => {
         return <BlogSection item={item} key={index} onClick={handleOpenGallery} />;
       })}
+
+      <Pagination
+        totalItems={totalItems}
+        pageSize={PAGE_SIZE}
+        currentPage={currentPage}
+        onPageChange={handlePageChange}
+      />
 
       {isGalleryOpen && (
         <SliderFullscreen onClose={() => setIsGalleryOpen(false)} images={sliderData} startingSlide={startingSlide} />

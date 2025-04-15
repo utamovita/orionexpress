@@ -84,5 +84,10 @@
   "csr": {
     "title": "Initiativen, an denen wir teilnehmen",
     "subtitle":"Wir engagieren uns in einer Vielzahl von Projekten und Aktivitäten, die die Gemeinschaft unterstützen, Innovationen fördern und zu einer nachhaltigen Entwicklung beitragen. Entdecken Sie die Initiativen, an denen wir uns aktiv beteiligen, um eine bessere Zukunft zu schaffen."
+  },
+  "pagination:": {
+    "prev": "Vorherige",
+    "next": "Nächste",
+    "of": "von"
   }
 }

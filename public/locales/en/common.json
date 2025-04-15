@@ -85,5 +85,10 @@
   "csr": {
     "title": "Initiatives we participate in",
     "subtitle":"We are involved in a variety of projects and activities that support the community, promote innovation and contribute to sustainable development. Discover the initiatives we are actively involved in to create a better future."
+  },
+  "pagination:": {
+    "prev": "Previous",
+    "next": "Next",
+    "of": "of"
   }
 }
