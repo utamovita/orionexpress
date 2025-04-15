@@ -12,7 +12,7 @@ function GalleryView({ currentPage, paginatedItems, totalItems }: GalleryViewPro
   return (
     <>
       <MainBanner />
-      <Blog currentPage={currentPage} paginatedItems={paginatedItems} totalItems={totalItems}/>
+      <Blog currentPage={currentPage} paginatedItems={paginatedItems} totalItems={totalItems} />
     </>
   );
 }

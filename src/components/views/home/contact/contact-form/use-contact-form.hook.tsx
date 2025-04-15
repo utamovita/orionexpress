@@ -28,7 +28,6 @@ export function useContactForm() {
       formData.append("file", data.file[0]);
       formData.append("agreements", data.agreements ? "1" : "0");
 
-
       const response = await fetch("/api/email/contact", {
         method: "POST",
         body: formData,

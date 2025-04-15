@@ -17,7 +17,6 @@ type BlogProps = {
   totalItems: number;
 };
 
-
 function Blog({ currentPage, paginatedItems, totalItems }: BlogProps) {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [sliderData, setSliderData] = useState<BlogItem["images"]>([]);
@@ -43,7 +42,6 @@ function Blog({ currentPage, paginatedItems, totalItems }: BlogProps) {
 
     push({ pathname, query: updatedQuery }, undefined, { scroll: false });
   };
-
 
   return (
     <div className={styles.wrapper}>

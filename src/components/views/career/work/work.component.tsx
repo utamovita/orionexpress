@@ -24,9 +24,7 @@ function Work() {
               </p>
               <div className={styles.btns}>
                 <div className={styles.buttonWrapper}>
-                  <ButtonLink to={"/"}>
-                    {t("career.button.whatDoWeDo")}
-                  </ButtonLink>
+                  <ButtonLink to={"/"}>{t("career.button.whatDoWeDo")}</ButtonLink>
                 </div>
                 <div className={styles.buttonWrapper}>
                   <ButtonLink to={"/assets/docs/Orion-Express-Rekrutacja.pdf"} newTab>

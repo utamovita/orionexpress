@@ -8,12 +8,7 @@ type PaginationProps = {
   onPageChange: (page: number) => void;
 };
 
-export default function Pagination({
-                                     totalItems,
-                                     currentPage,
-                                     onPageChange,
-                                     pageSize
-                                   }: PaginationProps) {
+export default function Pagination({ totalItems, currentPage, onPageChange, pageSize }: PaginationProps) {
   const { t } = useTranslation("common");
 
   const totalPages = Math.ceil(totalItems / pageSize);
