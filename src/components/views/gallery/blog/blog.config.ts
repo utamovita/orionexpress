@@ -95,20 +95,12 @@ const blogConfig: BlogItem[] = [
     },
     images: [
       {
-        url: `${imageBasePath}kwiecien-24/2v1.jpg`,
-        alt: "gallery blog 1 image 1",
-      },
-      {
         url: `${imageBasePath}kwiecien-24/2v2.jpg`,
         alt: "gallery blog 1 image 2",
       },
       {
         url: `${imageBasePath}kwiecien-24/2v3.jpg`,
         alt: "gallery blog 1 image 3",
-      },
-      {
-        url: `${imageBasePath}kwiecien-24/2v4.jpg`,
-        alt: "gallery blog 1 image 4",
       },
       {
         url: `${imageBasePath}kwiecien-24/2v5.jpg`,
@@ -127,20 +119,12 @@ const blogConfig: BlogItem[] = [
         alt: "gallery blog 1 image 8",
       },
       {
-        url: `${imageBasePath}kwiecien-24/2v9.jpg`,
-        alt: "gallery blog 1 image 9",
-      },
-      {
         url: `${imageBasePath}kwiecien-24/2v10.jpg`,
         alt: "gallery blog 1 image 10",
       },
       {
         url: `${imageBasePath}kwiecien-24/2v11.jpg`,
         alt: "gallery blog 1 image 11",
-      },
-      {
-        url: `${imageBasePath}kwiecien-24/2v12.jpg`,
-        alt: "gallery blog 1 image 12",
       },
     ],
   },
