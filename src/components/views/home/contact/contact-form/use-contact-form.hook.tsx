@@ -2,9 +2,12 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useContactFormConfig } from "@components/views/home/contact/contact-form/use-contact-form-config.hook";
 import { useState } from "react";
+import { toast } from "react-toastify";
+import { useTranslation } from "next-i18next";
 
 export function useContactForm() {
   const [isLoading, setIsLoading] = useState(false);
+  const { t } = useTranslation("forms");
   const { schema, fieldsContact } = useContactFormConfig();
   const { control, handleSubmit, formState, reset } = useForm({
     defaultValues: {
@@ -25,7 +28,7 @@ export function useContactForm() {
       formData.append("name", data.name);
       formData.append("email", data.email);
       formData.append("message", data.message);
-      formData.append("file", data.file[0]);
+      {data.file ? formData.append("file", data.file[0]) : null}
       formData.append("agreements", data.agreements ? "1" : "0");
 
       const response = await fetch("/api/email/contact", {
@@ -36,7 +39,7 @@ export function useContactForm() {
       if (response.ok) {
         setIsLoading(false);
         reset();
-        return alert(`Wiadomość została wysłana. Odezwiemy się wkrótce!`);
+        toast.success(t("messageSent"));
       }
       setIsLoading(false);
     } catch (error) {

@@ -66,6 +66,7 @@ export function FormFieldsRenderer(props: FormFieldsRenderer) {
                     isInvalid={invalid}
                     error={error}
                     ref={ref}
+                    value={value}
                   />
                 );
               }

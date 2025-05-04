@@ -16,6 +16,7 @@ export type FileFieldProps = {
   error: FieldError | undefined | CustomErrorType;
   errorMessage?: string | undefined;
   name: string;
+  value?: FileList | null;
 };
 
 const FileField = forwardRef<HTMLInputElement, FileFieldProps>((props, ref) => {

@@ -14,6 +14,8 @@
   justify-content: center;
   backdrop-filter: blur(8px);
   padding: vr.$spacingSizeXXL;
+  touch-action: pan-y; // ← allow touch gestures
+  overscroll-behavior: contain;
 
   [class~="swiper-button-prev"],
   [class~="swiper-button-next"] {
@@ -71,5 +73,21 @@
   &.darkTheme {
     background: none;
     fill: white;
+  }
+}
+
+
+@include mx.devices(mobile) {
+  .overlay {
+    padding: vr.$spacingSizeS;
+    [class~="swiper-button-prev"],
+    [class~="swiper-button-next"] {
+      width: 30px;
+      height: 30px;
+
+      &:after {
+        font-size: 18px;
+      }
+    }
   }
 }

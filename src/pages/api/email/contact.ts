@@ -27,9 +27,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const agreements = Array.isArray(fields.agreements) ? fields.agreements[0] : fields.agreements;
     const file = Array.isArray(files.file) ? files.file[0] : files.file;
 
-    if (!file || typeof file !== "object" || !("filepath" in file)) {
-      console.error("File upload is invalid or missing.");
-      return res.status(400).json({ message: "File upload is invalid or missing." });
+    const fileAttachment = [];
+
+
+    if (file && typeof file === "object" && "filepath" in file) {
+      fileAttachment.push({
+        filename: file.originalFilename || "attachment",
+        path: file.filepath as string,
+      });
     }
 
     // Validate required fields
@@ -55,12 +60,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                <p><strong>Email:</strong> ${email}</p>
                <p><strong>Wiadomość:</strong></p>
                <p>${message}</p>`,
-        attachments: [
-          {
-            filename: file.originalFilename || "attachment",
-            path: file.filepath,
-          },
-        ],
+        attachments: fileAttachment,
       };
 
       await transporter.sendMail(mailOptions);

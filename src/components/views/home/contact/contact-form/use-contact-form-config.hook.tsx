@@ -8,14 +8,14 @@ import {
 } from "../../../../../utilities/validationSchema/use-validation-schema-required.hook";
 import { FormFieldRendererConfig } from "@components/shared/form/form-fields.types";
 import { useValidationSchemaEmail } from "../../../../../utilities/validationSchema/use-validation-schema-email.hook";
-import { useValidationSchemaFile } from "../../../../../utilities/validationSchema/use-validation-schema-file.hook";
+import { useOptionalValidationSchemaFile } from "../../../../../utilities/validationSchema/use-validation-schema-file.hook";
 
 export function useContactFormConfig() {
   const { t } = useTranslation("forms");
   const isRequiredStringValidationSchema = useValidationSchemaIsRequiredString();
   const emailValidationSchema = useValidationSchemaEmail();
   const isRequiredBooleanValidationSchema = useValidationSchemaIsRequiredBoolean();
-  const isFileRequiredValidationSchema = useValidationSchemaFile();
+  const isFileOptionalValidationSchema = useOptionalValidationSchemaFile();
 
   const fieldsContact = useMemo(
     () =>
@@ -50,10 +50,10 @@ export function useContactFormConfig() {
         },
         file: {
           type: "file",
-          defaultValue: "",
+          defaultValue: null,
           label: t("uploadFile"),
           name: "file",
-          validationSchema: isFileRequiredValidationSchema,
+          validationSchema: isFileOptionalValidationSchema,
         },
         agreements: {
           type: "checkbox",
@@ -68,7 +68,7 @@ export function useContactFormConfig() {
       isRequiredStringValidationSchema,
       isRequiredBooleanValidationSchema,
       emailValidationSchema,
-      isFileRequiredValidationSchema,
+      isFileOptionalValidationSchema,
       t,
     ],
   );

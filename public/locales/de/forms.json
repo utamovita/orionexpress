@@ -8,5 +8,6 @@
   "uploadFile": "Datei anhängen (PDF)",
   "submit": "Senden",
   "acceptOur": "Ich akzeptiere die",
-  "privacyPolicy": "Datenschutzbestimmungen"
+  "privacyPolicy": "Datenschutzbestimmungen",
+  "messageSent": "Nachricht erfolgreich gesendet"
 }

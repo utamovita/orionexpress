@@ -8,5 +8,6 @@
   "uploadFile": "Attach file (PDF)",
   "submit": "Submit",
   "acceptOur": "I accept the",
-  "privacyPolicy": "Privacy Policy"
+  "privacyPolicy": "Privacy Policy",
+  "messageSent": "Message sent successfully"
 }

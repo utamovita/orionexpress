@@ -34,7 +34,7 @@ type FormFieldRadio = {
 type FormFieldFile = {
   type: "file";
   label: string;
-  defaultValue: "";
+  defaultValue: null | FileList;
 } & FordFieldBase;
 
 export type FormFieldRendererConfig = FormFieldTextInput | FormFieldCheckbox | FormFieldRadio | FormFieldFile;

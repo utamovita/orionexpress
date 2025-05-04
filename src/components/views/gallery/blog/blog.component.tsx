@@ -5,9 +5,14 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { Locale } from "@customTypes/pages";
 import ZoomIcon from "@components/shared/icons/zoom.icon";
-import { SliderFullscreen } from "@components/shared/slider/fullscreen-slider.component";
+import dynamic from "next/dynamic";
 import { useState } from "react";
 import Pagination from "@components/shared/pagination/pagination.component";
+
+const SliderFullscreen = dynamic(
+  () => import("@components/shared/slider/fullscreen-slider.component").then(mod => mod.SliderFullscreen),
+  { ssr: false }
+);
 
 const PAGE_SIZE = 4;
 
