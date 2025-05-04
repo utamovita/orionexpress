@@ -29,7 +29,7 @@ const branchData: BranchData[] = [
       de: "Buk",
     },
     img: `${imageBasePath2}6.jpg`,
-    address: "Mickiewicza 1a, 64-320 Buk",
+    address: "Mickiewicza, 64-320 Buk",
     team: [
       {
         name: "Agata",
@@ -169,7 +169,7 @@ const branchData: BranchData[] = [
       de: "Buk",
     },
     img: `${imageBasePath2}7.jpg`,
-    address: "Wiśniowy Sad 25/2 64-320 Buk",
+    address: "Wiśniowy Sad, 64-320 Buk",
     team: [
       {
         name: "Jakub",
@@ -245,7 +245,7 @@ const branchData: BranchData[] = [
       de: "Pniewy",
     },
     img: `${imageBasePath2}10.jpg`,
-    address: "Borówkowa 31a,  62-045 Pniewy",
+    address: "Borówkowa, 62-045 Pniewy",
     team: [
       {
         name: "Kacper",
@@ -393,7 +393,7 @@ const branchData: BranchData[] = [
       de: "Opalenica",
     },
     img: `${imageBasePath2}9.jpg`,
-    address: "Zamkowa 3/30 , 64-330 Opalenica",
+    address: "Zamkowa, 64-330 Opalenica",
     team: [
       {
         name: "Patryk",
@@ -421,7 +421,7 @@ const branchData: BranchData[] = [
       de: "Glinno",
     },
     img: `${imageBasePath}glinno.jpg`,
-    address: "Grudniowa 66B , 64-300 Glinno",
+    address: "Grudniowa, 64-300 Glinno",
     team: [
       {
         name: "Filip",
@@ -457,7 +457,7 @@ const branchData: BranchData[] = [
       de: "Tarnowo Podgórne",
     },
     img: `${imageBasePath2}8.jpg`,
-    address: "Florencka 7/5 , 62-080 Tarnowo Podgórne",
+    address: "Florencka, 62-080 Tarnowo Podgórne",
     team: [
       {
         name: "Filip",
