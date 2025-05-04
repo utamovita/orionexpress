@@ -11,7 +11,13 @@ type PaginationProps = {
   isLoading?: boolean;
 };
 
-export default function Pagination({ totalItems, currentPage, onPageChange, pageSize, isLoading = true }: PaginationProps) {
+export default function Pagination({
+  totalItems,
+  currentPage,
+  onPageChange,
+  pageSize,
+  isLoading = true,
+}: PaginationProps) {
   const { t } = useTranslation("common");
 
   const totalPages = Math.ceil(totalItems / pageSize);
@@ -24,7 +30,11 @@ export default function Pagination({ totalItems, currentPage, onPageChange, page
 
   return (
     <div className={styles.pagination}>
-      {isLoading ? <div className={styles.loading}><Spinner show={true} customColor={"var(--colorTextLink)"}/></div> : null }
+      {isLoading ? (
+        <div className={styles.loading}>
+          <Spinner show={true} customColor={"var(--colorTextLink)"} />
+        </div>
+      ) : null}
       <button
         onClick={() => handlePageClick(currentPage - 1)}
         disabled={currentPage === 1}
@@ -50,8 +60,6 @@ export default function Pagination({ totalItems, currentPage, onPageChange, page
         {/* eslint-disable @next/next/no-img-element */}
         <img src={"/assets/images/icons/arrows.png"} alt={t("pagination.next")} />
       </button>
-
-
     </div>
   );
 }

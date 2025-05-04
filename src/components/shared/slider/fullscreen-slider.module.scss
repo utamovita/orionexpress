@@ -2,37 +2,37 @@
 @use "@design-system/styles/utilities/mixins" as mx;
 
 .overlay {
-    position: fixed;
-    z-index: 9999999100;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(22, 22, 22, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(8px);
-    padding: vr.$spacingSizeXXL;
+  position: fixed;
+  z-index: 9999999100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(22, 22, 22, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  padding: vr.$spacingSizeXXL;
 
-    [class~="swiper-button-prev"],
-    [class~="swiper-button-next"] {
-      background: var(--colorWhite);
-      border-radius: 50%;
-      padding: 0.5rem;
-      width: 50px;
-      height: 50px;
-      &:after {
-        font-size: 32px;
-      }
+  [class~="swiper-button-prev"],
+  [class~="swiper-button-next"] {
+    background: var(--colorWhite);
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 50px;
+    height: 50px;
+    &:after {
+      font-size: 32px;
     }
+  }
 
-    [class~="swiper-button-prev"] {
-      padding-left: 4px;
-    }
-    [class~="swiper-button-next"] {
-      padding-right: 4px;
-    }
+  [class~="swiper-button-prev"] {
+    padding-left: 4px;
+  }
+  [class~="swiper-button-next"] {
+    padding-right: 4px;
+  }
 }
 
 .swiper {
@@ -73,4 +73,3 @@
     fill: white;
   }
 }
-

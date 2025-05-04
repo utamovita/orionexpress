@@ -43,20 +43,17 @@ function SliderFullscreen(props: SliderFullscreenProps) {
 
   return (
     <div className={styles.overlay}>
-      <button
-        className={styles.closeButton}
-        onClick={closePopup}
-      >
+      <button className={styles.closeButton} onClick={closePopup}>
         <CloseIcon />
       </button>
       <Swiper navigation={true} modules={[Navigation]} className={styles.swiper} initialSlide={startingSlide}>
         {images.map((image) => (
           <SwiperSlide key={image.alt} className={styles.swiperSlide}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={image.url} alt={image.alt} className={styles.image} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={image.url} alt={image.alt} className={styles.image} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 }
