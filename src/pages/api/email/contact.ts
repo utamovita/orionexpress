@@ -29,7 +29,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const fileAttachment = [];
 
-
     if (file && typeof file === "object" && "filepath" in file) {
       fileAttachment.push({
         filename: file.originalFilename || "attachment",

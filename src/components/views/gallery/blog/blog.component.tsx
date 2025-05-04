@@ -10,8 +10,8 @@ import { useState } from "react";
 import Pagination from "@components/shared/pagination/pagination.component";
 
 const SliderFullscreen = dynamic(
-  () => import("@components/shared/slider/fullscreen-slider.component").then(mod => mod.SliderFullscreen),
-  { ssr: false }
+  () => import("@components/shared/slider/fullscreen-slider.component").then((mod) => mod.SliderFullscreen),
+  { ssr: false },
 );
 
 const PAGE_SIZE = 4;

@@ -28,7 +28,9 @@ export function useContactForm() {
       formData.append("name", data.name);
       formData.append("email", data.email);
       formData.append("message", data.message);
-      {data.file ? formData.append("file", data.file[0]) : null}
+      {
+        data.file ? formData.append("file", data.file[0]) : null;
+      }
       formData.append("agreements", data.agreements ? "1" : "0");
 
       const response = await fetch("/api/email/contact", {
