@@ -1,21 +1,76 @@
 @use "@design-system/styles/utilities/variables" as vr;
 @use "@design-system/styles/utilities/mixins" as mx;
 
+.overlay {
+    position: fixed;
+    z-index: 9999999100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(22, 22, 22, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    padding: vr.$spacingSizeXXL;
+
+    [class~="swiper-button-prev"],
+    [class~="swiper-button-next"] {
+      background: var(--colorWhite);
+      border-radius: 50%;
+      padding: 0.5rem;
+      width: 50px;
+      height: 50px;
+      &:after {
+        font-size: 32px;
+      }
+    }
+
+    [class~="swiper-button-prev"] {
+      padding-left: 4px;
+    }
+    [class~="swiper-button-next"] {
+      padding-right: 4px;
+    }
+}
+
 .swiper {
+  height: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: stretch;
 }
 
 .swiperSlide {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
 }
 
 .image {
-  max-width: 70vw;
-  max-height: 70vh;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  height: auto;
+  width: auto;
 }
+
+.closeButton {
+  border: none;
+  background-color: #f2f2f2;
+  position: absolute;
+  z-index: 10;
+  right: vr.$spacingSizeXL;
+  top: vr.$spacingSizeM;
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 50%;
+  padding: vr.$spacingSizeXXS;
+
+  &.darkTheme {
+    background: none;
+    fill: white;
+  }
+}
+

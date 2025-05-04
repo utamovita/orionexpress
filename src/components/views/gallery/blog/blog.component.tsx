@@ -21,6 +21,7 @@ function Blog({ currentPage, paginatedItems, totalItems }: BlogProps) {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [sliderData, setSliderData] = useState<BlogItem["images"]>([]);
   const [startingSlide, setStartingSlide] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
 
   const { push, pathname, query } = useRouter();
 
@@ -30,7 +31,8 @@ function Blog({ currentPage, paginatedItems, totalItems }: BlogProps) {
     setStartingSlide(slide);
   };
 
-  const handlePageChange = (newPage: number) => {
+  const handlePageChange = async (newPage: number) => {
+    setIsLoading(true);
     const isFirstPage = newPage === 1;
     const updatedQuery = { ...query };
 
@@ -40,7 +42,9 @@ function Blog({ currentPage, paginatedItems, totalItems }: BlogProps) {
       updatedQuery.page = String(newPage);
     }
 
-    push({ pathname, query: updatedQuery }, undefined, { scroll: false });
+    await push({ pathname, query: updatedQuery }, undefined, { scroll: false });
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setIsLoading(false);
   };
 
   return (
@@ -54,6 +58,7 @@ function Blog({ currentPage, paginatedItems, totalItems }: BlogProps) {
         pageSize={PAGE_SIZE}
         currentPage={currentPage}
         onPageChange={handlePageChange}
+        isLoading={isLoading}
       />
 
       {isGalleryOpen && (

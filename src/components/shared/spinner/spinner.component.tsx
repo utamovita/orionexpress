@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./spinner.module.scss";
 
-function Spinner(props: { show: boolean }) {
-  const { show } = props;
+function Spinner(props: { show: boolean, customColor?: string }) {
+  const { show, customColor = "var(--colorWhite)"} = props;
 
   if (!show) {
     return null;
@@ -10,7 +10,7 @@ function Spinner(props: { show: boolean }) {
 
   return (
     <svg className={styles.spinnerSVG} viewBox="0 0 50 50" data-testid="spinner">
-      <circle className={styles.path} cx="25" cy="25" r="20" fill="none" strokeWidth="2" />
+      <circle className={styles.path} cx="25" cy="25" r="20" fill="none" strokeWidth="2" stroke={customColor}/>
     </svg>
   );
 }
