@@ -10,6 +10,7 @@ type BlogItem = {
   images: Array<{
     url: string;
     alt: string;
+    ytLink?: string;
   }>;
 };
 
@@ -109,10 +110,44 @@ const blogConfig: BlogItem[] = [
       de: "Dezember 2023",
       pl: "Grudzień 2023",
     },
-    images: Array.from({ length: 8 }, (_, i) => ({
-      url: `${imageBasePath}grudzien-23/${i + 1}.jpg`,
-      alt: `Integrations September 2023 photo ${i + 1}`,
-    })),
+    images: [
+      {
+        url: `${imageBasePath}grudzien-23/1.jpg`,
+        alt: "Integrations December 2023 photo 1",
+      },
+      {
+        url: `${imageBasePath}grudzien-23/2.jpg`,
+        alt: "Integrations December 2023 photo 2",
+        ytLink: "https://www.youtube.com/watch?v=SBLa3Q_4qS8",
+
+      },
+      {
+        url: `${imageBasePath}grudzien-23/3.jpg`,
+        alt: "Integrations December 2023 photo 3",
+        ytLink: "https://www.youtube.com/watch?v=alroEc_K0c4",
+      },
+      {
+        url: `${imageBasePath}grudzien-23/4.jpg`,
+        alt: "Integrations December 2023 photo 4",
+        ytLink: "https://www.youtube.com/watch?v=Q2i_8hCGs6E",
+      },
+      {
+        url: `${imageBasePath}grudzien-23/5.jpg`,
+        alt: "Integrations December 2023 photo 5",
+      },
+      {
+        url: `${imageBasePath}grudzien-23/6.jpg`,
+        alt: "Integrations December 2023 photo 6",
+      },
+      {
+        url: `${imageBasePath}grudzien-23/7.jpg`,
+        alt: "Integrations December 2023 photo 7",
+      },
+      {
+        url: `${imageBasePath}grudzien-23/8.jpg`,
+        alt: "Integrations December 2023 photo 8",
+      },
+    ]
   },
   {
     title: {

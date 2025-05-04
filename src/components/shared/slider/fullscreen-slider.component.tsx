@@ -8,6 +8,8 @@ import CloseIcon from "@components/shared/icons/close-icon";
 import { usePreventScroll } from "react-aria";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import { YoutubeIcon } from "@components/shared/icons/youtube.icon";
+import cx from "classnames";
 
 type SliderFullscreenProps = {
   onClose(): void;
@@ -47,12 +49,26 @@ function SliderFullscreen(props: SliderFullscreenProps) {
         <CloseIcon />
       </button>
       <Swiper navigation={true} modules={[Navigation]} className={styles.swiper} initialSlide={startingSlide}>
-        {images.map((image) => (
-          <SwiperSlide key={image.alt} className={styles.swiperSlide}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={image.url} alt={image.alt} className={styles.image} />
-          </SwiperSlide>
-        ))}
+        {images.map((image) => {
+          const isYouTubeVideo = image.ytLink && image.ytLink.length > 0;
+
+          return (
+            <SwiperSlide key={image.alt} className={styles.swiperSlide}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={image.url}
+                alt={image.alt}
+                className={cx(styles.image, { [styles.darkImage]: isYouTubeVideo })}
+              />
+
+              {isYouTubeVideo ? (
+                <a href={image.ytLink} className={styles.ytLink} target={"_blank"} rel="noopener noreferrer">
+                  <YoutubeIcon className={styles.youtubeIcon} />
+                </a>) : null }
+
+            </SwiperSlide>
+            );
+          })}
       </Swiper>
     </div>
   );

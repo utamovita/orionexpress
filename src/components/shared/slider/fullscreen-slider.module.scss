@@ -56,6 +56,10 @@
   object-fit: contain;
   height: auto;
   width: auto;
+
+  &.darkImage {
+    filter: brightness(0.5);
+  }
 }
 
 .closeButton {
@@ -73,6 +77,22 @@
   &.darkTheme {
     background: none;
     fill: white;
+  }
+}
+
+.youtubeIcon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+    margin: auto;
+  display: flex;
+  width: 100px;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
   }
 }
 

@@ -84,6 +84,7 @@ function BlogSection(props: BlogSectionProps) {
 
   const title = item.title[locale as Locale];
   const subtitle = item.subtitle[locale as Locale];
+
   return (
     <div className={styles.sectionWrapper}>
       <Container className={styles.gridWrapper}>
