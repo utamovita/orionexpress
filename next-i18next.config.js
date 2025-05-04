@@ -4,6 +4,7 @@ const path = require("path");
 const i18n = {
     defaultLocale: "pl",
     locales: ["en", "de", "pl"],
+    localeDetection: true,
 };
 
 /** @type import("next-i18next").UserConfig */
