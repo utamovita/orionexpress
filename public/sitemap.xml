@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://orionexpress.pl</loc>
+        <lastmod>2024-05-01T00:00:00Z</lastmod>
+        <alternates>
+            <lang lang="en">https://orionexpress.pl/en</lang>
+            <lang lang="de">https://orionexpress.pl/de</lang>
+        </alternates>
+    </url>
+    <url>
+        <loc>https://orionexpress.pl/o-nas</loc>
+        <lastmod>2024-05-01T00:00:00Z</lastmod>
+        <alternates>
+            <lang lang="en">https://orionexpress.pl/en/about-us</lang>
+            <lang lang="de">https://orionexpress.pl/de/uber-uns</lang>
+        </alternates>
+    </url>
+    <url>
+        <loc>https://orionexpress.pl/galeria</loc>
+        <lastmod>2024-05-01T00:00:00Z</lastmod>
+        <alternates>
+            <lang lang="en">https://orionexpress.pl/en/gallery</lang>
+            <lang lang="de">https://orionexpress.pl/de/galerie</lang>
+        </alternates>
+    </url>
+    <url>
+        <loc>https://orionexpress.pl/kariera</loc>
+        <lastmod>2024-05-01T00:00:00Z</lastmod>
+        <alternates>
+            <lang lang="en">https://orionexpress.pl/en/career</lang>
+            <lang lang="de">https://orionexpress.pl/de/karriere</lang>
+        </alternates>
+    </url>
+    <url>
+        <loc>https://orionexpress.pl/dokumenty</loc>
+        <lastmod>2024-05-01T00:00:00Z</lastmod>
+        <alternates>
+            <lang lang="en">https://orionexpress.pl/en/documents</lang>
+            <lang lang="de">https://orionexpress.pl/de/unterlagen</lang>
+        </alternates>
+    </url>
+    <url>
+        <loc>https://orionexpress.pl/kontakt</loc>
+        <lastmod>2024-05-01T00:00:00Z</lastmod>
+        <alternates>
+            <lang lang="en">https://orionexpress.pl/en/contact</lang>
+            <lang lang="de">https://orionexpress.pl/de/kontakt</lang>
+        </alternates>
+    </url>
+    <url>
+        <loc>https://orionexpress.pl/csr</loc>
+        <lastmod>2024-05-01T00:00:00Z</lastmod>
+        <alternates>
+            <lang lang="en">https://orionexpress.pl/en/csr</lang>
+            <lang lang="de">https://orionexpress.pl/de/csr</lang>
+        </alternates>
+    </url>
+</urlset>
