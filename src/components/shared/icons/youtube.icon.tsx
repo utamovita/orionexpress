@@ -1,5 +1,5 @@
-import * as React from "react"
-import { SVGProps } from "react"
+import * as React from "react";
+import { SVGProps } from "react";
 
 const YoutubeIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -17,6 +17,6 @@ const YoutubeIcon = (props: SVGProps<SVGSVGElement>) => (
       }}
     />
   </svg>
-)
+);
 
-export { YoutubeIcon }
+export { YoutubeIcon };

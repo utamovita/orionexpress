@@ -64,11 +64,11 @@ function SliderFullscreen(props: SliderFullscreenProps) {
               {isYouTubeVideo ? (
                 <a href={image.ytLink} className={styles.ytLink} target={"_blank"} rel="noopener noreferrer">
                   <YoutubeIcon className={styles.youtubeIcon} />
-                </a>) : null }
-
+                </a>
+              ) : null}
             </SwiperSlide>
-            );
-          })}
+          );
+        })}
       </Swiper>
     </div>
   );

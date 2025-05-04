@@ -119,7 +119,6 @@ const blogConfig: BlogItem[] = [
         url: `${imageBasePath}grudzien-23/2.jpg`,
         alt: "Integrations December 2023 photo 2",
         ytLink: "https://www.youtube.com/watch?v=SBLa3Q_4qS8",
-
       },
       {
         url: `${imageBasePath}grudzien-23/3.jpg`,
@@ -147,7 +146,7 @@ const blogConfig: BlogItem[] = [
         url: `${imageBasePath}grudzien-23/8.jpg`,
         alt: "Integrations December 2023 photo 8",
       },
-    ]
+    ],
   },
   {
     title: {
