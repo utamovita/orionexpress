@@ -219,7 +219,6 @@ const documentsConfig: DocumentItem[] = [
       pl: `${docBasePath}new/pl/kabotaz-ue.pdf`,
     },
     //new
-
   },
 ];
 

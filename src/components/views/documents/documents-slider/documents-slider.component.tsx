@@ -57,7 +57,12 @@ function DocumentsSlider() {
                       <h2 className={styles.documentTitle}>{title[locale as Locale]}</h2>
                     </div>
 
-                    <ButtonLink newTab={true} to={link[locale as Locale]} variant={"secondary"} className={styles.documentBtn}>
+                    <ButtonLink
+                      newTab={true}
+                      to={link[locale as Locale]}
+                      variant={"secondary"}
+                      className={styles.documentBtn}
+                    >
                       {t("sprawdź")}
                     </ButtonLink>
                   </Stack>
