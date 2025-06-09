@@ -43,7 +43,7 @@ function DocumentsSlider() {
           <SwiperSlide key={image.alt} className={styles.swiperSlide}>
             <div className={styles.slideContent}>
               <Image
-                src={image.url}
+                src={image.url[locale as Locale]}
                 alt={image.alt}
                 className={styles.image}
                 width={image.width}
@@ -57,7 +57,7 @@ function DocumentsSlider() {
                       <h2 className={styles.documentTitle}>{title[locale as Locale]}</h2>
                     </div>
 
-                    <ButtonLink newTab={true} to={link} variant={"secondary"} className={styles.documentBtn}>
+                    <ButtonLink newTab={true} to={link[locale as Locale]} variant={"secondary"} className={styles.documentBtn}>
                       {t("sprawdź")}
                     </ButtonLink>
                   </Stack>
