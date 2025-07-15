@@ -21,28 +21,29 @@ function BranchList({ branches }: { branches: Branch[] }) {
         </div>
 
         <div className={styles.branchList}>
-          {branches.map((branch) => (
-            branch.imageUrl && (
-              <Link href={`/kontakt/${branch.slug}`} key={branch._id} className={styles.branch}>
-                <Image
-                  src={branch.imageUrl}
-                  alt={branch.title[locale as Locale]}
-                  className={styles.branchImage}
-                  fill
-                  style={{ objectFit: "cover" }}
-                  loading={"lazy"}
-                />
-                <div className={styles.overlay}>
-                  <div className={styles.textWrapper}>
-                    <Stack space={"XS"} className={styles.stack}>
-                      <h3 className={styles.documentTitle}>{branch.title[locale as Locale]}</h3>
-                      <h4 className={styles.documentSubtitle}>{branch.address}</h4>
-                    </Stack>
+          {branches.map(
+            (branch) =>
+              branch.imageUrl && (
+                <Link href={`/kontakt/${branch.slug}`} key={branch._id} className={styles.branch}>
+                  <Image
+                    src={branch.imageUrl}
+                    alt={branch.title[locale as Locale]}
+                    className={styles.branchImage}
+                    fill
+                    style={{ objectFit: "cover" }}
+                    loading={"lazy"}
+                  />
+                  <div className={styles.overlay}>
+                    <div className={styles.textWrapper}>
+                      <Stack space={"XS"} className={styles.stack}>
+                        <h3 className={styles.documentTitle}>{branch.title[locale as Locale]}</h3>
+                        <h4 className={styles.documentSubtitle}>{branch.address}</h4>
+                      </Stack>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            )
-          ))}
+                </Link>
+              ),
+          )}
         </div>
       </Container>
     </div>

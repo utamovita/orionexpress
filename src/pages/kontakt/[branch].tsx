@@ -6,11 +6,7 @@ import React from "react";
 
 import { BaseLayout } from "@design-system/layout/base-layout.component";
 import { BranchView } from "@components/views/contact/branch/branch.component";
-import {
-  getAllBranchSlugs,
-  getBranchBySlug,
-  Branch,
-} from "@sanity/lib/queries";
+import { getAllBranchSlugs, getBranchBySlug, Branch } from "@sanity/lib/queries";
 
 type BranchPageProps = {
   data: Branch;
@@ -34,14 +30,14 @@ export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
 
   const paths = locales
     ? locales.flatMap((locale) =>
-      slugs.map(({ slug }) => ({
-        params: { branch: slug },
-        locale,
-      })),
-    )
+        slugs.map(({ slug }) => ({
+          params: { branch: slug },
+          locale,
+        })),
+      )
     : slugs.map(({ slug }) => ({
-      params: { branch: slug },
-    }));
+        params: { branch: slug },
+      }));
 
   return { paths, fallback: "blocking" }; // Używamy 'blocking' lub 'true' dla lepszego UX
 };

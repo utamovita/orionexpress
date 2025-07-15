@@ -1,5 +1,5 @@
 // src/sanity/schemaTypes/branch.ts
-import {defineField, defineType} from "sanity"
+import { defineField, defineType } from "sanity";
 
 export const branchType = defineType({
   name: "branch",
@@ -11,9 +11,9 @@ export const branchType = defineType({
       title: "Nazwa Oddziału (wielojęzyczna)",
       type: "object",
       fields: [
-        {name: "pl", type: "string", title: "Polska"},
-        {name: "en", type: "string", title: "Angielska"},
-        {name: "de", type: "string", title: "Niemiecka"},
+        { name: "pl", type: "string", title: "Polska" },
+        { name: "en", type: "string", title: "Angielska" },
+        { name: "de", type: "string", title: "Niemiecka" },
       ],
     }),
     defineField({
@@ -40,7 +40,7 @@ export const branchType = defineType({
       name: "team",
       title: "Zespół",
       type: "array",
-      of: [{type: "teamMember"}],
+      of: [{ type: "teamMember" }],
     }),
   ],
-})
+});

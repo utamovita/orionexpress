@@ -13,7 +13,14 @@ function Team(props: { team: TeamMember[] }) {
         {team.map((item, index) => (
           <div key={index} className={styles.member}>
             <div className={styles.imageWrapper}>
-              <Image quality={100} src={item.img1Url!} alt={item.name} width={274} height={300} className={styles.image1} />
+              <Image
+                quality={100}
+                src={item.img1Url!}
+                alt={item.name}
+                width={274}
+                height={300}
+                className={styles.image1}
+              />
               <Image
                 src={item.img2Url!}
                 alt={item.name}

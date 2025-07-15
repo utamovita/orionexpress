@@ -1,5 +1,5 @@
 // src/sanity/schemaTypes/teamMember.ts
-import {defineField, defineType} from "sanity"
+import { defineField, defineType } from "sanity";
 
 export const teamMemberType = defineType({
   name: "teamMember",
@@ -32,13 +32,13 @@ export const teamMemberType = defineType({
       name: "img1",
       title: "Zdjęcie 1",
       type: "image",
-      options: {hotspot: true},
+      options: { hotspot: true },
     }),
     defineField({
       name: "img2",
       title: "Zdjęcie 2",
       type: "image",
-      options: {hotspot: true},
+      options: { hotspot: true },
     }),
   ],
-})
+});

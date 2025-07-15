@@ -7,7 +7,6 @@ import { NextSeo } from "next-seo";
 import React from "react";
 import { getAllBranches, Branch } from "@sanity/lib/queries";
 
-
 export default function ContactPage({ branches }: { branches: Branch[] }) {
   const { t } = useTranslation("common");
 
