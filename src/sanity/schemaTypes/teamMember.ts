@@ -8,7 +8,7 @@ export const teamMemberType = defineType({
   fields: [
     defineField({
       name: "name",
-      title: "Imię i Nazwisko",
+      title: "Imię",
       type: "string",
       validation: (Rule) => Rule.required(),
     }),
