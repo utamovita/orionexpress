@@ -1,15 +1,19 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
-import { branchData, BranchData } from "@components/views/contact/branch/branch-data";
-import { BranchView } from "@components/views/contact/branch/branch.component";
 import { NextSeo } from "next-seo";
-import { BaseLayout } from "@design-system/layout/base-layout.component";
 import { useTranslation } from "next-i18next";
-
-import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import React from "react";
+
+import { BaseLayout } from "@design-system/layout/base-layout.component";
+import { BranchView } from "@components/views/contact/branch/branch.component";
+import {
+  getAllBranchSlugs,
+  getBranchBySlug,
+  Branch,
+} from "@sanity/lib/queries";
 
 type BranchPageProps = {
-  data: BranchData;
+  data: Branch;
 };
 
 const BranchPage: NextPage<BranchPageProps> = ({ data }) => {
@@ -26,30 +30,40 @@ const BranchPage: NextPage<BranchPageProps> = ({ data }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
+  const slugs = await getAllBranchSlugs();
+
   const paths = locales
     ? locales.flatMap((locale) =>
-        branchData.map((branch) => ({
-          params: { branch: branch.slug },
-          locale, // Add locale to the paths
-        })),
-      )
-    : branchData.map((branch) => ({
-        params: { branch: branch.slug },
-      }));
+      slugs.map(({ slug }) => ({
+        params: { branch: slug },
+        locale,
+      })),
+    )
+    : slugs.map(({ slug }) => ({
+      params: { branch: slug },
+    }));
 
-  return { paths, fallback: false };
+  return { paths, fallback: "blocking" }; // Używamy 'blocking' lub 'true' dla lepszego UX
 };
 
 export const getStaticProps: GetStaticProps<BranchPageProps> = async ({ params, locale }) => {
   const branchSlug = params?.branch as string;
 
-  const data = branchData.find((branch) => branch.slug === branchSlug);
+  // Pobieramy dane dla konkretnego slugu z Sanity
+  const data = await getBranchBySlug(branchSlug);
+  const translations = await serverSideTranslations(locale as string, ["common", "validation", "forms"]);
 
   if (!data) {
     return { notFound: true };
   }
 
-  return { props: { ...(await serverSideTranslations(locale as string, ["common", "validation", "forms"])), data } };
+  return {
+    props: {
+      ...translations,
+      data,
+    },
+    revalidate: 60, // Opcjonalnie: odświeżaj dane co 60 sekund (Incremental Static Regeneration)
+  };
 };
 
 export default BranchPage;

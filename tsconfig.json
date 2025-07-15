@@ -36,6 +36,9 @@
       ],
       "@hooks/*": [
         "./src/hooks/*"
+      ],
+      "@sanity/*": [
+        "./src/sanity/*"
       ]
     },
     "baseUrl": ".",

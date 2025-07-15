@@ -5,7 +5,7 @@ type BranchData = {
     pl: string;
     de: string;
   };
-  img: string;
+  imgUrl?: string;
   address: string;
   team: TeamMember[];
 };
@@ -28,7 +28,7 @@ const branchData: BranchData[] = [
       en: "Buk",
       de: "Buk",
     },
-    img: `${imageBasePath2}6.jpg`,
+    imgUrl: `${imageBasePath2}6.jpg`,
     address: "Mickiewicza, 64-320 Buk",
     team: [
       {
@@ -168,7 +168,7 @@ const branchData: BranchData[] = [
       en: "Buk",
       de: "Buk",
     },
-    img: `${imageBasePath2}7.jpg`,
+    imgUrl: `${imageBasePath2}7.jpg`,
     address: "Wiśniowy Sad, 64-320 Buk",
     team: [
       {
@@ -244,7 +244,7 @@ const branchData: BranchData[] = [
       en: "Pniewy",
       de: "Pniewy",
     },
-    img: `${imageBasePath2}10.jpg`,
+    imgUrl: `${imageBasePath2}10.jpg`,
     address: "Borówkowa, 62-045 Pniewy",
     team: [
       {
@@ -392,7 +392,7 @@ const branchData: BranchData[] = [
       en: "Opalenica",
       de: "Opalenica",
     },
-    img: `${imageBasePath2}9.jpg`,
+    imgUrl: `${imageBasePath2}9.jpg`,
     address: "Zamkowa, 64-330 Opalenica",
     team: [
       {
@@ -420,7 +420,7 @@ const branchData: BranchData[] = [
       en: "Glinno",
       de: "Glinno",
     },
-    img: `${imageBasePath}glinno.jpg`,
+    imgUrl: `${imageBasePath}glinno.jpg`,
     address: "Grudniowa, 64-300 Glinno",
     team: [
       {
@@ -456,7 +456,7 @@ const branchData: BranchData[] = [
       en: "Tarnowo Podgórne",
       de: "Tarnowo Podgórne",
     },
-    img: `${imageBasePath2}8.jpg`,
+    imgUrl: `${imageBasePath2}8.jpg`,
     address: "Florencka, 62-080 Tarnowo Podgórne",
     team: [
       {
