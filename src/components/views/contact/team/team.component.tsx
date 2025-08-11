@@ -42,9 +42,7 @@ function Team(props: { team: TeamMember[] }) {
                   <div className={styles.iconWrapper}>
                     <EnvelopeIcon fill={"white"} />
                   </div>
-                  <span className={styles.emailText}>
-                    {item.email}
-                  </span>
+                  <span className={styles.emailText}>{item.email}</span>
                 </li>
               </ul>
             </div>
