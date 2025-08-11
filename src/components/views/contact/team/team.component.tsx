@@ -44,7 +44,6 @@ function Team(props: { team: TeamMember[] }) {
                   </div>
                   <span className={styles.emailText}>
                     {item.email}
-                    <span>@orionexpress.eu</span>
                   </span>
                 </li>
               </ul>
