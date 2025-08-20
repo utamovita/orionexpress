@@ -57,4 +57,17 @@ export const galleryPostType = defineType({
       of: [{ type: "galleryImage" }],
     }),
   ],
+  preview: {
+    select: {
+      title: "title.pl",
+      subtitle: "subtitle.pl",
+    },
+    prepare({ title, subtitle }) {
+      const combinedTitle = subtitle ? `${title} - ${subtitle}` : title;
+
+      return {
+        title: combinedTitle || "Nowy post",
+      };
+    },
+  },
 });
