@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BlogItem } from "@components/views/gallery/blog/blog.config";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
@@ -10,10 +10,11 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { YoutubeIcon } from "@components/shared/icons/youtube.icon";
 import cx from "classnames";
+import { GalleryImage } from "@sanity/lib/queries";
 
 type SliderFullscreenProps = {
   onClose(): void;
-  images: BlogItem["images"];
+  images: GalleryImage[];
   startingSlide: number;
 };
 
@@ -56,7 +57,7 @@ function SliderFullscreen(props: SliderFullscreenProps) {
             <SwiperSlide key={image.alt} className={styles.swiperSlide}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={image.url}
+                src={image.imageUrl}
                 alt={image.alt}
                 className={cx(styles.image, { [styles.darkImage]: isYouTubeVideo })}
               />

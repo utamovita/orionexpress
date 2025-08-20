@@ -1,6 +1,7 @@
 import { groq } from "next-sanity";
 import { client } from "./client";
 
+// Branches:
 export type TeamMember = {
   name: string;
   role: string | null;
@@ -67,4 +68,47 @@ export async function getBranchBySlug(slug: string): Promise<Branch | null> {
 
 export async function getAllBranchSlugs(): Promise<{ slug: string }[]> {
   return client.fetch(branchSlugsQuery);
+}
+
+
+//Gallery:
+
+export type GalleryImage = {
+  imageUrl: string;
+  alt: string;
+  ytLink?: string;
+};
+
+export type GalleryPost = {
+  _id: string;
+  title: {
+    en: string;
+    pl: string;
+    de: string;
+  };
+  subtitle: {
+    en: string | null;
+    pl: string | null;
+    de: string | null;
+  };
+  slug: string;
+  images: GalleryImage[];
+};
+
+const allGalleryPostsQuery = groq`
+  *[_type == "galleryPost"] | order(isPinned desc, publicationDate desc){
+    _id,
+    title,
+    subtitle,
+    "slug": slug.current,
+    "images": images[]{
+      "imageUrl": image.asset->url,
+      alt,
+      ytLink
+    }
+  }
+`;
+
+export async function getAllGalleryPosts(): Promise<GalleryPost[]> {
+  return client.fetch(allGalleryPostsQuery);
 }

@@ -52,7 +52,7 @@ function CSRPost(props: CSRPostProps) {
     <div className={styles.post} onClick={() => onClick(data.images)}>
       <Image
         className={styles.postImg}
-        src={data.images[0].url}
+        src={data.images[0].imageUrl}
         alt={"csr"}
         layout="responsive"
         width={100}

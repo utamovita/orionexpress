@@ -1,48 +1,38 @@
+// src/pages/galeria.tsx
 import { BaseLayout } from "@design-system/layout/base-layout.component";
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next"; // Zmiana na GetStaticProps
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GalleryView } from "@components/views/gallery";
 import { NextSeo } from "next-seo";
 import React from "react";
 import { useTranslation } from "next-i18next";
-import { blogConfig, BlogItem } from "@components/views/gallery/blog/blog.config";
+import { getAllGalleryPosts, GalleryPost } from "@sanity/lib/queries"; // Importujemy nowe funkcje i typy
 
 type GalleryPageProps = {
-  paginatedItems: BlogItem[];
-  currentPage: number;
-  totalItems: number;
+  posts: GalleryPost[];
 };
 
-const PAGE_SIZE = 4;
-
-export default function GalleryPage({ paginatedItems, currentPage, totalItems }: GalleryPageProps) {
+export default function GalleryPage({ posts }: GalleryPageProps) {
   const { t } = useTranslation("common");
 
   return (
     <>
       <NextSeo title={t("seo.gallery.title")} description={t("seo.gallery.description")} />
       <BaseLayout>
-        <GalleryView paginatedItems={paginatedItems} currentPage={currentPage} totalItems={totalItems} />
+        <GalleryView posts={posts} />
       </BaseLayout>
     </>
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ locale, query }) => {
-  const page = parseInt(query.page as string) || 1;
-  const totalItems = blogConfig.length;
-  const totalPages = Math.ceil(totalItems / PAGE_SIZE);
-
-  const currentPage = Math.max(1, Math.min(page, totalPages));
-  const startIndex = (currentPage - 1) * PAGE_SIZE;
-  const paginatedItems = blogConfig.slice(startIndex, startIndex + PAGE_SIZE);
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const posts = await getAllGalleryPosts();
 
   return {
     props: {
       ...(await serverSideTranslations(locale ?? "en", ["common"])),
-      currentPage,
-      totalItems,
-      paginatedItems,
+      posts,
     },
+    revalidate: 60,
   };
 };

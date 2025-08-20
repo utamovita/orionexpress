@@ -16,7 +16,7 @@ export default function Pagination({
   currentPage,
   onPageChange,
   pageSize,
-  isLoading = true,
+  isLoading = false,
 }: PaginationProps) {
   const { t } = useTranslation("common");
 
