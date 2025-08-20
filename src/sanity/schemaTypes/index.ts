@@ -5,5 +5,5 @@ import { galleryPostType } from "@sanity/schemaTypes/galleryPage/gallery-post";
 import { galleryImageType } from "@sanity/schemaTypes/galleryPage/gallery-image";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [branchType, teamMemberType, galleryPostType, galleryImageType]
+  types: [branchType, teamMemberType, galleryPostType, galleryImageType],
 };
