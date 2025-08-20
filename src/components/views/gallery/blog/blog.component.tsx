@@ -15,7 +15,6 @@ const SliderFullscreen = dynamic(
   { ssr: false },
 );
 
-
 const PAGE_SIZE = 4;
 
 type BlogProps = {
@@ -79,24 +78,19 @@ function BlogSection(props: BlogSectionProps) {
         <div className={styles.gridItem}>
           {title} {subtitle ? <span className={styles.subtitle}>{subtitle}</span> : null}
         </div>
-        {item.images.slice(0, 4).map((image, index) => (
-          image.imageUrl && (
-            <div className={styles.gridItem} key={image.alt} onClick={() => onClick(item.images, index)}>
-              <div className={styles.imageWrapper}>
-                <div className={styles.hoverOverlay}>
-                  <ZoomIcon className={styles.zoomIcon} />
+        {item.images.slice(0, 4).map(
+          (image, index) =>
+            image.imageUrl && (
+              <div className={styles.gridItem} key={image.alt} onClick={() => onClick(item.images, index)}>
+                <div className={styles.imageWrapper}>
+                  <div className={styles.hoverOverlay}>
+                    <ZoomIcon className={styles.zoomIcon} />
+                  </div>
+                  <Image src={image.imageUrl} alt={image.alt} fill style={{ objectFit: "cover" }} loading={"lazy"} />
                 </div>
-                <Image
-                  src={image.imageUrl}
-                  alt={image.alt}
-                  fill
-                  style={{ objectFit: "cover" }}
-                  loading={"lazy"}
-                />
               </div>
-            </div>
-          )
-        ))}
+            ),
+        )}
       </Container>
     </div>
   );

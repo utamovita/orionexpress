@@ -70,7 +70,6 @@ export async function getAllBranchSlugs(): Promise<{ slug: string }[]> {
   return client.fetch(branchSlugsQuery);
 }
 
-
 //Gallery:
 
 export type GalleryImage = {
