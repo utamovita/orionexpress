@@ -47,6 +47,13 @@
   }
 }
 
+.list {
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .element {
   display: flex;
   gap: vr.$spacingSizeXS;
@@ -62,6 +69,7 @@
   @include mx.fontSize(24px);
   font-weight: var(--fontWeightBold);
 }
+
 @media only screen and (min-width: 770px) {
   .imageWrapper {
     transition: 0.5s ease-in-out;
@@ -94,5 +102,8 @@
 
   .element .iconWrapper {
     display: none;
+  }
+  .list {
+    min-height: auto;
   }
 }

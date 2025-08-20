@@ -1,9 +1,8 @@
-// src/sanity/schemaTypes/branch.ts
 import { defineField, defineType } from "sanity";
 
 export const branchType = defineType({
   name: "branch",
-  title: "Oddział",
+  title: "Kontakt - oddziały",
   type: "document",
   fields: [
     defineField({

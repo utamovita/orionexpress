@@ -1,4 +1,3 @@
-// src/sanity/schemaTypes/teamMember.ts
 import { defineField, defineType } from "sanity";
 
 export const teamMemberType = defineType({
