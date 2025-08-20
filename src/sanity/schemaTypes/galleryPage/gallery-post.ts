@@ -44,13 +44,6 @@ export const galleryPostType = defineType({
       ],
     }),
     defineField({
-      name: "slug",
-      title: "Link do posta (slug)",
-      type: "slug",
-      options: { source: "title.pl", maxLength: 96 },
-      validation: (Rule) => Rule.required(),
-    }),
-    defineField({
       name: "images",
       title: "Zdjęcia",
       type: "array",
