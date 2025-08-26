@@ -23,6 +23,7 @@ function CSRSection() {
           <div className={styles.side}>
             <CSRPost data={csrConfig[0]} onClick={handleOpenGallery} />
             <CSRPost data={csrConfig[1]} onClick={handleOpenGallery} />
+            <CSRPost data={csrConfig[4]} onClick={handleOpenGallery} />
           </div>
           <div className={styles.side}>
             <div className={styles.titleWrapper}>
@@ -30,6 +31,7 @@ function CSRSection() {
               <h2 className={styles.subtitle}>{t("csr.subtitle")}</h2>
             </div>
             <CSRPost data={csrConfig[2]} onClick={handleOpenGallery} />
+            <CSRPost data={csrConfig[3]} onClick={handleOpenGallery} />
           </div>
         </div>
       </Container>

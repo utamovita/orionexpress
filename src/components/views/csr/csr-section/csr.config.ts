@@ -71,6 +71,48 @@ const csrConfig: CsrConfig[] = [
       },
     ],
   },
+  {
+    title: "Namiot",
+    images: [
+      {
+        imageUrl: `${basePath}/namiot/namiot-1.jpg`,
+        alt: "orion namiot",
+      },
+      {
+        imageUrl: `${basePath}/namiot/namiot-2.jpg`,
+        alt: "orion namiot",
+      },
+      {
+        imageUrl: `${basePath}/namiot/namiot-3.jpg`,
+        alt: "orion namiot",
+      },
+      {
+        imageUrl: `${basePath}/namiot/namiot-4.jpg`,
+        alt: "orion namiot",
+      },
+    ],
+  },
+  {
+    title: "Bizon",
+    images: [
+      {
+        imageUrl: `${basePath}/bizon/bizon-1.jpg`,
+        alt: "orion csr",
+      },
+      {
+        imageUrl: `${basePath}/bizon/bizon-2.jpg`,
+        alt: "orion csr",
+      },
+      {
+        imageUrl: `${basePath}/bizon/bizon-3.jpg`,
+        alt: "orion csr",
+      },
+      {
+        imageUrl: `${basePath}/bizon/bizon-4.jpg`,
+        alt: "orion csr",
+      },
+    ],
+  },
 ];
 
 export { csrConfig };
