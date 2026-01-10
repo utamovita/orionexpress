@@ -5,12 +5,12 @@ type CsrConfig = {
     en: string;
     pl: string;
     de: string;
-  }
+  };
   description: {
     en: string;
     pl: string;
     de: string;
-  }
+  };
   images: GalleryImage[];
 };
 
@@ -26,7 +26,7 @@ const csrConfig: CsrConfig[] = [
     description: {
       en: "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       pl: "PL Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     images: [
       {
@@ -52,7 +52,7 @@ const csrConfig: CsrConfig[] = [
     description: {
       en: "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       pl: "PL Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     images: [
       {
@@ -78,7 +78,7 @@ const csrConfig: CsrConfig[] = [
     description: {
       en: "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       pl: "PL Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     images: [
       {
@@ -120,7 +120,7 @@ const csrConfig: CsrConfig[] = [
     description: {
       en: "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       pl: "PL Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     images: [
       {
@@ -150,7 +150,7 @@ const csrConfig: CsrConfig[] = [
     description: {
       en: "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       pl: "PL Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     images: [
       {

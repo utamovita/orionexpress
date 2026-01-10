@@ -26,16 +26,13 @@
   }
 }
 
-
 .badgeTitle {
-    @include mx.fontSize(24px);
-    font-weight: var(--fontWeightBold);
-    margin-bottom: vr.$spacingSizeM;
+  @include mx.fontSize(24px);
+  font-weight: var(--fontWeightBold);
+  margin-bottom: vr.$spacingSizeM;
 }
 @include mx.devices(desktop) {
-
 }
-
 
 @include mx.devices(mobile) {
   .badgesWrapper {

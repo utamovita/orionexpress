@@ -5,12 +5,10 @@ import EventsIcon from "@components/shared/icons/events.icon";
 import SoccerIcon from "@components/shared/icons/soccer.icon";
 import EnterpriseIcon from "@components/shared/icons/enterprise.icon";
 
-
 function BadgesSection() {
   const { t } = useTranslation("common");
 
   return (
-
     <div className={styles.wrapper}>
       <Container>
         <div className={styles.badgesWrapper}>
@@ -29,7 +27,6 @@ function BadgesSection() {
         </div>
       </Container>
     </div>
-
   );
 }
 

@@ -19,14 +19,11 @@ function CSRSection() {
 
   return (
     <div className={styles.wrapper}>
-        {csrConfig.map((csrItem, index) => {
-          if (csrItem.images.length < 3) return null;
-          const isEven = index % 2 !== 0;
-          return (
-            <CSRPost key={index} data={csrItem} onClick={() => handleOpenGallery(csrItem.images)} isEven={isEven}/>
-          );
-        })}
-
+      {csrConfig.map((csrItem, index) => {
+        if (csrItem.images.length < 3) return null;
+        const isEven = index % 2 !== 0;
+        return <CSRPost key={index} data={csrItem} onClick={() => handleOpenGallery(csrItem.images)} isEven={isEven} />;
+      })}
 
       {isGalleryOpen && (
         <SliderFullscreen onClose={() => setIsGalleryOpen(false)} images={sliderData} startingSlide={0} />
@@ -46,57 +43,38 @@ function CSRPost(props: CSRPostProps) {
   const { locale } = useRouter();
 
   return (
-  <div className={cx(styles.postWrapper, {[styles.isEven]: isEven})}>
-
-    <Container>
-
-    <div className={cx(styles.post, {[styles.isEven]: isEven})}>
-      <div className={styles.imgSection} onClick={() => onClick(data.images)}>
-        <div className={styles.columnsSection}>
-          <div className={styles.leftImgColumn}>
-            <div className={styles.imgWrapper}>
-              <Image
-                className={styles.postImg}
-                src={data.images[1].imageUrl}
-                alt="csr"
-                fill
-
-              />
+    <div className={cx(styles.postWrapper, { [styles.isEven]: isEven })}>
+      <Container>
+        <div className={cx(styles.post, { [styles.isEven]: isEven })}>
+          <div className={styles.imgSection} onClick={() => onClick(data.images)}>
+            <div className={styles.columnsSection}>
+              <div className={styles.leftImgColumn}>
+                <div className={styles.imgWrapper}>
+                  <Image className={styles.postImg} src={data.images[1].imageUrl} alt="csr" fill />
+                </div>
+                <div className={styles.imgWrapper}>
+                  <Image className={styles.postImg} src={data.images[2].imageUrl} alt="csr" fill />
+                </div>
+              </div>
+              <div className={styles.rightImgColumn}>
+                <div className={styles.imgWrapper}>
+                  <Image className={styles.postImg} src={data.images[0].imageUrl} alt="csr" fill />
+                </div>
+              </div>
             </div>
-            <div className={styles.imgWrapper}>
-              <Image
-                className={styles.postImg}
-                src={data.images[2].imageUrl}
-                alt="csr"
-                fill
-              />
-            </div>
+            <Thumbnails images={data.images} />
           </div>
-          <div className={styles.rightImgColumn}>
-          <div className={styles.imgWrapper}>
-            <Image
-              className={styles.postImg}
-              src={data.images[0].imageUrl}
-              alt="csr"
-              fill
-            />
+          <div className={styles.textSection}>
+            <h3 className={styles.postTitle}>{data.title[locale as Locale]}</h3>
+            <p className={styles.postDescription}>{data.description[locale as Locale]}</p>
           </div>
         </div>
-        </div>
-        <Thumbnails images={data.images} />
-      </div>
-      <div className={styles.textSection}>
-        <h3 className={styles.postTitle}>{data.title[locale as Locale]}</h3>
-        <p className={styles.postDescription}>{data.description[locale as Locale]}</p>
-      </div>
-    </div>
       </Container>
-  </div>
-      );
+    </div>
+  );
 }
 
 export { CSRSection };
-
 
 type ThumbnailsProps = {
   images: CsrConfig["images"];
@@ -110,15 +88,9 @@ function Thumbnails({ images }: ThumbnailsProps) {
     <div className={styles.thumbnailsWrapper}>
       {trimmedImages.map((img, index) => (
         <div key={index} className={styles.thumbnail}>
-          <Image
-            className={styles.thumbnailImg}
-            src={img.imageUrl}
-            alt={img.alt}
-            fill
-          />
+          <Image className={styles.thumbnailImg} src={img.imageUrl} alt={img.alt} fill />
         </div>
       ))}
     </div>
   );
-
 }

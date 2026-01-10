@@ -6,7 +6,7 @@ import { BadgesSection } from "@components/views/csr/badges-section/badges-secti
 function CSRView() {
   return (
     <>
-      <MainBanner/>
+      <MainBanner />
       <IntroSection />
       <BadgesSection />
       <CSRSection />
