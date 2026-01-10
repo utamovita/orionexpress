@@ -82,8 +82,16 @@
     "teamTitle2": "Werfen Sie einen Blick auf die gesamte Crew von OrionExpress"
   },
   "csr": {
-    "title": "Initiativen, an denen wir teilnehmen",
-    "subtitle":"Wir engagieren uns in einer Vielzahl von Projekten und Aktivitäten, die die Gemeinschaft unterstützen, Innovationen fördern und zu einer nachhaltigen Entwicklung beitragen. Entdecken Sie die Initiativen, an denen wir uns aktiv beteiligen, um eine bessere Zukunft zu schaffen."
+    "title": "CSR",
+    "subtitle": "Wir unterstützen das, was zählt – lokal und mit Herz",
+    "introSection": {
+      "description": "Menschen und ihre Leidenschaften bilden das Fundament unseres Unternehmens. Deshalb unterstützen wir Initiativen, die die Gemeinschaft verbinden – von Festen mit Attraktionen für Kinder über Profisportler bis hin zu Mannschaften, in denen unsere Mitarbeiter spielen. Erfolg bedeutet für uns mehr als nur Zahlen und Ergebnisse. Es geht um Partnerschaft, Engagement und die Förderung lokaler Aktivitäten, die andere inspirieren und zeigen, dass es sich lohnt, hoch hinaus zu wollen. Wir glauben an Projekte, die Beziehungen aufbauen und etwas Gutes hinterlassen."
+    },
+    "badgesSection": {
+      "badge1": "Lokale Veranstaltungen",
+      "badge2": "Finanzielle Unterstützung",
+      "badge3": "Unterstützung von Sportlern"
+    }
   },
   "pagination:": {
     "prev": "Vorherige",

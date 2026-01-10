@@ -1,7 +1,16 @@
 import { GalleryImage } from "@sanity/lib/queries";
 
 type CsrConfig = {
-  title: string;
+  title: {
+    en: string;
+    pl: string;
+    de: string;
+  }
+  description: {
+    en: string;
+    pl: string;
+    de: string;
+  }
   images: GalleryImage[];
 };
 
@@ -9,7 +18,16 @@ const basePath = "/assets/images/csr";
 
 const csrConfig: CsrConfig[] = [
   {
-    title: "Rutka",
+    title: {
+      en: "Rutka EN",
+      pl: "Rutka PL",
+      de: "Rutka DE",
+    },
+    description: {
+      en: "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      pl: "PL Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
     images: [
       {
         imageUrl: `${basePath}/rutka/1.jpg`,
@@ -26,7 +44,16 @@ const csrConfig: CsrConfig[] = [
     ],
   },
   {
-    title: "Mecz hala",
+    title: {
+      en: "Rutka EN",
+      pl: "Rutka PL",
+      de: "Rutka DE",
+    },
+    description: {
+      en: "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      pl: "PL Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
     images: [
       {
         imageUrl: `${basePath}/mecz-hala/1.jpg`,
@@ -36,10 +63,23 @@ const csrConfig: CsrConfig[] = [
         imageUrl: `${basePath}/mecz-hala/2.jpg`,
         alt: "mecz-hala",
       },
+      {
+        imageUrl: `${basePath}/mecz-hala/2.jpg`,
+        alt: "mecz-hala",
+      },
     ],
   },
   {
-    title: "Patria Buk",
+    title: {
+      en: "Rutka EN",
+      pl: "Rutka PL",
+      de: "Rutka DE",
+    },
+    description: {
+      en: "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      pl: "PL Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
     images: [
       {
         imageUrl: `${basePath}/patria-buk/1.jpg`,
@@ -72,7 +112,16 @@ const csrConfig: CsrConfig[] = [
     ],
   },
   {
-    title: "Namiot",
+    title: {
+      en: "Rutka EN",
+      pl: "Rutka PL",
+      de: "Rutka DE",
+    },
+    description: {
+      en: "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      pl: "PL Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
     images: [
       {
         imageUrl: `${basePath}/namiot/namiot-1.jpg`,
@@ -93,7 +142,16 @@ const csrConfig: CsrConfig[] = [
     ],
   },
   {
-    title: "Bizon",
+    title: {
+      en: "Rutka EN",
+      pl: "Rutka PL",
+      de: "Rutka DE",
+    },
+    description: {
+      en: "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      pl: "PL Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      de: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
     images: [
       {
         imageUrl: `${basePath}/bizon/bizon-1.jpg`,

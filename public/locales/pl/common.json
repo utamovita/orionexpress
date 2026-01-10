@@ -83,8 +83,16 @@
     "teamTitle2": "Zerknij na pełną załogę OrionExpress"
   },
   "csr": {
-    "title": "Inicjatywy, w których bierzemy udział",
-    "subtitle":"Sukces to dla nas nie tylko liczby i wyniki – to również partnerstwo i czynne wspieranie lokalnej społeczności. Doceniamy ludzi z pasją, którzy poprzez swoje działania inspirują innych, pokazując, że warto sięgać wyżej – niezależnie od dziedziny. Wspieramy inicjatywy, które łączą, budują relacje i zostawiają po sobie coś dobrego."
+    "title": "CSR",
+    "subtitle":"Wspieramy to, co ważne - lokalnie i z sercem",
+    "introSection": {
+      "description": "To ludzie i ich pasje budują fundament naszej firmy. Dlatego wspieramy inicjatywy, które łączą społeczność - od festynów z atrakcjami dla dzieci, przez zawodowych sportowców, po drużyny, w których grają nasi pracownicy. Sukces to dla nas więcej niż liczby i wyniki. To partnerstwo, zaangażowanie i wspieranie lokalnych działań, które inspirują innych, pokazując, że warto mierzyć wysoko. Wierzymy w projekty, które budują relacje i zostawiają po sobie coś dobrego."
+    },
+    "badgesSection": {
+      "badge1": "Lokalne wydarzenia",
+      "badge2": "Wsparcie finansowe",
+      "badge3": "Wspieranie sportowców"
+    }
   },
   "pagination": {
     "prev": "Poprzednia",

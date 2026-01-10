@@ -2,12 +2,13 @@ import styles from "./csr-section.module.scss";
 import { Container } from "@design-system/layout/utilities";
 import { CsrConfig, csrConfig } from "./csr.config";
 import Image from "next/image";
-import { useTranslation } from "next-i18next";
 import { useState } from "react";
 import { SliderFullscreen } from "@components/shared/slider/fullscreen-slider.component";
+import { Locale } from "@customTypes/pages";
+import { useRouter } from "next/router";
+import cx from "classnames";
 
 function CSRSection() {
-  const { t } = useTranslation("common");
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [sliderData, setSliderData] = useState<CsrConfig["images"]>([]);
 
@@ -18,23 +19,14 @@ function CSRSection() {
 
   return (
     <div className={styles.wrapper}>
-      <Container>
-        <div className={styles.contentWrapper}>
-          <div className={styles.side}>
-            <CSRPost data={csrConfig[0]} onClick={handleOpenGallery} />
-            <CSRPost data={csrConfig[1]} onClick={handleOpenGallery} />
-            <CSRPost data={csrConfig[4]} onClick={handleOpenGallery} />
-          </div>
-          <div className={styles.side}>
-            <div className={styles.titleWrapper}>
-              <h1 className={styles.title}>{t("csr.title")}</h1>
-              <h2 className={styles.subtitle}>{t("csr.subtitle")}</h2>
-            </div>
-            <CSRPost data={csrConfig[2]} onClick={handleOpenGallery} />
-            <CSRPost data={csrConfig[3]} onClick={handleOpenGallery} />
-          </div>
-        </div>
-      </Container>
+        {csrConfig.map((csrItem, index) => {
+          if (csrItem.images.length < 3) return null;
+          const isEven = index % 2 !== 0;
+          return (
+            <CSRPost key={index} data={csrItem} onClick={() => handleOpenGallery(csrItem.images)} isEven={isEven}/>
+          );
+        })}
+
 
       {isGalleryOpen && (
         <SliderFullscreen onClose={() => setIsGalleryOpen(false)} images={sliderData} startingSlide={0} />
@@ -46,22 +38,87 @@ function CSRSection() {
 type CSRPostProps = {
   data: CsrConfig;
   onClick: (sliderData: CsrConfig["images"]) => void;
+  isEven: boolean;
 };
 
 function CSRPost(props: CSRPostProps) {
-  const { data, onClick } = props;
+  const { data, onClick, isEven } = props;
+  const { locale } = useRouter();
+
   return (
-    <div className={styles.post} onClick={() => onClick(data.images)}>
-      <Image
-        className={styles.postImg}
-        src={data.images[0].imageUrl}
-        alt={"csr"}
-        layout="responsive"
-        width={100}
-        height={50}
-      />
+  <div className={cx(styles.postWrapper, {[styles.isEven]: isEven})}>
+
+    <Container>
+
+    <div className={cx(styles.post, {[styles.isEven]: isEven})}>
+      <div className={styles.imgSection} onClick={() => onClick(data.images)}>
+        <div className={styles.columnsSection}>
+          <div className={styles.leftImgColumn}>
+            <div className={styles.imgWrapper}>
+              <Image
+                className={styles.postImg}
+                src={data.images[1].imageUrl}
+                alt="csr"
+                fill
+
+              />
+            </div>
+            <div className={styles.imgWrapper}>
+              <Image
+                className={styles.postImg}
+                src={data.images[2].imageUrl}
+                alt="csr"
+                fill
+              />
+            </div>
+          </div>
+          <div className={styles.rightImgColumn}>
+          <div className={styles.imgWrapper}>
+            <Image
+              className={styles.postImg}
+              src={data.images[0].imageUrl}
+              alt="csr"
+              fill
+            />
+          </div>
+        </div>
+        </div>
+        <Thumbnails images={data.images} />
+      </div>
+      <div className={styles.textSection}>
+        <h3 className={styles.postTitle}>{data.title[locale as Locale]}</h3>
+        <p className={styles.postDescription}>{data.description[locale as Locale]}</p>
+      </div>
     </div>
-  );
+      </Container>
+  </div>
+      );
 }
 
 export { CSRSection };
+
+
+type ThumbnailsProps = {
+  images: CsrConfig["images"];
+};
+
+function Thumbnails({ images }: ThumbnailsProps) {
+  const MAX_IMAGES = 6;
+
+  const trimmedImages = images.slice(0, MAX_IMAGES);
+  return (
+    <div className={styles.thumbnailsWrapper}>
+      {trimmedImages.map((img, index) => (
+        <div key={index} className={styles.thumbnail}>
+          <Image
+            className={styles.thumbnailImg}
+            src={img.imageUrl}
+            alt={img.alt}
+            fill
+          />
+        </div>
+      ))}
+    </div>
+  );
+
+}

@@ -6,7 +6,7 @@ import React from "react";
 import { useTranslation } from "next-i18next";
 import { CSRView } from "@components/views/csr";
 
-export default function GalleryPage() {
+export default function CSRPage() {
   const { t } = useTranslation("common");
 
   return (
