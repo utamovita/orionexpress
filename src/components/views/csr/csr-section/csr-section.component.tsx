@@ -1,25 +1,29 @@
 import styles from "./csr-section.module.scss";
 import { Container } from "@design-system/layout/utilities";
-import { CsrConfig, csrConfig } from "./csr.config";
 import Image from "next/image";
 import { useState } from "react";
 import { SliderFullscreen } from "@components/shared/slider/fullscreen-slider.component";
 import { Locale } from "@customTypes/pages";
 import { useRouter } from "next/router";
 import cx from "classnames";
+import { CsrPost, GalleryImage } from "@sanity/lib/queries";
 
-function CSRSection() {
+type CSRSectionProps = {
+  posts: CsrPost[];
+};
+
+function CSRSection({ posts }: CSRSectionProps) {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
-  const [sliderData, setSliderData] = useState<CsrConfig["images"]>([]);
+  const [sliderData, setSliderData] = useState<GalleryImage[]>([]);
 
-  const handleOpenGallery = (sliderData: CsrConfig["images"]) => {
+  const handleOpenGallery = (sliderData: GalleryImage[]) => {
     setIsGalleryOpen(true);
     setSliderData(sliderData);
   };
 
   return (
     <div className={styles.wrapper}>
-      {csrConfig.map((csrItem, index) => {
+      {posts.map((csrItem, index) => {
         if (csrItem.images.length < 3) return null;
         const isEven = index % 2 !== 0;
         return <CSRPost key={index} data={csrItem} onClick={() => handleOpenGallery(csrItem.images)} isEven={isEven} />;
@@ -33,8 +37,8 @@ function CSRSection() {
 }
 
 type CSRPostProps = {
-  data: CsrConfig;
-  onClick: (sliderData: CsrConfig["images"]) => void;
+  data: CsrPost;
+  onClick: (sliderData: GalleryImage[]) => void;
   isEven: boolean;
 };
 
@@ -77,7 +81,7 @@ function CSRPost(props: CSRPostProps) {
 export { CSRSection };
 
 type ThumbnailsProps = {
-  images: CsrConfig["images"];
+  images: GalleryImage[];
 };
 
 function Thumbnails({ images }: ThumbnailsProps) {
