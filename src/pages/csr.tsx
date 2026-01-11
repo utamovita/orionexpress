@@ -11,7 +11,6 @@ type CSRPageProps = {
   posts: CsrPost[];
 };
 
-
 export default function CSRPage({ posts }: CSRPageProps) {
   const { t } = useTranslation("common");
 
@@ -19,7 +18,7 @@ export default function CSRPage({ posts }: CSRPageProps) {
     <>
       <NextSeo title={t("seo.csr.title")} description={t("seo.csr.description")} />
       <BaseLayout>
-        <CSRView posts={posts}/>
+        <CSRView posts={posts} />
       </BaseLayout>
     </>
   );

@@ -14,7 +14,7 @@ function CSRView({ posts }: CSRViewProps) {
       <MainBanner />
       <IntroSection />
       <BadgesSection />
-      <CSRSection posts={posts}/>
+      <CSRSection posts={posts} />
     </>
   );
 }
