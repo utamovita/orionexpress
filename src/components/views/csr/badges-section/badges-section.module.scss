@@ -1,0 +1,48 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  background-color: var(--colorWhite);
+  padding: vr.$spacingSize7XL 0;
+  color: var(--colorBlack);
+}
+
+.badgesWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+
+  .icon {
+    width: 180px;
+    height: 180px;
+    margin-bottom: vr.$spacingSizeL;
+  }
+}
+
+.badgeTitle {
+  @include mx.fontSize(24px);
+  font-weight: var(--fontWeightBold);
+  margin-bottom: vr.$spacingSizeM;
+}
+@include mx.devices(desktop) {
+}
+
+@include mx.devices(mobile) {
+  .badgesWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: vr.$spacingSize5XL;
+  }
+
+  .badge {
+    width: 100%;
+  }
+}

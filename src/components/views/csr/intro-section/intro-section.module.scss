@@ -1,0 +1,50 @@
+@use "@design-system/styles/utilities/variables" as vr;
+@use "@design-system/styles/utilities/mixins" as mx;
+
+.wrapper {
+  background-color: var(--colorBlack);
+  padding: vr.$spacingSize7XL 0;
+}
+
+.title {
+  font-weight: var(--fontWeightBold);
+  @include mx.fontSize(42px);
+  line-height: 1.2em;
+  margin-bottom: vr.$spacingSizeXL;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 65%;
+    height: 2px;
+    background-color: var(--colorThunder);
+    margin-top: vr.$spacingSizeL;
+  }
+}
+
+.description {
+  font-weight: var(--fontWeightRegular);
+  @include mx.fontSize(22px);
+  line-height: 1.5em;
+}
+
+@include mx.devices(desktop) {
+  .title {
+    @include mx.fontSize(32px);
+  }
+
+  .description {
+    @include mx.fontSize(18px);
+  }
+}
+
+@include mx.devices(mobile) {
+  .title {
+    @include mx.fontSize(24px);
+  }
+
+  .description {
+    @include mx.fontSize(14px);
+  }
+}
