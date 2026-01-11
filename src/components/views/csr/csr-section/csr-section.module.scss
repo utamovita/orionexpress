@@ -96,7 +96,7 @@
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  gap: vr.$spacingSizeXL;
+  gap: vr.$spacingSizeXXL;
 
   .postTitle {
     @include mx.fontSize(40px);
@@ -106,8 +106,7 @@
 
   .postDescription {
     @include mx.fontSize(24px);
-    text-transform: uppercase;
-    line-height: 1.3em;
+    line-height: 1.5em;
   }
 }
 

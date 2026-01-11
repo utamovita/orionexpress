@@ -1,7 +1,7 @@
 import styles from "./main-banner.module.scss";
 import { useTranslation } from "next-i18next";
 import { Container } from "@design-system/layout/utilities";
-import backgroundImage from "../../../../../public/assets/images/csr/bizon/bizon-1.jpg";
+import backgroundImage from "../../../../../public/assets/images/csr/main-banner.jpg";
 import Image from "next/image";
 
 function MainBanner() {

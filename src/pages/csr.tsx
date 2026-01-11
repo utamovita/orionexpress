@@ -32,5 +32,6 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
       ...(await serverSideTranslations(locale as string, ["common"])),
       posts,
     },
+    revalidate: 60,
   };
 }
