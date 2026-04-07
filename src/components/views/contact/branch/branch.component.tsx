@@ -4,7 +4,7 @@ import { Team } from "@components/views/contact/team/team.component";
 import { Locale } from "@customTypes/pages";
 import { useRouter } from "next/router";
 import { Branch } from "@sanity/lib/queries";
-import {MainBanner} from "./main-banner/main-banner.component";
+import { MainBanner } from "./main-banner/main-banner.component";
 
 function BranchView(props: { branchData: Branch }) {
   const { branchData } = props;
@@ -12,7 +12,11 @@ function BranchView(props: { branchData: Branch }) {
 
   return (
     <div className={styles.wrapper}>
-      <MainBanner title={branchData.title[locale as Locale]} subtitle={branchData.address} imageUrl={branchData.mainBannerImageUrl!}/>
+      <MainBanner
+        title={branchData.title[locale as Locale]}
+        subtitle={branchData.address}
+        imageUrl={branchData.mainBannerImageUrl!}
+      />
       <Container>
         <Team team={branchData.team} />
       </Container>

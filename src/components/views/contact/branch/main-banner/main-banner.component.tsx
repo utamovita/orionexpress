@@ -35,4 +35,4 @@ function MainBanner({ imageUrl, title, subtitle }: MainBannerProps) {
   );
 }
 
-export { MainBanner}
+export { MainBanner };
