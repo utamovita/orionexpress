@@ -21,6 +21,7 @@ export type Branch = {
   slug: string;
   address: string;
   imageUrl?: string;
+  mainBannerImageUrl?: string;
   team: TeamMember[];
 };
 
@@ -78,6 +79,7 @@ const branchBySlugQuery = groq`
     "slug": slug.current,
     address,
     "imageUrl": img.asset->url,
+    "mainBannerImageUrl": mainBannerImage.asset->url,
     "team": team[]{
       name,
       role,

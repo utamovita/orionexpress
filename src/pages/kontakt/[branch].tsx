@@ -39,13 +39,12 @@ export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
         params: { branch: slug },
       }));
 
-  return { paths, fallback: "blocking" }; // Używamy 'blocking' lub 'true' dla lepszego UX
+  return { paths, fallback: "blocking" };
 };
 
 export const getStaticProps: GetStaticProps<BranchPageProps> = async ({ params, locale }) => {
   const branchSlug = params?.branch as string;
 
-  // Pobieramy dane dla konkretnego slugu z Sanity
   const data = await getBranchBySlug(branchSlug);
   const translations = await serverSideTranslations(locale as string, ["common", "validation", "forms"]);
 
@@ -58,7 +57,7 @@ export const getStaticProps: GetStaticProps<BranchPageProps> = async ({ params, 
       ...translations,
       data,
     },
-    revalidate: 60, // Opcjonalnie: odświeżaj dane co 60 sekund (Incremental Static Regeneration)
+    revalidate: 60,
   };
 };
 

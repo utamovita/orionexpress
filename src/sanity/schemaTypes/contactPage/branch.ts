@@ -27,7 +27,12 @@ export const branchType = defineType({
     }),
     defineField({
       name: "img",
-      title: "Zdjęcie oddziału",
+      title: "Zdjęcie oddziału (widok listy)",
+      type: "image",
+    }),
+    defineField({
+      name: "mainBannerImage",
+      title: "Zdjęcie oddziału (główny banner)",
       type: "image",
     }),
     defineField({
